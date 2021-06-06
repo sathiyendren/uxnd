@@ -23,12 +23,12 @@ const greeting = {
 
 const socialMediaLinks = {
   display: true,
-  github: "https://github.com/lazaromer97",
-  gitlab: "https://gitlab.com/lazaromer97",
-  gmail: "lazaromer97@gmail.com",
-  linkedin: "https://www.linkedin.com/in/lazaromer97/",
-  facebook: "https://www.facebook.com/lazaromer97/",
-  twitter: "https://twitter.com/lazaromer97",
+  github: null,
+  gitlab: null,
+  gmail: "iammega@gmail.com",
+  linkedin: "https://www.linkedin.com/in/megalatha-s-0a679816/",
+  facebook: "https://www.facebook.com/megalatha",
+  twitter: null,
 };
 
 const workExperiences = {
@@ -240,10 +240,113 @@ const contactInfo = {
   emailAddress: "lazaromer97@gmail.com",
 };
 
+const greet = {
+  title: "Greetings",
+  display: true,
+  sectionTitle: "greet",
+  menuDisplay: false,
+  type: "greetings",
+  data: {
+    greeting: "Hi There!",
+    title: "I'm Megalatha",
+    subTitle: emoji(
+      "I'm a User Experience Designer and Interaction Designer based in Bangalore, India with experience in delivering user-centric Interfaces for surface UIs. I'm passionate about rendering intuitive UIs for people and thereby enrich the overall customer experience."
+    ),
+    resumeLink: "https://bit.ly/3uRVWnP",
+    socialMediaLinks,
+  },
+};
+
+const aboutMe = {
+  title: "About Me",
+  display: true,
+  menuDisplay: true,
+  sectionTitle: "aboutMe",
+  type: "aboutMe",
+  data: {
+    content: [
+      "With hands-on experience for 13+ years in the field of creating better experiences and intuitive interactions on the Surface User Interfaces, I have been caring for my end-users leading to more loyal customers and better business. I am empathetic to the needs and identifying the job to be done of my end-users. I am a naturally curious person who tries to get to the root of an issue and find solution.",
+      "I keep a good understanding of the coding and technical skills in order to be able to take possibilities and constraints into considerations. My logic and reasoning skills help me to discern why a designed approach is not working and, by contrast, why other one might be. I have the ability to hear and accept feedback which helps me broaden my lens in empathy designing for my audience.",
+      "My domain exposure are in Analytical Dashboards, Banking, Airline, Airport management systems, Tourism, Lighting for Residential, Retail, Fashion, Office, Sports, Recreational areas and Hardware manufacturing.",
+    ],
+  },
+};
+
+const iAmGoodAt = {
+  title: "I'm Good At",
+  display: true,
+  menuDisplay: true,
+  sectionTitle: "iAmGoodAt",
+  type: "skills",
+  data: {
+    content: [
+      "Interactive UIs",
+      "User Research/Interview",
+      "Contextual Inquiries",
+      "Empathy mapping",
+      "Customer journey mapping",
+      "Creative thinking",
+      "Ideation",
+      "Rapid prototyping",
+      "Story telling with prototypes",
+      "User testing",
+      "A/B testing",
+      "UX writing",
+      "Low/Hi-fidelity mockups",
+      "Quantitative Analysis",
+      "Optimize design and dev process with SAFe",
+      "Identify and develop MVP",
+    ],
+  },
+};
+
+const toolsIUse = {
+  title: "Tools I Use",
+  display: true,
+  menuDisplay: true,
+  sectionTitle: "toolsIUse",
+  type: "tools",
+  data: {
+    content: [
+      "Sketch",
+      "InVision App + Craft",
+      "Adobe XD",
+      "Adobe Photoshop",
+      "Miro",
+      "Trello",
+    ],
+  },
+};
+
+const work = {
+  title: "Work",
+  display: true,
+  menuDisplay: true,
+  sectionTitle: "work",
+  type: "work",
+};
+
+const contact = {
+  title: "Contact",
+  display: true,
+  menuDisplay: true,
+  sectionTitle: "contact",
+  type: "contact",
+};
+
+const content = [greet, aboutMe, iAmGoodAt, toolsIUse, work, contact];
+
+const portfolio = {
+  name: "UXnD",
+  content,
+};
+
 export {
   illustration,
   greeting,
   socialMediaLinks,
   workExperiences,
   contactInfo,
+  portfolio,
+  greet,
 };

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
@@ -8,31 +9,29 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import manOnTable from "../../assets/img/manOnTable.svg";
 
-import { illustration, greeting } from "../../portfolio";
+import { illustration } from "../../portfolio";
 
-export default function Greeting() {
-  if (!greeting.displayGreeting) {
-    return null;
-  }
+export default function Greeting(props) {
+  const data = props.data;
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className={"greeting-text"}>
-                {" "}
-                {greeting.title}{" "}
+              <div className={"greeting-text"}>
+                {data.greeting}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
-              </h1>
-              <p className={"greeting-text-p subTitle"}>{greeting.subTitle}</p>
-              <SocialMedia />
+              </div>
+              <h1 className={"title-text"}>{data.title}</h1>
+              <p className={"greeting-text-p subTitle"}>{data.subTitle}</p>
+              <SocialMedia {...data.socialMediaLinks} />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 <Button
                   text="See my resume"
                   newTab={true}
-                  href={greeting.resumeLink}
+                  href={data.resumeLink}
                 />
               </div>
             </div>

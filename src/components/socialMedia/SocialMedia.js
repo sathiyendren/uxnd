@@ -2,13 +2,13 @@ import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 
-export default function socialMedia() {
+export default function socialMedia(props) {
   if (!socialMediaLinks.display) {
     return null;
   }
   return (
     <div className="social-media-div">
-      {socialMediaLinks.github ? (
+      {props.github ? (
         <a
           href={socialMediaLinks.github}
           className="icon-button github"
@@ -20,7 +20,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.gitlab ? (
+      {props.gitlab ? (
         <a
           href={socialMediaLinks.gitlab}
           className="icon-button gitlab"
@@ -32,7 +32,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.gmail ? (
+      {props.gmail ? (
         <a
           href={`mailto:${socialMediaLinks.gmail}`}
           className="icon-button google"
@@ -44,7 +44,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.linkedin ? (
+      {props.linkedin ? (
         <a
           href={socialMediaLinks.linkedin}
           className="icon-button linkedin"
@@ -56,7 +56,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.facebook ? (
+      {props.facebook ? (
         <a
           href={socialMediaLinks.facebook}
           className="icon-button facebook"
@@ -68,7 +68,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.twitter ? (
+      {props.twitter ? (
         <a
           href={socialMediaLinks.twitter}
           className="icon-button twitter"

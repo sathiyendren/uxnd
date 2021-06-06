@@ -2,17 +2,16 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  /* margin-top: 4rem; */
+  margin-top: 4rem;
 }
-.greet-main {
-  /* width: 90%; */
-  padding: 100px 30px;
-  /* margin: 0px auto; */
-  /* margin-top: 2rem; */
-  background: #EFE5E5;
+.toolsIUse-main {
+  width: 90%;
+  padding: 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
 }
 
-.greeting-main {
+.toolsIUse-main {
   display: flex;
 }
 
@@ -22,37 +21,42 @@
   font-weight: bold;
 }
 
-.greeting-main {
+.toolsIUse-main {
   display: flex;
 }
 
-.greeting-main > * {
+.toolsIUse-main > * {
   flex: 1;
   margin-bottom: 30px;
 }
-.button-greeting-div {
+.button-toolsIUse-div {
   display: flex;
   margin-top: 20px;
 }
 
-.greeting-text {
+.toolsIUse-text {
   font-size: 20px;
   line-height: 1.1;
   color: black !important;
 }
 
-.title-text {
-  font-size: 70px;
+.toolsIUse-title-text {
+  /* font-size: 70px; */
   line-height: 1.1;
   color: black !important;
 }
 
-.greeting-text-p {
+.toolsIUse-text-p {
   font-size: 20px;
-  line-height: 30px;
+  /* line-height: 30px; */
+
+  margin: 20px 10px 30px 20px;
+  color: black !important;
+  font-family: 'Abhaya Libre';
+    line-height: 5px;
 }
 
-.greeting-image-div > img {
+.toolsIUse-image-div > img {
   max-width: 100%;
   height: auto;
 }
@@ -92,38 +96,38 @@
 
 /* Media Query */
 @media (max-width: 1380px) {
-  .greeting-text {
+  .toolsIUse-text {
     font-size: 30px;
   }
-  .title-text {
-    font-size: 80px;
+  .toolsIUse-title-text {
+    /* font-size: 80px; */
   }
-  .greeting-text-p {
+  .toolsIUse-text-p {
     font-size: 20px;
   }
 }
 @media (max-width: 768px) {
-  .button-greeting-div {
+  .button-toolsIUse-div {
     justify-content: space-around;
   }
-  .greeting-text {
+  .toolsIUse-text {
     font-size: 15px;
     text-align: center;
   }
 
-  .title-text {
-    font-size: 50px;
+  .toolsIUse-title-text {
+    /* font-size: 50px; */
   }
 
-  .greeting-text-p {
+  .toolsIUse-text-p {
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
-  .greeting-main {
+  .toolsIUse-main {
     display: block;
   }
-  .greeting-image-div {
+  .toolsIUse-image-div {
     height: 256px;
   }
 }
