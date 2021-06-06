@@ -1,13 +1,16 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./Contact.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { illustration, contactInfo } from "../../portfolio";
+import { illustration } from "../../portfolio";
 import { Fade } from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import contactMailDark from "../../assets/img/contactMailDark.svg";
 
-export default function Contact() {
+export default function Contact(props) {
+  const contactInfo = props.data;
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">

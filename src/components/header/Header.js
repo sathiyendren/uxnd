@@ -73,7 +73,7 @@ export default class Header extends Component {
   render() {
     const username = this.props.name;
     const menus = this.props.content.map((menu) => {
-      const display = menu.menuDisplay;
+      const display = menu.display && menu.menuDisplay;
       return (
         display && (
           <li key={menu?.sectionTitle} onMouseEnter={this.mouseEnter}>

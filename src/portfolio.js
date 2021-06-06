@@ -21,16 +21,6 @@ const greeting = {
   displayGreeting: true,
 };
 
-const socialMediaLinks = {
-  display: true,
-  github: null,
-  gitlab: null,
-  gmail: "iammega@gmail.com",
-  linkedin: "https://www.linkedin.com/in/megalatha-s-0a679816/",
-  facebook: "https://www.facebook.com/megalatha",
-  twitter: null,
-};
-
 const workExperiences = {
   display: true,
   experiences: [
@@ -232,6 +222,18 @@ const workExperiences = {
   ],
 };
 
+// megalatha data
+
+const socialMediaLinks = {
+  display: true,
+  github: null,
+  gitlab: null,
+  gmail: "iammega@gmail.com",
+  linkedin: "https://www.linkedin.com/in/megalatha-s-0a679816/",
+  facebook: "https://www.facebook.com/megalatha",
+  twitter: null,
+};
+
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
@@ -326,15 +328,38 @@ const work = {
   type: "work",
 };
 
+const experience = {
+  title: "Experience",
+  display: false,
+  menuDisplay: true,
+  sectionTitle: "experience",
+  type: "experience",
+};
+
 const contact = {
   title: "Contact",
   display: true,
   menuDisplay: true,
   sectionTitle: "contact",
   type: "contact",
+  data: {
+    title: emoji("Contact Me ☎️"),
+    subtitle:
+      "Discuss a project or just want to say hi? My Inbox is open for all.",
+    number: "(+91)9741878855",
+    emailAddress: "iammega@gmail.com",
+  },
 };
 
-const content = [greet, aboutMe, iAmGoodAt, toolsIUse, work, contact];
+const content = [
+  greet,
+  aboutMe,
+  iAmGoodAt,
+  toolsIUse,
+  experience,
+  work,
+  contact,
+];
 
 const portfolio = {
   name: "UXnD",

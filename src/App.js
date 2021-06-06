@@ -17,7 +17,7 @@ function App() {
       case "greetings":
         contentItem = item.display && <Greeting {...item} />;
         break;
-      case "work":
+      case "experience":
         contentItem = item.display && <WorkExperience {...item} />;
         break;
       case "contact":
