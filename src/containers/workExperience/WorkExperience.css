@@ -1,0 +1,15 @@
+#experience {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+#experience h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.experiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
