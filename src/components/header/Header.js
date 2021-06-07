@@ -77,7 +77,7 @@ export default class Header extends Component {
       return (
         display && (
           <li key={menu?.sectionTitle} onMouseEnter={this.mouseEnter}>
-            <a className={"roboto-text"} href={"#" + menu?.sectionTitle}>
+            <a className={"roboto-text"} href={"/#" + menu?.sectionTitle}>
               {menu?.title}
             </a>
           </li>

@@ -13,58 +13,67 @@ const illustration = {
 
 const workProjects = [
   {
+    id: 1,
     title: "EasyAim",
     description:
       "A motorized spot in combination with an intuitive mobile phone application designed together with visual merchandizers for the fashion industry.",
-    thumbnailURL: "",
+    thumbnailURL: "work_img1.png",
   },
   {
+    id: 2,
     title: "Interact Pro",
     description:
       "Enables installers to do commissioning and testing, and business owners to manage the lighting system for small and medium sized offices and industries.",
-    thumbnailURL: "",
+    thumbnailURL: "work_img2.png",
   },
   {
+    id: 3,
     title: "Dynalite Control ",
     description:
       "Allows to manage scenes, control individual channels and apply schedules of the Philips Dynalite system for residential and commercial spaces.",
-    thumbnailURL: "",
+    thumbnailURL: "work_img3.png",
   },
   {
+    id: 4,
     title: "Philips Hue",
     description:
       "Easily organize individual lights into rooms switch on/off or change the color or brightness of all the lights to match your mood or your activity at your residence.",
-    thumbnailURL: "",
+    thumbnailURL: "work_img4.png",
   },
   {
+    id: 5,
     title: "Service Tag",
     description:
       "View relevant luminaire configuration information and identifying spare parts needed.  LED drivers can be programmed to factory settings using Near Field Communication (NFC) technology for street lamp propositions.",
-    thumbnailURL: "",
+    thumbnailURL: "work_img5.png",
   },
   {
+    id: 6,
     title: "Interact Retail HQ",
     description:
       "Create flexible retail spaces, trigger specific shopper behaviors through zoning and layers of light, deliver location- basedoffers to shoppers on their smart phone via the app",
-    thumbnailURL: "",
+    thumbnailURL: "work_img6.png",
   },
   {
+    id: 7,
     title: "Interact Sports",
     description:
       "Monitor, manage and optimize connected lighting across the entire stadium. Manage venue and audience as efficiently as possible using accurate data and insights. ",
-    thumbnailURL: "",
+    thumbnailURL: "work_img7.png",
   },
   {
+    id: 8,
     title: "Check My Trip",
     description:
       "A complete travel itinerary tool, bringing you flight information and alerts, travel services and extras to get you smoothly from door to door.",
-    thumbnailURL: "",
+    thumbnailURL: "work_img8.png",
   },
   {
+    id: 9,
     title: "Amadeus e-Travel Management",
     description:
       "Corporate booking tool that enables your travellers to manage their complete itineraries aligned with company’s guidelines.",
-    thumbnailURL: "",
+    thumbnailURL: "work_img9.png",
   },
 ];
 
