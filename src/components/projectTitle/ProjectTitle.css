@@ -1,41 +1,73 @@
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  /* margin-top: 4rem; */
-}
-.greet-main {
+.projectTitle-main {
   /* width: 90%; */
-  padding: 100px 30px;
+  /* padding: 100px 30px; */
   /* margin: 0px auto; */
   /* margin-top: 2rem; */
-  background: #EFE5E5;
+  background: #E5E5E5;
 }
 
-.greeting-main {
+.projectTitle-main {
+  display: flex;
+}
+.projectTitle-text-inner-div {
   display: flex;
 }
 
-.subTitle {
-  /* font-family: 'Abhaya Libre'; */
-  color: #333 !important;
-  font-weight: bold;
-}
-
-.greeting-main {
-  display: flex;
-}
-
-.greeting-main > * {
+.projectTitle-text-inner-div > * {
   flex: 1;
   margin-bottom: 30px;
 }
-.button-greeting-div {
+
+.projectTitle-text-inner-div-img{
   display: flex;
   margin-top: 20px;
 }
 
-.greeting-text {
+.projectTitle-text-inner-div-title{
+  display: flex;
+  margin-top: 20px;
+}
+
+.subTitle {
+  /* font-family: "Abhaya Libre"; */
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.projectTitle-main-content {
+  content: "";
+  display: table;
+  clear: both;
+}
+.projectTitle-back-btn-div {
+  float: left;
+  width: 15%;
+  margin: 10px;
+  /* height: 300px; */
+}
+.projectTitle-text-div {
+  float: left;
+  width: 60%;
+  margin: 10px;
+  /* height: 300px; */
+}
+.projectTitle-store-div {
+  float: right;
+  width: 10%;
+  margin: 50px 10px;
+  /* height: 300px; */
+}
+
+.projectTitle-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-projectTitle-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.projectTitle-text {
   font-size: 20px;
   line-height: 1.1;
   color: black !important;
@@ -47,16 +79,20 @@
   color: black !important;
 }
 
-.greeting-text-p {
+.projectTitle-text-p {
   font-size: 20px;
   line-height: 30px;
 }
 
-.greeting-image-div > img {
+.projectTitle-image-div > img {
   max-width: 100%;
   height: auto;
 }
 
+.back-container {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .wave-emoji {
   font-size: 30px;
   animation-duration: 1.8s;
@@ -92,21 +128,21 @@
 
 /* Media Query */
 @media (max-width: 1380px) {
-  .greeting-text {
+  .projectTitle-text {
     font-size: 30px;
   }
   .title-text {
     font-size: 80px;
   }
-  .greeting-text-p {
+  .projectTitle-text-p {
     font-size: 20px;
   }
 }
 @media (max-width: 768px) {
-  .button-greeting-div {
+  .button-projectTitle-div {
     justify-content: space-around;
   }
-  .greeting-text {
+  .projectTitle-text {
     font-size: 15px;
     text-align: center;
   }
@@ -115,15 +151,15 @@
     font-size: 50px;
   }
 
-  .greeting-text-p {
+  .projectTitle-text-p {
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
-  .greeting-main {
+  .projectTitle-main {
     display: block;
   }
-  .greeting-image-div {
+  .projectTitle-image-div {
     height: 256px;
   }
 }

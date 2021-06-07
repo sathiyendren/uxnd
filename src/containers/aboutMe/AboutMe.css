@@ -16,7 +16,7 @@
 }
 
 .subTitle {
-  font-family: 'Abhaya Libre';
+  /* font-family: 'Abhaya Libre'; */
   color: #333 !important;
   font-weight: bold;
 }
@@ -52,7 +52,7 @@
 
   margin: 20px 10px 30px 20px;
   color: black !important;
-  font-family: 'Abhaya Libre';
+  /* font-family: 'Abhaya Libre'; */
     line-height: 2rem;
 }
 

@@ -18,7 +18,10 @@ function App() {
             component={() => <Portfolio portfolio={portfolio} />}
             exact
           />
-          <Route path="/project/:id" component={WorkProjectDetail} />
+          <Route
+            path="/project/:id"
+            component={() => <WorkProjectDetail portfolio={portfolio} />}
+          />
         </Switch>
         <Footer {...portfolio} />
       </Router>
