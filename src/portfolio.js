@@ -11,15 +11,62 @@ const illustration = {
   animated: false, // set to false to use static SVG
 };
 
-const greeting = {
-  username: "Lazaro Estrada",
-  title: "Hi all, I'm Lázaro",
-  subTitle: emoji(
-    "A professional software developer with +4 years 🚀 of IT experiences working with patterns and best practices, trained to develop web and mobile applications with end-user experience, teamwork abilities, proactive, self-motivation, quick learning, sound reasoning, and problem-solving skills."
-  ),
-  resumeLink: "https://bit.ly/3svBhER",
-  displayGreeting: true,
-};
+const workProjects = [
+  {
+    title: "EasyAim",
+    description:
+      "A motorized spot in combination with an intuitive mobile phone application designed together with visual merchandizers for the fashion industry.",
+    thumbnailURL: "",
+  },
+  {
+    title: "Interact Pro",
+    description:
+      "Enables installers to do commissioning and testing, and business owners to manage the lighting system for small and medium sized offices and industries.",
+    thumbnailURL: "",
+  },
+  {
+    title: "Dynalite Control ",
+    description:
+      "Allows to manage scenes, control individual channels and apply schedules of the Philips Dynalite system for residential and commercial spaces.",
+    thumbnailURL: "",
+  },
+  {
+    title: "Philips Hue",
+    description:
+      "Easily organize individual lights into rooms switch on/off or change the color or brightness of all the lights to match your mood or your activity at your residence.",
+    thumbnailURL: "",
+  },
+  {
+    title: "Service Tag",
+    description:
+      "View relevant luminaire configuration information and identifying spare parts needed.  LED drivers can be programmed to factory settings using Near Field Communication (NFC) technology for street lamp propositions.",
+    thumbnailURL: "",
+  },
+  {
+    title: "Interact Retail HQ",
+    description:
+      "Create flexible retail spaces, trigger specific shopper behaviors through zoning and layers of light, deliver location- basedoffers to shoppers on their smart phone via the app",
+    thumbnailURL: "",
+  },
+  {
+    title: "Interact Sports",
+    description:
+      "Monitor, manage and optimize connected lighting across the entire stadium. Manage venue and audience as efficiently as possible using accurate data and insights. ",
+    thumbnailURL: "",
+  },
+  {
+    title: "Check My Trip",
+    description:
+      "A complete travel itinerary tool, bringing you flight information and alerts, travel services and extras to get you smoothly from door to door.",
+    thumbnailURL: "",
+  },
+  {
+    title: "Amadeus e-Travel Management",
+    description:
+      "Corporate booking tool that enables your travellers to manage their complete itineraries aligned with company’s guidelines.",
+    thumbnailURL: "",
+  },
+];
 
 const workExperiences = {
   display: true,
@@ -222,7 +269,7 @@ const workExperiences = {
   ],
 };
 
-// megalatha data
+// Megalatha data
 
 const socialMediaLinks = {
   display: true,
@@ -232,17 +279,11 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/megalatha-s-0a679816/",
   facebook: "https://www.facebook.com/megalatha",
   twitter: null,
+  phoneNumber: "(+91)9741878855",
+  whatsApp: "9741878855",
 };
 
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "(+53)54325166",
-  emailAddress: "lazaromer97@gmail.com",
-};
-
-const greet = {
+const greeting = {
   title: "Greetings",
   display: true,
   sectionTitle: "greet",
@@ -324,8 +365,11 @@ const work = {
   title: "Work",
   display: true,
   menuDisplay: true,
-  sectionTitle: "work",
-  type: "work",
+  sectionTitle: "project",
+  type: "project",
+  data: {
+    projects: workProjects,
+  },
 };
 
 const experience = {
@@ -346,13 +390,13 @@ const contact = {
     title: emoji("Contact Me ☎️"),
     subtitle:
       "Discuss a project or just want to say hi? My Inbox is open for all.",
-    number: "(+91)9741878855",
-    emailAddress: "iammega@gmail.com",
+    number: socialMediaLinks.phoneNumber,
+    emailAddress: socialMediaLinks.gmail,
   },
 };
 
 const content = [
-  greet,
+  greeting,
   aboutMe,
   iAmGoodAt,
   toolsIUse,
@@ -366,12 +410,4 @@ const portfolio = {
   content,
 };
 
-export {
-  illustration,
-  greeting,
-  socialMediaLinks,
-  workExperiences,
-  contactInfo,
-  portfolio,
-  greet,
-};
+export { illustration, workExperiences, portfolio, greeting };

@@ -1,16 +1,15 @@
 import React from "react";
 import "./SocialMedia.css";
-import { socialMediaLinks } from "../../portfolio";
 
 export default function socialMedia(props) {
-  if (!socialMediaLinks.display) {
+  if (!props.display) {
     return null;
   }
   return (
     <div className="social-media-div">
       {props.github ? (
         <a
-          href={socialMediaLinks.github}
+          href={props.github}
           className="icon-button github"
           target="_blank"
           rel="noopener noreferrer"
@@ -22,7 +21,7 @@ export default function socialMedia(props) {
 
       {props.gitlab ? (
         <a
-          href={socialMediaLinks.gitlab}
+          href={props.gitlab}
           className="icon-button gitlab"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +33,7 @@ export default function socialMedia(props) {
 
       {props.gmail ? (
         <a
-          href={`mailto:${socialMediaLinks.gmail}`}
+          href={`mailto:${props.gmail}`}
           className="icon-button google"
           target="_blank"
           rel="noopener noreferrer"
@@ -46,7 +45,7 @@ export default function socialMedia(props) {
 
       {props.linkedin ? (
         <a
-          href={socialMediaLinks.linkedin}
+          href={props.linkedin}
           className="icon-button linkedin"
           target="_blank"
           rel="noopener noreferrer"
@@ -58,7 +57,7 @@ export default function socialMedia(props) {
 
       {props.facebook ? (
         <a
-          href={socialMediaLinks.facebook}
+          href={props.facebook}
           className="icon-button facebook"
           target="_blank"
           rel="noopener noreferrer"
@@ -70,7 +69,7 @@ export default function socialMedia(props) {
 
       {props.twitter ? (
         <a
-          href={socialMediaLinks.twitter}
+          href={props.twitter}
           className="icon-button twitter"
           target="_blank"
           rel="noopener noreferrer"

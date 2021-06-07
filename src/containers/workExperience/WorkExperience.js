@@ -1,19 +1,17 @@
+/* eslint-disable react/prop-types */
 import "./WorkExperience.css";
 import ExperienceCard from "../../components/experieceCard/ExperienceCard";
-import { workExperiences } from "../../portfolio";
 
-export default function Experience() {
-  if (workExperiences.display) {
-    return (
-      <div id="experience">
-        <h2>Work Experiences</h2>
-        <div className="experiences">
-          {workExperiences.experiences.map((experience, i) => {
+export default function Experience(props) {
+  return (
+    <div id="experience">
+      <h2>Work Experiences</h2>
+      <div className="experiences">
+        {props.data.experiences &&
+          props.data.experiences.map((experience, i) => {
             return <ExperienceCard key={i} {...experience} />;
           })}
-        </div>
       </div>
-    );
-  }
-  return null;
+    </div>
+  );
 }

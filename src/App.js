@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Greeting from "./containers/greeting/Greeting";
 import WorkExperience from "./containers/workExperience/WorkExperience";
+import WorkProject from "./containers/workProject/WorkProject";
 import Contact from "./containers/contact/Contact";
 import AboutMe from "./containers/aboutMe/AboutMe";
 import ToolsIUse from "./containers/toolsIUse/ToolsIUse";
@@ -19,6 +20,9 @@ function App() {
         break;
       case "experience":
         contentItem = item.display && <WorkExperience {...item} />;
+        break;
+      case "project":
+        contentItem = item.display && <WorkProject {...item} />;
         break;
       case "contact":
         contentItem = item.display && <Contact {...item} />;
