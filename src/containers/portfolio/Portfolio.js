@@ -17,29 +17,31 @@ export default class Portfolio extends Component {
   }
 
   getContent() {
-    return this.props.portfolio.content.map((item) => {
+    return this.props.portfolio.content.map((item, index) => {
       let contentItem = null;
       switch (item.type) {
         case "greetings":
-          contentItem = item.display && <Greeting {...item} />;
+          contentItem = item.display && <Greeting {...item} key={index} />;
           break;
         case "experience":
-          contentItem = item.display && <WorkExperience {...item} />;
+          contentItem = item.display && (
+            <WorkExperience {...item} key={index} />
+          );
           break;
         case "project":
-          contentItem = item.display && <WorkProject {...item} />;
+          contentItem = item.display && <WorkProject {...item} key={index} />;
           break;
         case "contact":
-          contentItem = item.display && <Contact {...item} />;
+          contentItem = item.display && <Contact {...item} key={index} />;
           break;
         case "aboutMe":
-          contentItem = item.display && <AboutMe {...item} />;
+          contentItem = item.display && <AboutMe {...item} key={index} />;
           break;
         case "tools":
-          contentItem = item.display && <ToolsIUse {...item} />;
+          contentItem = item.display && <ToolsIUse {...item} key={index} />;
           break;
         case "skills":
-          contentItem = item.display && <IAmGoodAt {...item} />;
+          contentItem = item.display && <IAmGoodAt {...item} key={index} />;
           break;
         default:
           contentItem = <></>;

@@ -17,15 +17,167 @@ const workProjects = [
     title: "EasyAim",
     description:
       "A motorized spot in combination with an intuitive mobile phone application designed together with visual merchandizers for the fashion industry.",
-    thumbnailURL: "work_img1.png",
-    imageURL: "work_img1.png",
+    thumbnailURL: "http://uxnd.in/images/work_img1.png",
+    imageURL: "http://uxnd.in/images/work_img1.png",
     appStoreLink: {
       apple:
         "https://apps.apple.com/us/app/interact-retail-easyaim/id1286741772",
       android:
         "https://apps.apple.com/us/app/interact-retail-easyaim/id1286741772",
     },
-    details: [],
+    details: {
+      title: "title",
+      subTitle: "subTitle1",
+      content: [
+        {
+          title: "Drafting the problem statement",
+          layout: "horizontal",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "123",
+              content:
+                "Zara our prime customer in fashion lighting were facing a major challenge in managing and aiming spot lights which are located at a height of 4.5 meters in their shop window ceilings. This activity has to be conducted every two weeks when they had to showcase their new merchadises in their shop windows. Each fortnight couple of their lighting designers gathered with a 4 mtr ladder and a set of walkie-talkies at the store. Where one was inside the shop window on a ladder paning and tilting the spot lights and the other standing outside the glass wall trying to orchestrate and guide the light directions accordingly. This is not an easy job as they had to carefully balance on the 4 mtr ladder and at the other hand also be creative in managing the lights.",
+            },
+          ],
+        },
+        {
+          title: "",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [],
+        },
+        {
+          title: "Identify personas",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "Personas and profiles were created as the user profiles were mainly based on assumptions. Actual qualitative and quantitative user research was missing. In a team session, I collected all the assumptions out and populated my persona, quick and dirty. By this I made sure that everybody is heard and opinions are formalized.",
+            },
+          ],
+        },
+        {
+          title: "User journey and rapid prototyping",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "A quick sketches were created after the discussions with the stakeholders, product architects and the business analysts. These  were drawn in order to verify the assumptions and it also helped us as a starting point to dig more deeper on our assumptions and ground it to the requirements properly.",
+            },
+          ],
+        },
+        {
+          title: "Story boarding the outcome",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [],
+        },
+        {
+          title: "",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content: "",
+            },
+          ],
+        },
+        {
+          title: "Epics, User tasks and User story writing",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "We populated a scrum board by having frequent interdisciplinary discussions on creating the MVP for our first beta release and test Scalability, 3rd party integrations and algorithm realization and broke the epics to the tasks and then user stories.",
+            },
+          ],
+        },
+        {
+          title: "Low-fidelity Interaction design",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content: "First, make it work...",
+            },
+            {
+              title: "",
+              content:
+                "Functionalities are communicated using low-fidelity Interaction wireframes.",
+            },
+          ],
+        },
+        {
+          title: "Testing different interaction patterns",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "Created  few interaction designs for Panning and Tilting of the spotlights which was the main functionality of the app . These were then usability tested to understand the best intuitive interaction patterns and re-iterated the designs further to attain the final result.",
+            },
+          ],
+        },
+        {
+          title: "User interviews",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "Visited cutomers to conduct user interviews and gather insights and opinions on the first prototype design and also conduct research on their workflows and interaction patterns with the proposition.",
+            },
+          ],
+        },
+        {
+          title: "Reiterating the design",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "Created task flow diagram, understanding different use cases of the audience, and arriving at an iterated design solution.",
+            },
+          ],
+        },
+        {
+          title: "First beta release",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "Based on the feedback received from the user testing and research, a new set of iterated designs were created and ready to be released  for a beta",
+            },
+          ],
+        },
+        {
+          title: "",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/work_img2.png",
+          videoURL: "",
+          paragraph: [
+            {
+              title: "",
+              content: "",
+            },
+          ],
+        },
+      ],
+    },
   },
   {
     id: "2",

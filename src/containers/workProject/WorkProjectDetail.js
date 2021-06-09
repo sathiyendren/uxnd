@@ -1,8 +1,10 @@
 /* eslint-disable no-debugger */
 /* eslint-disable react/prop-types */
+import { useEffect } from "react";
 import "./WorkProjectDetail.css";
 import { useParams } from "react-router-dom";
 import ProjectTitle from "../../components/projectTitle/ProjectTitle";
+import ProjectDetail from "../../components/projectDetail/ProjectDetail";
 
 export default function WorkProjectDetail(props) {
   let { id } = useParams();
@@ -18,9 +20,15 @@ export default function WorkProjectDetail(props) {
     selectedProjectArray &&
     selectedProjectArray.length > 0 &&
     selectedProjectArray[0];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="projectDetail">
       <ProjectTitle project={selectedProject}></ProjectTitle>
+      <ProjectDetail details={selectedProject.details} />
     </div>
   );
 }

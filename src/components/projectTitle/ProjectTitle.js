@@ -25,9 +25,13 @@ export default function ProjectTitle(props) {
           <div className="projectTitle-text-div">
             <div className="projectTitle-text-inner-div">
               <div className="projectTitle-text-inner-div-img">
-                <img src={`/images/${project.imageURL}`} />
+                <img src={project.imageURL} />
               </div>
-              <div className="projectTitle-text-inner-div-title"></div>
+              <div className="projectTitle-text-inner-div-title">
+                <span className="projectTitle-text-inner-div-title-span">
+                  {project.title}
+                </span>
+              </div>
             </div>
           </div>
           <div className="projectTitle-store-div">
