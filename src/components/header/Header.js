@@ -17,7 +17,7 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: "#F05F32",
+      color: "#DBA46B",
     };
     this.mouseEnter = this.mouseEnter.bind(this);
     this.resize = this.resize.bind(this);

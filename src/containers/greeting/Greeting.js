@@ -1,39 +1,48 @@
+/* eslint-disable no-debugger */
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.css";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
-import manOnTable from "../../assets/img/manOnTable.svg";
 
 export default function Greeting(props) {
+  const [height, setHeight] = useState(600);
+  let divStyle = {
+    height: height + " px",
+  };
+
+  useEffect(() => {
+    // debugger;
+    setHeight(document.body.scrollHeight);
+    divStyle = {
+      height: height + 100 + "px",
+    };
+    console.log(document.body.scrollHeight);
+  });
   const data = props.data;
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
-        <div className="greeting-main">
+        <div className="greeting-main" style={divStyle}>
           <div className="greeting-text-div">
             <div>
               <div className={"greeting-text"}>
                 {data.greeting}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </div>
-              <h1 className={"title-text"}>{data.title}</h1>
-              <p className={"greeting-text-p subTitle"}>{data.subTitle}</p>
-              <SocialMedia {...data.socialMediaLinks} />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                <Button
-                  text="See my resume"
-                  newTab={true}
-                  href={data.resumeLink}
-                />
-              </div>
+              <div className={"title-text"}>{data.title}</div>
+              <div className={"title-text"}>{data.subTitle}</div>
+              <p className={"greeting-text-p subTitle"}>
+                {data.description}{" "}
+                <a href="#aboutMe" style={{ color: "#DBA46B" }}>
+                  {" "}
+                  Read on
+                </a>
+              </p>
             </div>
           </div>
           <div className="greeting-image-div">
-            <img alt="man sitting on table" src={manOnTable}></img>
+            <img alt="man sitting on table" src={data.imageURL}></img>
           </div>
         </div>
       </div>

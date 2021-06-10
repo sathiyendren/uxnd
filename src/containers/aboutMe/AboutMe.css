@@ -53,11 +53,11 @@
   margin: 20px 10px 30px 20px;
   color: black !important;
   /* font-family: 'Abhaya Libre'; */
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
 .aboutMe-image-div > img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -68,6 +68,17 @@
   animation-name: wave;
   display: inline-block;
   transform-origin: 70% 70%;
+}
+
+.resume-btn {
+  border: 2px solid #dba46b;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 @keyframes wave {

@@ -847,11 +847,11 @@ const greeting = {
   type: "greetings",
   data: {
     greeting: "Hi There!",
-    title: "I'm Megalatha",
-    subTitle: emoji(
-      "I'm a User Experience Designer and Interaction Designer based in Bangalore, India with experience in delivering user-centric Interfaces for surface UIs. I'm passionate about rendering intuitive UIs for people and thereby enrich the overall customer experience."
-    ),
-    resumeLink: "https://bit.ly/3uRVWnP",
+    title: "I'm",
+    subTitle: "Megalatha",
+    description:
+      "An User Experience and Interaction Designer based in Bangalore, India with experience in delivering user-centric Interfaces for surface UIs. I'm passionate about rendering intuitive UIs for people and thereby enrich the overall customer experience...",
+    imageURL: "https://uxnd.in/images/home_bg_plant.png",
     socialMediaLinks,
   },
 };
@@ -863,6 +863,8 @@ const aboutMe = {
   sectionTitle: "aboutMe",
   type: "aboutMe",
   data: {
+    resumeLink: "https://bit.ly/3uRVWnP",
+    imageURL: "https://uxnd.in/images/mega.jpg",
     content: [
       "With hands-on experience for 13+ years in the field of creating better experiences and intuitive interactions on the Surface User Interfaces, I have been caring for my end-users leading to more loyal customers and better business. I am empathetic to the needs and identifying the job to be done of my end-users. I am a naturally curious person who tries to get to the root of an issue and find solution.",
       "I keep a good understanding of the coding and technical skills in order to be able to take possibilities and constraints into considerations. My logic and reasoning skills help me to discern why a designed approach is not working and, by contrast, why other one might be. I have the ability to hear and accept feedback which helps me broaden my lens in empathy designing for my audience.",
@@ -964,7 +966,7 @@ const content = [
 const portfolio = {
   name: "UXnD",
   content,
-  logo: "logo.png",
+  logo: "https://uxnd.in/logo.png",
 };
 
 export { illustration, workExperiences, portfolio, greeting };
