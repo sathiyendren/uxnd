@@ -2,11 +2,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import "./IAmGoodAt.css";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import manOnTable from "../../assets/img/manOnTable.svg";
-
-import { illustration } from "../../portfolio";
 
 export default function IAmGoodAt(props) {
   const content = props?.data?.content;
@@ -15,11 +11,7 @@ export default function IAmGoodAt(props) {
       <div className="iAmGoodAt-main" id="iAmGoodAt">
         <div className="iAmGoodAt-main">
           <div className="iAmGoodAt-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img alt="man sitting on table" src={manOnTable}></img>
-            )}
+            <img alt="man sitting on table" src={manOnTable}></img>
           </div>
           <div className="iAmGoodAt-text-div">
             <div>

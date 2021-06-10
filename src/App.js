@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import Portfolio from "./containers/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
 import WorkProjectDetail from "./containers/workProject/WorkProjectDetail";
-import { portfolio } from "./portfolio";
+import { portfolio } from "./portfolioData";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {

@@ -11,6 +11,7 @@ export default class Header extends Component {
   static propTypes = {
     name: PropTypes.any,
     content: PropTypes.any,
+    logo: PropTypes.any,
   };
 
   constructor(props) {
@@ -72,6 +73,7 @@ export default class Header extends Component {
 
   render() {
     const username = this.props.name;
+    const logo = this.props.logo;
     const menus = this.props.content.map((menu) => {
       const display = menu.display && menu.menuDisplay;
       return (
@@ -88,7 +90,9 @@ export default class Header extends Component {
       <Headroom>
         <header className={"header headroom--pinned"}>
           <a href="/" className="logo">
-            <span className="logo-name">{username}</span>
+            <span className="logo-name">
+              <img src={logo} alt={username} />
+            </span>
           </a>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label

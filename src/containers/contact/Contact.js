@@ -2,10 +2,7 @@
 import React from "react";
 import "./Contact.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { illustration } from "../../portfolio";
 import { Fade } from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import contactMailDark from "../../assets/img/contactMailDark.svg";
 
 export default function Contact(props) {
@@ -38,11 +35,7 @@ export default function Contact(props) {
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img alt="Man working" src={contactMailDark}></img>
-            )}
+            <img alt="Man working" src={contactMailDark}></img>
           </div>
         </div>
       </div>

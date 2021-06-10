@@ -2,12 +2,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import "./AboutMe.css";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import manOnTable from "../../assets/img/manOnTable.svg";
-
-import { illustration } from "../../portfolio";
-
 export default function AboutMe(props) {
   const content = props?.data?.content;
   return (
@@ -15,11 +10,7 @@ export default function AboutMe(props) {
       <div className="aboutMe-main" id="aboutMe">
         <div className="aboutMe-main">
           <div className="aboutMe-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img alt="man sitting on table" src={manOnTable}></img>
-            )}
+            <img alt="man sitting on table" src={manOnTable}></img>
           </div>
           <div className="aboutMe-text-div">
             <div>
