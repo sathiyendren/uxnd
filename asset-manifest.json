@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/uxnd/static/css/main.67b50c43.chunk.css",
-    "main.js": "/uxnd/static/js/main.d9d63dec.chunk.js",
-    "main.js.map": "/uxnd/static/js/main.d9d63dec.chunk.js.map",
+    "main.css": "/uxnd/static/css/main.146b7cc2.chunk.css",
+    "main.js": "/uxnd/static/js/main.759edebd.chunk.js",
+    "main.js.map": "/uxnd/static/js/main.759edebd.chunk.js.map",
     "runtime-main.js": "/uxnd/static/js/runtime-main.4fb5bc05.js",
     "runtime-main.js.map": "/uxnd/static/js/runtime-main.4fb5bc05.js.map",
     "static/css/2.3ecba133.chunk.css": "/uxnd/static/css/2.3ecba133.chunk.css",
-    "static/js/2.ea963cbb.chunk.js": "/uxnd/static/js/2.ea963cbb.chunk.js",
-    "static/js/2.ea963cbb.chunk.js.map": "/uxnd/static/js/2.ea963cbb.chunk.js.map",
+    "static/js/2.6f686f37.chunk.js": "/uxnd/static/js/2.6f686f37.chunk.js",
+    "static/js/2.6f686f37.chunk.js.map": "/uxnd/static/js/2.6f686f37.chunk.js.map",
     "static/js/3.43f36a51.chunk.js": "/uxnd/static/js/3.43f36a51.chunk.js",
     "static/js/3.43f36a51.chunk.js.map": "/uxnd/static/js/3.43f36a51.chunk.js.map",
     "index.html": "/uxnd/index.html",
     "static/css/2.3ecba133.chunk.css.map": "/uxnd/static/css/2.3ecba133.chunk.css.map",
-    "static/css/main.67b50c43.chunk.css.map": "/uxnd/static/css/main.67b50c43.chunk.css.map",
-    "static/js/2.ea963cbb.chunk.js.LICENSE.txt": "/uxnd/static/js/2.ea963cbb.chunk.js.LICENSE.txt",
+    "static/css/main.146b7cc2.chunk.css.map": "/uxnd/static/css/main.146b7cc2.chunk.css.map",
+    "static/js/2.6f686f37.chunk.js.LICENSE.txt": "/uxnd/static/js/2.6f686f37.chunk.js.LICENSE.txt",
     "static/media/index.css": "/uxnd/static/media/roboto-latin-900italic.cb5ad999.woff2",
     "static/media/Freelance.cdd6014a.webp": "/uxnd/static/media/Freelance.cdd6014a.webp",
     "static/media/Interamplify.0bcb96c7.webp": "/uxnd/static/media/Interamplify.0bcb96c7.webp",
@@ -21,14 +21,13 @@
     "static/media/SolutionDeveloppeur.03dbefed.webp": "/uxnd/static/media/SolutionDeveloppeur.03dbefed.webp",
     "static/media/UniversityCMG.c408bbf1.webp": "/uxnd/static/media/UniversityCMG.c408bbf1.webp",
     "static/media/VacancyRewards.0c3dd1ee.webp": "/uxnd/static/media/VacancyRewards.0c3dd1ee.webp",
-    "static/media/contactMailDark.1db650d3.svg": "/uxnd/static/media/contactMailDark.1db650d3.svg",
     "static/media/manOnTable.8f117eb2.svg": "/uxnd/static/media/manOnTable.8f117eb2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4fb5bc05.js",
     "static/css/2.3ecba133.chunk.css",
-    "static/js/2.ea963cbb.chunk.js",
-    "static/css/main.67b50c43.chunk.css",
-    "static/js/main.d9d63dec.chunk.js"
+    "static/js/2.6f686f37.chunk.js",
+    "static/css/main.146b7cc2.chunk.css",
+    "static/js/main.759edebd.chunk.js"
   ]
 }
