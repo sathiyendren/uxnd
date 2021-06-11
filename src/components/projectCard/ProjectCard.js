@@ -14,7 +14,7 @@ export default function ProjectCard(props) {
           <img
             className="thumbnail-project"
             // eslint-disable-next-line no-undef
-            src={`/images/${props.thumbnailURL}`}
+            src={`${props.thumbnailURL}`}
             alt={props.title}
           />
         </div>

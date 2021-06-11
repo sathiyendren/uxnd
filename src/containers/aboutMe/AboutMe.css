@@ -79,6 +79,7 @@
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes wave {

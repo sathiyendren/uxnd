@@ -1,5 +1,3 @@
-import emoji from "react-easy-emoji";
-
 import LithiumSoftwareLogo from "./assets/img/LithiumSoftware.webp";
 import InteramplifyLogo from "./assets/img/Interamplify.webp";
 import SolutionDeveloppeurLogo from "./assets/img/SolutionDeveloppeur.webp";
@@ -842,7 +840,7 @@ const socialMediaLinks = {
 const greeting = {
   title: "Greetings",
   display: true,
-  sectionTitle: "greet",
+  sectionTitle: "greeting",
   menuDisplay: false,
   type: "greetings",
   data: {
@@ -863,7 +861,7 @@ const aboutMe = {
   sectionTitle: "aboutMe",
   type: "aboutMe",
   data: {
-    resumeLink: "https://bit.ly/3uRVWnP",
+    resumeLink: "https://uxnd.in/resume/Megalatha_resume.pdf",
     imageURL: "https://uxnd.in/images/mega.jpg",
     content: [
       "With hands-on experience for 13+ years in the field of creating better experiences and intuitive interactions on the Surface User Interfaces, I have been caring for my end-users leading to more loyal customers and better business. I am empathetic to the needs and identifying the job to be done of my end-users. I am a naturally curious person who tries to get to the root of an issue and find solution.",
@@ -880,30 +878,66 @@ const iAmGoodAt = {
   sectionTitle: "iAmGoodAt",
   type: "skills",
   data: {
+    imageURL: "https://uxnd.in/images/goodat_bg.png",
     content: [
-      "Interactive UIs",
-      "User Research/Interview",
-      "Contextual Inquiries",
-      "Empathy mapping",
-      "Customer journey mapping",
-      "Creative thinking",
-      "Ideation",
-      "Rapid prototyping",
-      "Story telling with prototypes",
-      "User testing",
-      "A/B testing",
-      "UX writing",
-      "Low/Hi-fidelity mockups",
-      "Quantitative Analysis",
-      "Optimize design and dev process with SAFe",
-      "Identify and develop MVP",
+      {
+        skills: [
+          {
+            title: "Design & Research",
+            content: [
+              "Interactive UIs",
+              "User Research/Interview",
+              "Contextual Inquiries",
+              "Empathy mapping",
+              "Customer journey mapping",
+              "Creative thinking",
+              "Ideation",
+              "Rapid prototyping",
+              "Story telling with prototypes",
+              "User testing",
+              "A/B testing",
+              "UX writing",
+              "Low/Hi-fidelity mockups",
+              "Quantitative Analysis",
+            ],
+          },
+          {
+            title: "Programming",
+            content: ["HTML", "CSS", "Jquery", "JavaScript"],
+          },
+        ],
+      },
+      {
+        skills: [
+          {
+            title: "Tools",
+            content: [
+              "Sketch",
+              "InVision App + Craft",
+              "Adobe XD",
+              "Adobe Photoshop",
+              "Miro",
+              "Trello",
+            ],
+          },
+          {
+            title: "Collaboration",
+            content: [
+              "SAFe Practitioner",
+              "SAFe PM/PO",
+              "Product Ownership",
+              "Psychology Counselling",
+            ],
+          },
+        ],
+      },
     ],
   },
 };
 
 const toolsIUse = {
   title: "Tools I Use",
-  display: true,
+  display: false,
   menuDisplay: true,
   sectionTitle: "toolsIUse",
   type: "tools",
@@ -945,11 +979,12 @@ const contact = {
   sectionTitle: "contact",
   type: "contact",
   data: {
-    title: emoji("Contact Me ☎️"),
+    title: "Contact",
     subtitle:
       "Discuss a project or just want to say hi? My Inbox is open for all.",
     number: socialMediaLinks.phoneNumber,
     emailAddress: socialMediaLinks.gmail,
+    socialMediaLinks,
   },
 };
 

@@ -14,21 +14,15 @@
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
   font-weight: 400;
-  color: #868e96;
-  text-decoration: none;
+  color: #333;
 }
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: black;
+  color: blue;
   text-shadow: 2px 1px 2px #b5b5b5;
   transition: all 0.3s;
-}
-
-.contact-subtitle {
-  text-transform: uppercase;
 }
 
 .contact-text-div {
@@ -77,5 +71,6 @@
 
   .contact-image-div {
     display: none;
+    width: 50%;
   }
 }

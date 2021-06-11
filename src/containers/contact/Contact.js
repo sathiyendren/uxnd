@@ -3,7 +3,6 @@ import React from "react";
 import "./Contact.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-reveal";
-import contactMailDark from "../../assets/img/contactMailDark.svg";
 
 export default function Contact(props) {
   const contactInfo = props.data;
@@ -12,6 +11,7 @@ export default function Contact(props) {
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
+          <div className="contact-image-div"></div>
           <div className="contact-header">
             <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p className={"subTitle contact-subtitle"}>
@@ -31,11 +31,8 @@ export default function Contact(props) {
               </a>
               <br />
               <br />
-              <SocialMedia />
+              <SocialMedia {...contactInfo.socialMediaLinks} />
             </div>
-          </div>
-          <div className="contact-image-div">
-            <img alt="Man working" src={contactMailDark}></img>
           </div>
         </div>
       </div>

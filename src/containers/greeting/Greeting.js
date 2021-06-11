@@ -15,7 +15,7 @@ export default function Greeting(props) {
     // debugger;
     setHeight(document.body.scrollHeight);
     divStyle = {
-      height: height + 100 + "px",
+      height: `${height + 100}px`,
     };
     console.log(document.body.scrollHeight);
   });

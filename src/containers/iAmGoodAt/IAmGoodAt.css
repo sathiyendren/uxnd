@@ -13,12 +13,23 @@
 
 .iAmGoodAt-main {
   display: flex;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .subTitle {
   /* font-family: 'Abhaya Libre'; */
   color: #333 !important;
   font-weight: bold;
+}
+
+.iAmGoodAt-text-content-container {
+  display: flex;
+}
+
+.iAmGoodAt-text-content-container .iAmGoodAt-text-content{
+  flex: 1;
+  margin: 10px 10px 30px 10px;
 }
 
 .iAmGoodAt-main {
@@ -28,6 +39,7 @@
 .iAmGoodAt-main > * {
   flex: 1;
   margin-bottom: 30px;
+  padding-left: 0px;
 }
 .button-iAmGoodAt-div {
   display: flex;
@@ -45,15 +57,17 @@
   line-height: 1.1;
   color: black !important;
 }
-
+.iAmGoodAt-text-skill {
+  margin-bottom: 50px;
+}
 .iAmGoodAt-text-p {
   font-size: 20px;
   /* line-height: 30px; */
 
-  margin: 20px 10px 30px 20px;
+  margin: 10px;
   color: black !important;
   /* font-family: 'Abhaya Libre'; */
-    line-height: 5px;
+  /* line-height: 5px; */
 }
 
 .iAmGoodAt-image-div > img {
