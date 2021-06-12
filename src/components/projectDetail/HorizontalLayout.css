@@ -36,6 +36,22 @@
     flex: 1;
     margin-bottom: 30px;
   }
+
+  .horizontalLayout-image-div.small, .horizontalLayout-image-div.medium, .horizontalLayout-image-div.large {
+    text-align: center;
+    justify-content: center;
+    }
+  
+    .horizontalLayout-image-div.small > img{
+      height: 50%;
+    } 
+    .horizontalLayout-image-div.medium > img{
+      height: 70%;
+    } 
+    .horizontalLayout-image-div.large > img{
+      height: 100%;
+    }
+    
   .button-horizontalLayout-div {
     display: flex;
     margin-top: 20px;

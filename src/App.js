@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import WorkProjectDetail from "./containers/workProject/WorkProjectDetail";
 import { portfolio } from "./portfolioData";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollArrow from "./components/scrollTopArrow/ScrollTopArrow";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </Switch>
         <Footer {...portfolio} />
       </Router>
+      <ScrollArrow></ScrollArrow>
     </div>
   );
 }

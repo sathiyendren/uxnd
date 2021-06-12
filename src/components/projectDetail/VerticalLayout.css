@@ -70,6 +70,25 @@
     max-width: 100%;
     height: auto;
   }
+
+  .verticalLayout-image-div.small, .verticalLayout-image-div.medium, .verticalLayout-image-div.large {
+  text-align: center;
+  justify-content: center;
+  }
+
+  .verticalLayout-image-div.small > img{
+    max-width: 50%;
+  } 
+  .verticalLayout-image-div.medium > img{
+    max-width: 70%;
+  } 
+  .verticalLayout-image-div.large > img{
+    max-width: 100%;
+  }
+  .verticalLayout-image-div > img {
+    max-width: 100%;
+    height: auto;
+  }
   
   .wave-emoji {
     font-size: 30px;

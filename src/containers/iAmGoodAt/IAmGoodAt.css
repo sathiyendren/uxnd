@@ -29,7 +29,7 @@
 
 .iAmGoodAt-text-content-container .iAmGoodAt-text-content{
   flex: 1;
-  margin: 10px 10px 30px 10px;
+  margin: 10px 10px 30px 0px;
 }
 
 .iAmGoodAt-main {
@@ -40,6 +40,10 @@
   flex: 1;
   margin-bottom: 30px;
   padding-left: 0px;
+}
+
+.iAmGoodAt-main .iAmGoodAt-text-div {
+  padding-left: 140px;
 }
 .button-iAmGoodAt-div {
   display: flex;

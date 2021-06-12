@@ -41,6 +41,7 @@ const workProjects = [
           title: "",
           layout: "vertical",
           imageURL: "http://uxnd.in/images/easyaim_2.png",
+          imageSize: "medium",
           paragraph: [],
         },
         {
@@ -59,6 +60,7 @@ const workProjects = [
           title: "User journey and rapid prototyping",
           layout: "vertical",
           imageURL: "http://uxnd.in/images/easyaim_4.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "",
@@ -70,6 +72,7 @@ const workProjects = [
         {
           title: "Story boarding the outcome",
           layout: "vertical",
+          imageSize: "medium",
           imageURL: "http://uxnd.in/images/easyaim_5.png",
           paragraph: [],
         },
@@ -89,6 +92,7 @@ const workProjects = [
           title: "Low-fidelity Interaction design",
           layout: "vertical",
           imageURL: "http://uxnd.in/images/easyaim_7.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "",
@@ -152,14 +156,9 @@ const workProjects = [
         {
           title: "",
           layout: "vertical",
-          imageURL: "http://uxnd.in/images/work_img2.png",
+          imageURL: "",
           videoURL: "",
-          paragraph: [
-            {
-              title: "",
-              content: "",
-            },
-          ],
+          paragraph: [],
         },
       ],
     },
@@ -184,6 +183,7 @@ const workProjects = [
           title: "Drafting the problem statement",
           layout: "horizontal",
           imageURL: "http://uxnd.in/images/iap_3.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "Project/topic context",
@@ -199,13 +199,33 @@ const workProjects = [
         },
         {
           title: "UX Research input",
-          layout: "vertical",
+          layout: "horizontal",
           imageURL: "http://uxnd.in/images/iap_4.png",
+          imageSize: "small",
+          imageSide: "left",
           paragraph: [
             {
               title: "",
+              content: "What is the current problem?",
+            },
+            {
+              title: "",
               content:
-                "What is the current problem?</br>- Preparation work is not always done before mechanic arrives on location. </br> - The mechanic should be able to create a project by himself </br>- The registration requires a lot of information, which makes it cumbersome and too time consuming to do on site.</br>- The mechanic just wants to start quickly.",
+                "-  Preparation work is not always done before mechanic arrives on location.",
+            },
+            {
+              title: "",
+              content:
+                "- The mechanic should be able to create a project by himself",
+            },
+            {
+              title: "",
+              content:
+                "- The registration requires a lot of information, which makes it cumbersome and too time consuming to do on site.",
+            },
+            {
+              title: "",
+              content: "- The mechanic just wants to start quickly.",
             },
           ],
         },
@@ -244,6 +264,7 @@ const workProjects = [
           title: "",
           layout: "horizontal",
           imageURL: "http://uxnd.in/images/iap_9.png",
+          imageSide: "left",
           paragraph: [
             {
               title: "",
@@ -255,6 +276,7 @@ const workProjects = [
           title: "",
           layout: "horizontal",
           imageURL: "http://uxnd.in/images/iap_10.png",
+          imageSide: "left",
           paragraph: [
             {
               title: "",
@@ -265,6 +287,7 @@ const workProjects = [
         {
           title: "",
           layout: "horizontal",
+          imageSide: "left",
           imageURL: "http://uxnd.in/images/iap_11.png",
           paragraph: [
             {
@@ -277,17 +300,65 @@ const workProjects = [
           title: "Test and learn",
           layout: "horizontal",
           imageURL: "http://uxnd.in/images/iap_12.png",
-          // imageURL: "http://uxnd.in/images/iap_13.png",
+          imageSize: "small",
           paragraph: [
             {
               title: "Connect with the end-users",
-              content:
-                "Activity: Innovation market </br></br>What we have done:</br></br>Testing the prototype & concept with the end-user. </br></br>Question: Should we give the mechanic the possibility to create a project by himself?</br>Answer: Small installation companies need more flexibility. Bigger installation companies prepare the project first.",
+              content: "Activity: Innovation market",
+            },
+            {
+              title: "",
+              content: "- What we have done:",
+            },
+            {
+              title: "",
+              content: "- Testing the prototype & concept with the end-user.",
             },
             {
               title: "",
               content:
-                "Activity: Workshop/feedback session with:</br>End-user (focus group) </br>Product management</br>Product marketer</br>UXD</br></br>Agenda:</br>Discussion on topics/concepts</br>Testing the improved registration flow</br>Lunch",
+                "Question: Should we give the mechanic the possibility to create a project by himself?",
+            },
+            {
+              title: "",
+              content:
+                "   Answer: Small installation companies need more flexibility. Bigger installation companies prepare the project first.",
+            },
+            {
+              title: "",
+              content: "Activity: Workshop/feedback session with:",
+            },
+            {
+              title: "",
+              content: "- End-user (focus group)",
+            },
+            {
+              title: "",
+              content: "- Product management",
+            },
+            {
+              title: "",
+              content: "- Product marketer",
+            },
+            {
+              title: "",
+              content: "Agenda:",
+            },
+            {
+              title: "",
+              content: "- Discussion on topics/concepts",
+            },
+            {
+              title: "",
+              content: "- Discussion on topics/concepts",
+            },
+            {
+              title: "",
+              content: "- Testing the improved registration flow",
+            },
+            {
+              title: "",
+              content: "- Lunch",
             },
           ],
         },
@@ -354,7 +425,7 @@ const workProjects = [
         },
         {
           title: "Rapid prototyping",
-          layout: "horizontal",
+          layout: "vertical",
           imageURL: "http://uxnd.in/images/dyn_23.png",
           paragraph: [
             {
@@ -377,8 +448,8 @@ const workProjects = [
         },
         {
           title: "Wireframing",
-          layout: "horizontal",
-          imageURL: "http://uxnd.in/images/dyn_30.png",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/dyn10.png",
           paragraph: [
             {
               title: "",
@@ -409,6 +480,7 @@ const workProjects = [
           title: "Drafting the problem statement",
           layout: "horizontal",
           imageURL: "http://uxnd.in/images/hue2.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "",
@@ -432,7 +504,8 @@ const workProjects = [
         {
           title: "Composting the data",
           layout: "vertical",
-          imageURL: "http://uxnd.in/images/hue_3.png",
+          imageURL: "http://uxnd.in/images/hue3.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "",
@@ -443,7 +516,7 @@ const workProjects = [
         },
         {
           title: "User journey and rapid prototyping",
-          layout: "horizontal",
+          layout: "vertical",
           imageURL: "http://uxnd.in/images/hue_4.png",
           paragraph: [
             {
@@ -475,7 +548,7 @@ const workProjects = [
         {
           title: "Product revamp and adding new flows",
           layout: "horizontal",
-          imageURL: "http://uxnd.in/images/st1",
+          imageURL: "http://uxnd.in/images/st_1.png",
           paragraph: [
             {
               title: "",
@@ -488,6 +561,7 @@ const workProjects = [
           title: "User stories",
           layout: "vertical",
           imageURL: "http://uxnd.in/images/st2.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "",
@@ -499,7 +573,7 @@ const workProjects = [
         {
           title: "Task flow diagram",
           layout: "vertical",
-          imageURL: "http://uxnd.in/images/dst_3.png",
+          imageURL: "http://uxnd.in/images/st3.png",
           paragraph: [
             {
               title: "",
@@ -511,7 +585,7 @@ const workProjects = [
         {
           title: "Wireframing the flows",
           layout: "vertical",
-          imageURL: "http://uxnd.in/images/st_4.png",
+          imageURL: "http://uxnd.in/images/st4.png",
           paragraph: [
             {
               title: "",
@@ -537,12 +611,36 @@ const workProjects = [
         {
           title: "What can the app do?",
           layout: "horizontal",
-          imageURL: "http://uxnd.in/images/hq1",
+          imageURL: "http://uxnd.in/images/hq1.png",
           paragraph: [
             {
               title: "",
               content:
-                "It provides various monitor, manage, and maintain capabilities to retail Headquarters, to ensure the retail shops follow the lighting concept(s) as defined by Headquarters and the lighting is functioning well. </br> • Scene management for stunning and flexible retail spaces </br> • Energy optimization to decrease operational expenses</br>• Lighting management to manage and monitor your lighting </br>• Indoor navigation providing location based marketing opportunities </br>• Location analytics to understand shopper flows in the store",
+                "It provides various monitor, manage, and maintain capabilities to retail Headquarters, to ensure the retail shops follow the lighting concept(s) as defined by Headquarters and the lighting is functioning well.",
+            },
+            {
+              title: "",
+              content:
+                "• Scene management for stunning and flexible retail spaces",
+            },
+            {
+              title: "",
+              content: "• Energy optimization to decrease operational expenses",
+            },
+            {
+              title: "",
+              content:
+                "• Lighting management to manage and monitor your lighting",
+            },
+            {
+              title: "",
+              content:
+                "• Indoor navigation providing location based marketing opportunities",
+            },
+            {
+              title: "",
+              content:
+                "• Location analytics to understand shopper flows in the store",
             },
           ],
         },
@@ -550,6 +648,7 @@ const workProjects = [
           title: "The BIG picture",
           layout: "vertical",
           imageURL: "http://uxnd.in/images/hq2.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "",
@@ -562,6 +661,7 @@ const workProjects = [
           title: "Co-create ‘Design doing’ workshops",
           layout: "vertical",
           imageURL: "http://uxnd.in/images/hq4.png",
+          imageSize: "medium",
           paragraph: [
             {
               title: "",
@@ -574,6 +674,7 @@ const workProjects = [
           title: "To-be user journey",
           layout: "vertical",
           imageURL: "http://uxnd.in/images/hq5.png",
+          imageSize: "medium",
           // imageURL: "http://uxnd.in/images/hq6.png",
           paragraph: [
             {
@@ -605,6 +706,53 @@ const workProjects = [
     thumbnailURL: "http://uxnd.in/images/interactsports_thumbnail.png",
     imageURL: "http://uxnd.in/images/interactsports_header.png",
     appStoreLink: {},
+    details: {
+      title: "",
+      subTitle: "About the app",
+      content: [
+        {
+          title: "",
+          layout: "horizontal",
+          imageURL: "http://uxnd.in/images/sports3.jpeg",
+          imageSize: "medium",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "Interact Sports enables flexible, multi- purpose venues that can generate new revenue streams, attract different types of events and create new business opportunities. With Interact Sports Lighting management, you can easily manage, monitor and control connected lighting across all areas of your stadium, including the stadium bowl.",
+            },
+          ],
+        },
+        {
+          title: "",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/sports1.png",
+          imageSize: "medium",
+          paragraph: [],
+        },
+        {
+          title: "",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/sports2.png",
+          imageSize: "medium",
+          paragraph: [],
+        },
+        {
+          title: "",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/sports4.png",
+          imageSize: "medium",
+          paragraph: [],
+        },
+        {
+          title: "",
+          layout: "vertical",
+          imageURL: "http://uxnd.in/images/sports5.png",
+          imageSize: "medium",
+          paragraph: [],
+        },
+      ],
+    },
   },
   {
     id: "8",
@@ -614,6 +762,24 @@ const workProjects = [
     thumbnailURL: "http://uxnd.in/images/checkmytrip_thumbnail.png",
     imageURL: "http://uxnd.in/images/checkmytrip_header.png",
     appStoreLink: {},
+    details: {
+      title: "",
+      subTitle: "About the app",
+      content: [
+        {
+          title: "",
+          layout: "horizontal",
+          imageURL: "http://uxnd.in/images/sports3.jpeg",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "A complete travel itinerary tool, bringing you flight information and alerts, travel services and extras to get you smoothly from door to door.",
+            },
+          ],
+        },
+      ],
+    },
   },
   {
     id: "9",
@@ -623,6 +789,24 @@ const workProjects = [
     thumbnailURL: "http://uxnd.in/images/etravel_thumbnail.png",
     imageURL: "http://uxnd.in/images/etravel_header.png",
     appStoreLink: {},
+    details: {
+      title: "",
+      subTitle: "About the app",
+      content: [
+        {
+          title: "",
+          layout: "horizontal",
+          imageURL: "http://uxnd.in/images/sports3.jpeg",
+          paragraph: [
+            {
+              title: "",
+              content:
+                "Corporate booking tool that enables your travellers to manage their complete itineraries aligned with company’s guidelines.",
+            },
+          ],
+        },
+      ],
+    },
   },
 ];
 

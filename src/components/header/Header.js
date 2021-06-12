@@ -88,7 +88,7 @@ export default class Header extends Component {
     });
     return (
       <Headroom>
-        <header className={"header headroom--pinned grey"}>
+        <header className={"header headroom--pinned "}>
           <a href="/#greeting" className="logo">
             <span className="logo-name">
               <img src={logo} alt={username} />

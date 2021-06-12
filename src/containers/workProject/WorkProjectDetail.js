@@ -5,6 +5,7 @@ import "./WorkProjectDetail.css";
 import { useParams } from "react-router-dom";
 import ProjectTitle from "../../components/projectTitle/ProjectTitle";
 import ProjectDetail from "../../components/projectDetail/ProjectDetail";
+import PreviousNextArrow from "../../components/previousNext/PreviousNext";
 
 export default function WorkProjectDetail(props) {
   let { id } = useParams();
@@ -27,6 +28,10 @@ export default function WorkProjectDetail(props) {
 
   return (
     <div id="projectDetail">
+      <PreviousNextArrow
+        selectedProject={selectedProject}
+        projects={projects}
+      ></PreviousNextArrow>
       <ProjectTitle project={selectedProject}></ProjectTitle>
       <ProjectDetail details={selectedProject.details} />
     </div>

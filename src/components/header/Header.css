@@ -1,7 +1,7 @@
 
 .header {
   max-width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .01), 0 6px 20px 0 rgba(0, 0, 0, .1);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .01), 0 6px 20px 0 rgba(0, 0, 0, .1); */
   margin: 0px auto;
   background: #fff;
 }
@@ -60,7 +60,7 @@ header .logo-name img {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-  margin-right: 50px;
+  margin-right: 110px;
 }
 
 /* menu icon */
