@@ -8,9 +8,13 @@ import { Link } from "react-router-dom";
 const PreviousNextArrow = ({ selectedProject, projects }) => {
   console.log(selectedProject);
   console.log(projects);
-  const onNextProjectClick = () => {};
+  const onNextProjectClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-  const onPreviousProjectClick = () => {};
+  const onPreviousProjectClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const isLastProject = () => {
     return selectedProject.id === projects[projects.length - 1].id;

@@ -49,7 +49,7 @@ export default function ProjectTitle(props) {
             </div>
             <div
               className="projectTitle-text-inner-div-img"
-              style={{ height: "500px" }}
+              style={{ height: "300px" }}
             >
               <img src={project.imageURL} />
             </div>

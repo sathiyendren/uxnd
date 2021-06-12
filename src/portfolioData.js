@@ -769,7 +769,7 @@ const workProjects = [
         {
           title: "",
           layout: "horizontal",
-          imageURL: "http://uxnd.in/images/sports3.jpeg",
+          imageURL: "http://uxnd.in/images/checkmytrip_thumbnail.png",
           paragraph: [
             {
               title: "",
@@ -796,7 +796,7 @@ const workProjects = [
         {
           title: "",
           layout: "horizontal",
-          imageURL: "http://uxnd.in/images/sports3.jpeg",
+          imageURL: "http://uxnd.in/images/etravel_thumbnail.png",
           paragraph: [
             {
               title: "",
