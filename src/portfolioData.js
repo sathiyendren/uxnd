@@ -602,8 +602,8 @@ const workProjects = [
     title: "Interact Sports",
     description:
       "Monitor, manage and optimize connected lighting across the entire stadium. Manage venue and audience as efficiently as possible using accurate data and insights. ",
-    thumbnailURL: "http://uxnd.in/images/interactretailhq_thumbnail.png",
-    imageURL: "http://uxnd.in/images/interactretailhq_header.png",
+    thumbnailURL: "http://uxnd.in/images/interactsports_thumbnail.png",
+    imageURL: "http://uxnd.in/images/interactsports_header.png",
     appStoreLink: {},
   },
   {
@@ -611,14 +611,18 @@ const workProjects = [
     title: "Check My Trip",
     description:
       "A complete travel itinerary tool, bringing you flight information and alerts, travel services and extras to get you smoothly from door to door.",
-    thumbnailURL: "work_img8.png",
+    thumbnailURL: "http://uxnd.in/images/checkmytrip_thumbnail.png",
+    imageURL: "http://uxnd.in/images/checkmytrip_header.png",
+    appStoreLink: {},
   },
   {
     id: "9",
     title: "Amadeus e-Travel Management",
     description:
       "Corporate booking tool that enables your travellers to manage their complete itineraries aligned with company’s guidelines.",
-    thumbnailURL: "work_img9.png",
+    thumbnailURL: "http://uxnd.in/images/etravel_thumbnail.png",
+    imageURL: "http://uxnd.in/images/etravel_header.png",
+    appStoreLink: {},
   },
 ];
 

@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Fade } from "react-reveal";
 import "./ProjectTitle.css";
 import Button from "../../components/button/Button";
 import { useHistory } from "react-router-dom";
@@ -12,42 +11,51 @@ export default function ProjectTitle(props) {
   const playStore = project?.appStoreLink?.android;
   let history = useHistory();
   return (
-    <Fade bottom duration={1000} distance="40px">
-      <div className="projectTitle-main" id="projectTitle">
-        <div className="projectTitle-main-content">
-          <div className="projectTitle-back-btn-div">
+    <div className="projectTitle-main" id="projectTitle">
+      <div className="projectTitle-main-content">
+        <div className="projectTitle-back-btn-div">
+          <div className={"div-container"}>
             <Button
               text="Back"
               handler={() => history.goBack()}
-              className={"back-container"}
+              className={"back-container black"}
             />
           </div>
-          <div className="projectTitle-text-div">
-            <div className="projectTitle-text-inner-div">
-              <div className="projectTitle-text-inner-div-img">
-                <img src={project.imageURL} />
-              </div>
-              <div className="projectTitle-text-inner-div-title">
-                <span className="projectTitle-text-inner-div-title-span">
-                  {project.title}
-                </span>
-              </div>
+          <div className={"div-container"}>
+            <div className="projectTitle-store-div">
+              {playStore && (
+                <Button
+                  href={playStore}
+                  newTab={true}
+                  imageURL={playStoreImage}
+                />
+              )}
+              {appStore && (
+                <Button
+                  href={appStore}
+                  newTab={true}
+                  imageURL={appStoreImage}
+                />
+              )}
             </div>
           </div>
-          <div className="projectTitle-store-div">
-            {appStore && (
-              <Button href={appStore} newTab={true} imageURL={appStoreImage} />
-            )}
-            {playStore && (
-              <Button
-                href={playStore}
-                newTab={true}
-                imageURL={playStoreImage}
-              />
-            )}
+        </div>
+        <div className="projectTitle-text-div">
+          <div className="projectTitle-text-inner-div">
+            <div className="projectTitle-text-inner-div-title">
+              <span className="projectTitle-text-inner-div-title-span">
+                {project.title}
+              </span>
+            </div>
+            <div
+              className="projectTitle-text-inner-div-img"
+              style={{ height: "500px" }}
+            >
+              <img src={project.imageURL} />
+            </div>
           </div>
         </div>
       </div>
-    </Fade>
+    </div>
   );
 }

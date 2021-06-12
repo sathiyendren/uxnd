@@ -11,12 +11,17 @@
 }
 .projectTitle-text-inner-div {
   display: flex;
-  
 }
 .projectTitle-text-inner-div span {
   position: absolute;
   bottom: 0;
   left: 0;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.projectTitle-text-inner-div {
+  display: flex;
 }
 
 .projectTitle-text-inner-div > * {
@@ -27,6 +32,7 @@
 .projectTitle-text-inner-div-img {
   display: flex;
   margin-top: 20px;
+  max-width: 70%;
 }
 .projectTitle-text-inner-div-img img {
   vertical-align: bottom;
@@ -36,6 +42,7 @@
   display: flex;
   margin-top: 20px;
   position: relative;
+  max-width: 30%;
 }
 
 .subTitle {
@@ -50,16 +57,16 @@
   clear: both;
 }
 .projectTitle-back-btn-div {
-  float: left;
-  width: 15%;
-  margin: 10px;
-  /* height: 300px; */
+  display: flex;
+  margin: 10px 10px 10px 10px;
+}
+.projectTitle-back-btn-div .div-container {
+  width: 50%;
+  padding-left: 30px;
 }
 .projectTitle-text-div {
-  float: left;
-  width: 60%;
-  margin: 20px 10px 0px 10px;
-  /* height: 300px; */
+  margin: 10px 10px 0px 10px;
+  
 }
 
 .projectTitle-text-inner-div-title-span {
@@ -71,8 +78,9 @@
 }
 .projectTitle-store-div {
   float: right;
-  width: 10%;
-  margin: 50px 10px;
+  width: 50%;
+  margin: 30px 10px 10px 10px;
+  display: flex;
   /* height: 300px; */
 }
 
@@ -109,8 +117,18 @@
 
 .back-container {
   margin-top: 30px;
-  margin-left: 30px;
 }
+.back-container.black .main-button {
+  background-color: #fff;
+  border: solid 1px #fff;
+  color: #333;
+}
+.back-container.black .main-button:hover {
+  background-color: #333;
+  border: solid 1px #333;
+  color: #fff;
+}
+
 .wave-emoji {
   font-size: 30px;
   animation-duration: 1.8s;

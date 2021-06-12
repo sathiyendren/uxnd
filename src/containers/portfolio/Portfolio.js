@@ -4,7 +4,7 @@ import "./Portfolio.css";
 import Greeting from "./../greeting/Greeting";
 import WorkExperience from "./../workExperience/WorkExperience";
 import WorkProject from "./../workProject/WorkProject";
-import Contact from "./../contact/Contact";
+// import Contact from "./../contact/Contact";
 import AboutMe from "./../aboutMe/AboutMe";
 import ToolsIUse from "./../toolsIUse/ToolsIUse";
 import IAmGoodAt from "./../iAmGoodAt/IAmGoodAt";
@@ -31,9 +31,9 @@ export default class Portfolio extends Component {
         case "project":
           contentItem = item.display && <WorkProject {...item} key={index} />;
           break;
-        case "contact":
-          contentItem = item.display && <Contact {...item} key={index} />;
-          break;
+        // case "contact":
+        //   contentItem = item.display && <Contact {...item} key={index} />;
+        //   break;
         case "aboutMe":
           contentItem = item.display && <AboutMe {...item} key={index} />;
           break;
