@@ -1052,8 +1052,8 @@ const aboutMe = {
     resumeLink: "https://uxnd.in/resume/Megalatha_resume.pdf",
     imageURL: "https://uxnd.in/images/mega.jpg",
     content: [
-      "With hands-on experience for 13+ years in the field of creating better experiences and intuitive interactions on the Surface User Interfaces, I have been caring for my end-users leading to more loyal customers and better business. I am empathetic to the needs and identifying the job to be done of my end-users. I am a naturally curious person who tries to get to the root of an issue and find solution.",
-      "I keep a good understanding of the coding and technical skills in order to be able to take possibilities and constraints into considerations. My logic and reasoning skills help me to discern why a designed approach is not working and, by contrast, why other one might be. I have the ability to hear and accept feedback which helps me broaden my lens in empathy designing for my audience.",
+      "With hands-on experience for <strong>13+ years</strong> in the field of creating better experiences and intuitive interactions on the Surface User Interfaces, I <strong>care</strong> for my end-users by creating good experiences thereby leading to more loyal customers and better business. I am <strong>empathetic</strong> to the needs and requirements of my end-users. I am a naturally <strong>curious</strong> person who gets to the root of an issue to find solution. ",
+      "I keep a good understanding of the <strong>coding and technical skills</strong> in order to be able to take possibilities and constraints into considerations. My <strong>logic and reasoning skills</strong> help me to discern why a designed approach is not working and, by contrast, why other one might be. I have the ability to <strong>hear and accept feedback</strong> which helps me broaden my lens in empathy designing for my audience.",
       "My domain exposure are in Analytical Dashboards, Banking, Airline, Airport management systems, Tourism, Lighting for Residential, Retail, Fashion, Office, Sports, Recreational areas and Hardware manufacturing.",
     ],
   },

@@ -22,7 +22,7 @@ export default function VerticalLayout({ content }) {
                   </div>
 
                   <div className={"verticalLayout-content-text-p"}>
-                    {paracontent.content}
+                    <RenderHTML HTML={paracontent.content}></RenderHTML>
                   </div>
                 </div>
               ))}
@@ -68,7 +68,7 @@ export default function VerticalLayout({ content }) {
                     {paracontent.title}
                   </div>
                   <div className={"verticalLayout-content-text-p"}>
-                    {paracontent.content}
+                    <RenderHTML HTML={paracontent.content}></RenderHTML>
                   </div>
                 </div>
               ))}
@@ -78,3 +78,7 @@ export default function VerticalLayout({ content }) {
     </div>
   );
 }
+
+const RenderHTML = (props) => (
+  <div dangerouslySetInnerHTML={{ __html: props.HTML }}></div>
+);

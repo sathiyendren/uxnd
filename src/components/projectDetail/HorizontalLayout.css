@@ -43,10 +43,10 @@
     }
   
     .horizontalLayout-image-div.small > img{
-      height: 50%;
+      height: 500px;
     } 
     .horizontalLayout-image-div.medium > img{
-      height: 70%;
+      height: 700px;
     } 
     .horizontalLayout-image-div.large > img{
       height: 100%;

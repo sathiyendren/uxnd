@@ -33,7 +33,7 @@ export default function HorizontalLayout({ content }) {
                   </div>
 
                   <div className={"horizontalLayout-content-text-p"}>
-                    {paracontent.content}
+                    <RenderHTML HTML={paracontent.content}></RenderHTML>
                   </div>
                 </div>
               ))}
@@ -57,7 +57,7 @@ export default function HorizontalLayout({ content }) {
                   </div>
 
                   <div className={"horizontalLayout-content-text-p"}>
-                    {paracontent.content}
+                    <RenderHTML HTML={paracontent.content}></RenderHTML>
                   </div>
                 </div>
               ))}
@@ -78,3 +78,7 @@ export default function HorizontalLayout({ content }) {
     </div>
   );
 }
+
+const RenderHTML = (props) => (
+  <div dangerouslySetInnerHTML={{ __html: props.HTML }}></div>
+);

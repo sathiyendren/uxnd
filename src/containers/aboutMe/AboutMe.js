@@ -19,9 +19,7 @@ export default function AboutMe(props) {
               )}
               {content &&
                 content.map((contentItem, index) => (
-                  <div key={index} className={"aboutMe-text-p"}>
-                    {contentItem}{" "}
-                  </div>
+                  <RenderHTML key={index} HTML={contentItem}></RenderHTML>
                 ))}
             </div>
             <div>
@@ -40,3 +38,10 @@ export default function AboutMe(props) {
     </Fade>
   );
 }
+
+const RenderHTML = (props) => (
+  <div
+    className={"aboutMe-text-p"}
+    dangerouslySetInnerHTML={{ __html: props.HTML }}
+  ></div>
+);
