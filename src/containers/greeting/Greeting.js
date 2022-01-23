@@ -32,13 +32,7 @@ export default function Greeting(props) {
               </div>
               <div className={"title-text"}>{data.title}</div>
               <div className={"title-text"}>{data.subTitle}</div>
-              <p className={"greeting-text-p subTitle"}>
-                {data.description}{" "}
-                <a href="#aboutMe" style={{ color: "#DBA46B" }}>
-                  {" "}
-                  Read on
-                </a>
-              </p>
+              <RenderHTML HTML={data.description}></RenderHTML>
             </div>
           </div>
           <div className="greeting-image-div">
@@ -49,3 +43,10 @@ export default function Greeting(props) {
     </Fade>
   );
 }
+
+const RenderHTML = (props) => (
+  <div
+    className={"aboutMe-text-p"}
+    dangerouslySetInnerHTML={{ __html: props.HTML }}
+  ></div>
+);

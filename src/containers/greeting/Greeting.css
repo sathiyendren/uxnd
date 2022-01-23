@@ -61,8 +61,8 @@ font-weight: 100;
 }
 
 .greeting-text-p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height:1.8rem;
 }
 
 .greeting-image-div {

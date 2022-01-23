@@ -1,4 +1,3 @@
-
 .header {
   max-width: 100%;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .01), 0 6px 20px 0 rgba(0, 0, 0, .1); */
@@ -24,6 +23,7 @@
   padding: 15px 20px;
   color: black;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .header li a:hover,
@@ -142,7 +142,7 @@ header .logo-name img {
 }
 
 .header .menu .roboto-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .target {
@@ -154,7 +154,7 @@ header .logo-name img {
 
 .header a,
 .target {
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 /* 48em = 768px */
@@ -171,18 +171,15 @@ header .logo-name img {
   }
   .header .menu {
     max-height: none;
-    
   }
   .header .menu-icon {
     display: none;
   }
-  
 }
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
   }
-  
 }
 
 @media (max-width: 500px) and (min-width: 320px) {
@@ -191,5 +188,5 @@ header .logo-name img {
   }
   .target {
     display: none;
-  } 
+  }
 }

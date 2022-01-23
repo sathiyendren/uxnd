@@ -1036,7 +1036,7 @@ const greeting = {
     title: "I'm",
     subTitle: "Megalatha",
     description:
-      "An User Experience and Interaction Designer based in Bangalore, India with experience in delivering user-centric Interfaces for surface UIs. I'm passionate about rendering intuitive UIs for people and thereby enrich the overall customer experience...",
+      'An <strong> User Experience </strong> and <strong> Interaction Designer </strong>based in Bangalore, India with experience in delivering user-centric Interfaces for surface UIs. I\'m passionate about rendering intuitive UIs for people and thereby enrich the overall customer experience... <a href="#aboutMe" style={{ color: "#DBA46B" }}>Read on</a>',
     imageURL: "https://uxnd.in/images/home_bg_plant.png",
     socialMediaLinks,
   },
@@ -1052,9 +1052,10 @@ const aboutMe = {
     resumeLink: "https://uxnd.in/resume/Megalatha_resume.pdf",
     imageURL: "https://uxnd.in/images/mega.jpg",
     content: [
-      "With hands-on experience for <strong>13+ years</strong> in the field of creating better experiences and intuitive interactions on the Surface User Interfaces, I <strong>care</strong> for my end-users by creating good experiences thereby leading to more loyal customers and better business. I am <strong>empathetic</strong> to the needs and requirements of my end-users. I am a naturally <strong>curious</strong> person who gets to the root of an issue to find solution. ",
-      "I keep a good understanding of the <strong>coding and technical skills</strong> in order to be able to take possibilities and constraints into considerations. My <strong>logic and reasoning skills</strong> help me to discern why a designed approach is not working and, by contrast, why other one might be. I have the ability to <strong>hear and accept feedback</strong> which helps me broaden my lens in empathy designing for my audience.",
-      "My domain exposure are in Analytical Dashboards, Banking, Airline, Airport management systems, Tourism, Lighting for Residential, Retail, Fashion, Office, Sports, Recreational areas and Hardware manufacturing.",
+      "With hands-on experience for 14+ years in the field of creating better experiences and intuitive interactions on the Surface User Interfaces, I have been caring for my end-users leading to more loyal customers and better business. I am empathetic to the needs and identifying the job to be done by my end-users. I am a naturally curious person who tries to get to the root of an issue and spends most of the time trying to understand the problem first.",
+      "I keep a good understanding of the coding and technical skills in order to be able to take possibilities and constraints into considerations of the engineering team. My logic and reasoning skills help me to discern why a designed approach is not working and, by contrast, why another one might be. I have the ability to hear and accept feedback which helps me broaden my lens in empathetically designing for my audience.",
+      "I believe that sometimes all you need is to keep things SIMPLE! sensible, intuitive, meaningful, plain, lucid and elegant.",
+      "My domain exposure is in Airline, Airport management systems, Tourism, Lighting for Residential, Retail, Fashion, Office, Sports, Recreational areas, supply chain visibility and Hardware manufacturing GUIs. I have worked on interfaces such as Mobile, Laptop, Desktop, Kiosks, Augmented Reality and Custom hardware devices.",
     ],
   },
 };
@@ -1074,6 +1075,7 @@ const iAmGoodAt = {
             title: "Design & Research",
             content: [
               "Interactive UIs",
+              "Information Architecture",
               "User Research/Interview",
               "Contextual Inquiries",
               "Empathy mapping",
@@ -1100,6 +1102,7 @@ const iAmGoodAt = {
           {
             title: "Tools",
             content: [
+              "Figma",
               "Sketch",
               "InVision App + Craft",
               "Adobe XD",
@@ -1109,12 +1112,16 @@ const iAmGoodAt = {
             ],
           },
           {
-            title: "Collaboration",
+            title: "Strategy and Collaboration",
             content: [
+              "Design thinking",
+              "UX strategy",
+              "Product Design",
               "SAFe Practitioner",
               "SAFe PM/PO",
               "Product Ownership",
-              "Psychology Counselling",
+              "Psychologist",
+              "Efficient Communicator",
             ],
           },
         ],
