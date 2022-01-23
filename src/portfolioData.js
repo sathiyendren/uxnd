@@ -33,7 +33,7 @@ const workProjects = [
             {
               title: "",
               content:
-                "Zara our prime customer in fashion lighting were facing a major challenge in managing and aiming spot lights which are located at a height of 4.5 meters in their shop window ceilings. This activity has to be conducted every two weeks when they had to showcase their new merchadises in their shop windows. </br> Each fortnight couple of their lighting designers gathered with a 4 mtr ladder and a set of walkie-talkies at the store. Where one of them was inside the shop window on a ladder paning and tilting the spot lights and the other one standing outside the glass wall trying to guide the light directions and aim accordingly. This is not an easy job as they had to carefully balance on the 4 mtr ladder and at the other hand also be creative in managing the lights.",
+                "Zara our prime customer in fashion lighting were facing a major challenge in managing and aiming spot lights which are located at a height of 4.5 meters in their shop window ceilings. This activity has to be conducted every two weeks when they had to showcase their new merchadises in their shop windows. </br> </br>Each fortnight couple of their lighting designers gathered with a 4 mtr ladder and a set of walkie-talkies at the store. Where one of them was inside the shop window on a ladder paning and tilting the spot lights and the other one standing outside the glass wall trying to guide the light directions and aim accordingly. This is not an easy job as they had to carefully balance on the 4 mtr ladder and at the other hand also be creative in managing the lights.",
             },
           ],
         },
