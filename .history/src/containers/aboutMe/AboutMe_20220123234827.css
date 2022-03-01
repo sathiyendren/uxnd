@@ -1,0 +1,150 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.aboutMe-main {
+  width: 90%;
+  padding: 10px;
+  margin: 0px auto;
+  margin-bottom: 2rem;
+}
+
+.aboutMe-main {
+  display: flex;
+}
+
+.subTitle {
+  /* font-family: 'Abhaya Libre'; */
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.aboutMe-main {
+  display: flex;
+}
+
+.aboutMe-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-aboutMe-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.aboutMe-text {
+  font-size: 20px;
+  line-height: 1.1;
+  color: black !important;
+}
+
+.aboutMe-title-text {
+  /* font-size: 70px; */
+  /* line-height: 1.1; */
+  color: black !important;
+}
+
+.aboutMe-text-p {
+  font-size: 16px;
+  line-height: 1.8rem;
+
+  margin: 20px 10px 30px 0px;
+  color: black !important;
+
+}
+
+.aboutMe-image-div > img {
+  max-width: 80%;
+  height: auto;
+}
+
+.wave-emoji {
+  font-size: 30px;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+.resume-btn {
+  border: 2px solid #dba46b;
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .aboutMe-text {
+    font-size: 30px;
+  }
+  .aboutMe-title-text {
+    /* font-size: 80px; */
+  }
+  .aboutMe-text-p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .button-aboutMe-div {
+    justify-content: space-around;
+  }
+  .aboutMe-text {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .aboutMe-title-text {
+    font-size: 3rem;
+  }
+
+  .aboutMe-text-p {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .aboutMe-main {
+    display: block;
+  }
+  .aboutMe-image-div {
+    height: 256px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}
