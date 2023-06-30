@@ -1,0 +1,285 @@
+.servicetag-child {
+  position: absolute;
+  top: 696px;
+  left: 1px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 12px rgba(166, 166, 166, 0.15);
+  width: 1440px;
+  height: 5265px;
+}
+.go-to-top4 {
+  position: absolute;
+  top: 5826px;
+  left: 118px;
+  width: 83.88px;
+  height: 18.49px;
+  cursor: pointer;
+}
+.st2-1-icon {
+  position: absolute;
+  top: 1378px;
+  left: 802px;
+  width: 528px;
+  height: 405px;
+  object-fit: cover;
+}
+.the-product-service {
+  margin: 0;
+}
+.the-product-service-container,
+.to-gain-a-container,
+.to-validate-my-container {
+  position: absolute;
+  top: 909px;
+  left: 82px;
+  line-height: 30px;
+  display: inline-block;
+  width: 661px;
+  height: 299px;
+}
+.to-gain-a-container,
+.to-validate-my-container {
+  top: 1432px;
+  width: 653px;
+  height: 298px;
+}
+.to-validate-my-container {
+  top: 2021px;
+  height: 566px;
+}
+.task-flow-diagram1,
+.user-stories1,
+.wireframing-the-flows {
+  position: absolute;
+  top: 1328px;
+  left: 82px;
+  font-size: var(--font-size-5xl);
+  line-height: 22px;
+  display: inline-block;
+  width: 505px;
+}
+.task-flow-diagram1,
+.wireframing-the-flows {
+  top: 1872px;
+}
+.wireframing-the-flows {
+  top: 2725px;
+}
+.st3-1-icon {
+  position: absolute;
+  top: 1919px;
+  left: 802px;
+  width: 510px;
+  height: 723px;
+  object-fit: cover;
+}
+.product-revamp-and {
+  position: absolute;
+  top: 812px;
+  left: 82px;
+  font-size: var(--font-size-5xl);
+  line-height: 22px;
+  display: inline-block;
+  width: 702px;
+  height: 50px;
+}
+.mobile-bg-3-icon,
+.st1-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 423px;
+  object-fit: cover;
+}
+.st1-1-icon {
+  top: 41px;
+  left: 23px;
+  border-radius: var(--br-11xs);
+  width: 189px;
+  height: 332px;
+}
+.st-1 {
+  position: absolute;
+  top: 812px;
+  left: 914px;
+  width: 230px;
+  height: 423px;
+}
+.screenshot-2021-06-05-at-1231 {
+  position: absolute;
+  top: 61px;
+  left: 182px;
+  width: 200px;
+  height: 357px;
+  object-fit: cover;
+}
+.mobile-bg-1-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 423px;
+}
+.screenshot-2021-06-03-at-137 {
+  position: absolute;
+  top: 42px;
+  left: 24px;
+  width: 187px;
+  height: 331px;
+  object-fit: cover;
+}
+.servicetag-header {
+  position: absolute;
+  top: 273px;
+  left: 720px;
+  width: 382px;
+  height: 423px;
+}
+.st4-icon,
+.st5-icon {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 868px;
+  height: 688px;
+  object-fit: cover;
+}
+.st5-icon {
+  top: 743px;
+  width: 872px;
+  height: 690px;
+}
+.st6-icon {
+  top: 1488px;
+  left: 0;
+  width: 874px;
+  height: 686px;
+  object-fit: cover;
+}
+.st-4,
+.st6-icon,
+.st7-icon {
+  position: absolute;
+}
+.st7-icon {
+  top: 2228px;
+  left: 6px;
+  width: 874px;
+  height: 690px;
+  object-fit: cover;
+}
+.st-4 {
+  top: 2786px;
+  left: 259px;
+  width: 880px;
+  height: 2918px;
+}
+.download-android-1-icon3,
+.download-mac-2-icon3 {
+  position: absolute;
+  top: 195px;
+  left: 1187px;
+  width: 76px;
+  height: 25px;
+  object-fit: cover;
+}
+.download-mac-2-icon3 {
+  top: 191px;
+  left: 1270px;
+  width: 73px;
+  height: 30px;
+}
+.service-tag {
+  position: absolute;
+  top: 622px;
+  left: 82px;
+  font-size: var(--font-size-61xl);
+  line-height: 88px;
+  display: inline-block;
+  color: var(--color-burlywood-100);
+  width: 527px;
+  height: 69px;
+}
+.ml-logo-1-icon5 {
+  position: absolute;
+  top: 56px;
+  left: 80px;
+  width: 82px;
+  height: 86px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.portfolio8,
+.service-tag1 {
+  position: absolute;
+  top: 187px;
+  font-size: var(--font-size-base);
+  line-height: 33px;
+  font-family: var(--font-chivo);
+}
+.portfolio8 {
+  left: 79px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.service-tag1 {
+  left: 178px;
+}
+.chevron-1-icon4 {
+  position: absolute;
+  top: 199px;
+  left: 158px;
+  width: 7px;
+  height: 9px;
+  object-fit: cover;
+}
+.about-me5,
+.my-skill-set4,
+.portfolio9,
+.resume4 {
+  position: absolute;
+  top: 85px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.about-me5 {
+  left: 633px;
+  font-weight: 500;
+  width: 120px;
+}
+.my-skill-set4,
+.portfolio9,
+.resume4 {
+  left: 837px;
+  width: 155px;
+}
+.portfolio9,
+.resume4 {
+  left: 1076px;
+  width: 90px;
+}
+.resume4 {
+  left: 1250px;
+  width: 120px;
+}
+.servicetag-item {
+  position: absolute;
+  top: 108px;
+  left: 1082px;
+  background-color: var(--color-burlywood-100);
+  width: 78px;
+  height: 5px;
+}
+.servicetag {
+  position: relative;
+  background-color: var(--color-whitesmoke-200);
+  width: 100%;
+  height: 5961px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}

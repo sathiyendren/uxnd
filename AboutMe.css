@@ -1,0 +1,395 @@
+.about-me-child,
+.about-me-item {
+  position: absolute;
+  top: 108px;
+  left: 647px;
+  background-color: var(--color-burlywood-100);
+  width: 92px;
+  height: 5px;
+}
+.about-me-item {
+  top: 177px;
+  left: 0;
+  background-color: var(--color-burlywood-300);
+  width: 1440px;
+  height: 837px;
+}
+.mega-1-icon,
+.ml-logo-1-icon9 {
+  position: absolute;
+  top: 223px;
+  left: 80px;
+  width: 407px;
+  height: 731px;
+  object-fit: cover;
+}
+.ml-logo-1-icon9 {
+  top: 56px;
+  width: 82px;
+  height: 86px;
+  cursor: pointer;
+}
+.specializing-in-ux {
+  margin: 0;
+}
+.my-expertise-lies,
+.specializing-in-ux-container,
+.throughout-my-career {
+  position: absolute;
+  top: 211px;
+  left: 543px;
+  line-height: 36px;
+  font-weight: 300;
+  text-align: left;
+  display: inline-block;
+  width: 810px;
+  height: 231px;
+}
+.my-expertise-lies,
+.throughout-my-career {
+  top: 461px;
+  height: 256px;
+}
+.throughout-my-career {
+  top: 748px;
+}
+.blank-line135 {
+  margin: 0;
+  font-size: var(--font-size-5xl);
+}
+.my-experience,
+.my-leadership-outlook-container {
+  left: 80px;
+  font-size: var(--font-size-13xl);
+  text-align: left;
+  width: 1266px;
+  height: 44px;
+}
+.my-leadership-outlook-container {
+  position: absolute;
+  top: 1954px;
+  line-height: 36px;
+  display: inline-block;
+}
+.my-experience {
+  top: 1119px;
+}
+.my-experience,
+.yrs,
+.yrs1 {
+  position: absolute;
+  line-height: 36px;
+  display: inline-block;
+}
+.yrs {
+  top: 1366px;
+  left: 700px;
+  font-size: var(--font-size-9xl);
+  width: 71px;
+  height: 44px;
+}
+.yrs1 {
+  left: 434px;
+  width: 100px;
+}
+.yrs1,
+.yrs2,
+.yrs3 {
+  top: 1366px;
+  font-size: var(--font-size-9xl);
+  height: 44px;
+}
+.yrs2 {
+  position: absolute;
+  left: 173px;
+  line-height: 36px;
+  display: inline-block;
+  width: 94px;
+}
+.yrs3 {
+  left: 960px;
+  width: 71px;
+}
+.the-traditional-image-container,
+.yrs3,
+.yrs4 {
+  position: absolute;
+  line-height: 36px;
+  display: inline-block;
+}
+.yrs4 {
+  top: 1366px;
+  left: 1212px;
+  font-size: var(--font-size-9xl);
+  width: 71px;
+  height: 44px;
+}
+.the-traditional-image-container {
+  top: 2045px;
+  left: 80px;
+  font-weight: 300;
+  text-align: left;
+  width: 1289px;
+  height: 900px;
+}
+.what-my-colleagues {
+  line-height: 36px;
+}
+.blank-line141 {
+  margin: 0;
+  line-height: 42px;
+}
+.throughout-my-career1 {
+  margin: 0;
+  line-height: 41px;
+  font-weight: 300;
+}
+.what-my-colleagues-container {
+  position: absolute;
+  top: 3002px;
+  left: 80px;
+  font-size: var(--font-size-13xl);
+  text-align: left;
+  display: inline-block;
+  width: 1266px;
+}
+.lieven-verdin {
+  margin: 0;
+  font-weight: 600;
+}
+.when-i-started {
+  margin: 0;
+  font-weight: 300;
+}
+.lieven-verdin-digital-container {
+  position: absolute;
+  top: 3292px;
+  left: 215px;
+  line-height: 36px;
+  text-align: left;
+  display: inline-block;
+  width: 474px;
+  height: 716px;
+}
+.julija-babre-enterprise-container,
+.laura-cunningham-global-container,
+.sanjeev-kumar-ps-container,
+.with-a-diverse-container {
+  position: absolute;
+  top: 3292px;
+  left: 902px;
+  line-height: 36px;
+  text-align: left;
+  display: inline-block;
+  width: 474px;
+  height: 710px;
+}
+.julija-babre-enterprise-container,
+.sanjeev-kumar-ps-container,
+.with-a-diverse-container {
+  top: 4151px;
+  height: 716px;
+}
+.julija-babre-enterprise-container,
+.with-a-diverse-container {
+  left: 215px;
+}
+.with-a-diverse-container {
+  top: 1473px;
+  left: 87px;
+  font-weight: 300;
+  width: 1266px;
+  height: 383px;
+}
+.design-ops2,
+.leadership,
+.proj-mngmt,
+.uxui-design,
+.visual-design {
+  position: absolute;
+  top: 1329px;
+  left: 115px;
+  font-size: var(--font-size-13xl);
+  line-height: 36px;
+  font-weight: 500;
+}
+.design-ops2,
+.leadership,
+.proj-mngmt,
+.uxui-design {
+  left: 389px;
+}
+.design-ops2,
+.leadership,
+.proj-mngmt {
+  left: 656px;
+}
+.design-ops2,
+.proj-mngmt {
+  left: 913px;
+}
+.proj-mngmt {
+  left: 1154px;
+}
+.linkedin1 {
+  text-decoration: underline;
+}
+.linkedin {
+  color: inherit;
+}
+.you-can-find-container {
+  position: absolute;
+  top: 4829px;
+  left: 225px;
+  line-height: 36px;
+  font-weight: 300;
+  color: var(--font-inherit);
+  text-align: left;
+  display: inline-block;
+  width: 1048px;
+  height: 58px;
+}
+.icon8 {
+  position: absolute;
+  top: 1199px;
+  left: 944px;
+  width: 103px;
+  height: 103px;
+  object-fit: cover;
+}
+.f-298592888-8nus4j80dit5ggqcon-icon,
+.icon10,
+.icon11,
+.icon9 {
+  position: absolute;
+  top: 1197px;
+  left: 178px;
+  width: 99px;
+  height: 99px;
+  object-fit: cover;
+}
+.icon10,
+.icon11,
+.icon9 {
+  top: 1204px;
+  left: 693px;
+  width: 92px;
+  height: 92px;
+}
+.icon10,
+.icon11 {
+  left: 436px;
+  width: 98px;
+  height: 99px;
+}
+.icon11 {
+  top: 1203px;
+  left: 1206px;
+  width: 99px;
+}
+.mask-group-icon,
+.mask-group-icon1,
+.mask-group-icon2 {
+  position: absolute;
+  top: 3292px;
+  left: 54px;
+  width: 151px;
+  height: 151px;
+  object-fit: cover;
+}
+.mask-group-icon1,
+.mask-group-icon2 {
+  top: 4151px;
+}
+.mask-group-icon2 {
+  top: 3292px;
+  left: 737px;
+}
+.about-me11,
+.my-skill-set10,
+.portfolio16,
+.resume9 {
+  position: absolute;
+  top: 85px;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+}
+.about-me11 {
+  left: 633px;
+  font-weight: 500;
+  width: 120px;
+}
+.my-skill-set10,
+.portfolio16,
+.resume9 {
+  left: 837px;
+  width: 155px;
+  cursor: pointer;
+}
+.portfolio16,
+.resume9 {
+  left: 1076px;
+  width: 90px;
+}
+.resume9 {
+  left: 1250px;
+  width: 120px;
+}
+.group-child29 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-14xl);
+  background-color: var(--color-burlywood-200);
+  width: 316px;
+  height: 45px;
+}
+.see-the-range {
+  position: absolute;
+  top: 17px;
+  left: 32px;
+  line-height: 36px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 253px;
+  height: 12px;
+}
+.rectangle-parent14 {
+  position: absolute;
+  top: 4922px;
+  left: 1075px;
+  width: 316px;
+  height: 45px;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.go-to-top6 {
+  position: absolute;
+  top: 4936px;
+  left: 87px;
+  width: 83.88px;
+  height: 18.49px;
+  cursor: pointer;
+}
+.mask-group-icon3 {
+  position: absolute;
+  top: 4151px;
+  left: 737px;
+  width: 151px;
+  height: 151px;
+  object-fit: cover;
+}
+.about-me10 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 5006px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}

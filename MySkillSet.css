@@ -1,0 +1,212 @@
+.interactive-uis {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.interactive-uis-user-research {
+  margin: 0;
+  padding-left: var(--padding-21xl);
+}
+.design-ops-design-container,
+.interactive-uis-user-container {
+  position: absolute;
+  line-height: 35px;
+  font-weight: 300;
+  font-family: var(--font-inherit);
+  display: inline-block;
+}
+.interactive-uis-user-container {
+  top: 660px;
+  left: 85px;
+  text-transform: capitalize;
+  width: 540px;
+  height: 487px;
+}
+.design-ops-design-container {
+  top: 316px;
+  left: 80px;
+  width: 553px;
+  height: 204px;
+}
+.my-skill-set-child {
+  position: absolute;
+  top: 314px;
+  left: 800px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.affinity-mapping-charrette-container,
+.figma-sketch-invision-container,
+.html-css-css-container {
+  position: absolute;
+  top: 316px;
+  left: 1092px;
+  line-height: 35px;
+  font-weight: 300;
+  font-family: var(--font-inherit);
+  display: inline-block;
+  width: 272px;
+}
+.affinity-mapping-charrette-container,
+.html-css-css-container {
+  top: 897px;
+  width: 202px;
+  height: 207px;
+}
+.affinity-mapping-charrette-container {
+  top: 617px;
+  left: 633px;
+  width: 412px;
+  height: 530px;
+}
+.design-research {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.collaboration,
+.design-management,
+.design-research-container,
+.information-architecture4,
+.programming1,
+.tools3 {
+  position: absolute;
+  top: 575px;
+  left: 85px;
+  font-size: var(--font-size-9xl);
+  line-height: 40px;
+  font-weight: 600;
+  display: inline-block;
+  width: 316px;
+  height: 37px;
+}
+.collaboration,
+.design-management,
+.information-architecture4,
+.programming1,
+.tools3 {
+  left: 633px;
+}
+.design-management,
+.information-architecture4,
+.programming1,
+.tools3 {
+  top: 833px;
+  left: 1092px;
+}
+.design-management,
+.information-architecture4,
+.tools3 {
+  top: 233px;
+}
+.design-management,
+.information-architecture4 {
+  left: 80px;
+}
+.information-architecture4 {
+  left: 648px;
+  width: 397px;
+}
+.ml-logo-1-icon8 {
+  position: absolute;
+  top: 56px;
+  left: 80px;
+  width: 82px;
+  height: 86px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.flow-charts-journey-container {
+  position: absolute;
+  top: 316px;
+  left: 633px;
+  line-height: 35px;
+  font-weight: 300;
+  font-family: var(--font-inherit);
+  display: inline-block;
+  width: 360px;
+  height: 193px;
+}
+.my-skill-set-item {
+  position: absolute;
+  top: 108px;
+  left: 864px;
+  background-color: var(--color-burlywood-100);
+  width: 100px;
+  height: 5px;
+}
+.about-me9,
+.my-skill-set9,
+.portfolio15,
+.resume8 {
+  position: absolute;
+  top: 85px;
+  font-size: var(--font-size-xl);
+  text-align: center;
+  display: inline-block;
+}
+.about-me9 {
+  left: 633px;
+  width: 120px;
+  cursor: pointer;
+}
+.my-skill-set9,
+.portfolio15,
+.resume8 {
+  left: 837px;
+  width: 155px;
+}
+.portfolio15,
+.resume8 {
+  left: 1076px;
+  width: 90px;
+  cursor: pointer;
+}
+.resume8 {
+  left: 1250px;
+  width: 120px;
+}
+.i-firmly-believe-container,
+.my-design-ops {
+  position: absolute;
+  left: 87px;
+  line-height: 36px;
+  display: inline-block;
+  width: 1266px;
+}
+.my-design-ops {
+  top: 1163px;
+  font-size: var(--font-size-13xl);
+  text-transform: uppercase;
+}
+.i-firmly-believe-container {
+  top: 1227px;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+}
+.process-and-workflow-managemen {
+  margin: 0;
+  padding-left: 37px;
+}
+.establishing-design-ops-container {
+  position: absolute;
+  top: 1500px;
+  left: 87px;
+  line-height: 35px;
+  font-weight: 300;
+  font-family: var(--font-inherit);
+  display: inline-block;
+  width: 1266px;
+  height: 942px;
+}
+.my-skill-set8 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 2581px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-inherit);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}

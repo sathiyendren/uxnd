@@ -1,0 +1,489 @@
+.ml-logo-2-icon {
+  position: absolute;
+  top: 56px;
+  left: 80px;
+  width: 82px;
+  height: 86px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.contact-child {
+  position: absolute;
+  top: 108px;
+  left: 1273px;
+  background-color: var(--color-burlywood-100);
+  width: 77px;
+  height: 5px;
+}
+.about-me8 {
+  position: absolute;
+  left: 633px;
+  font-weight: 500;
+  display: inline-block;
+  width: 120px;
+}
+.about-me8,
+.my-skill-set7,
+.portfolio14 {
+  top: 85px;
+  text-align: center;
+  cursor: pointer;
+}
+.my-skill-set7 {
+  position: absolute;
+  left: 837px;
+  display: inline-block;
+  width: 155px;
+}
+.portfolio14 {
+  left: 1076px;
+  width: 90px;
+}
+.megalatha-s,
+.portfolio14,
+.resume7 {
+  position: absolute;
+  display: inline-block;
+}
+.resume7 {
+  top: 85px;
+  left: 1250px;
+  text-align: center;
+  width: 120px;
+}
+.megalatha-s {
+  top: 375px;
+  left: 134px;
+  font-size: 50px;
+  width: 532px;
+  height: 45px;
+}
+.div4,
+.experience1,
+.iammegagmailcom3,
+.responsibilities,
+.wwwuxndin {
+  position: absolute;
+  top: 379px;
+  left: 549px;
+  font-size: var(--font-size-xs);
+  display: inline-block;
+  width: 139px;
+  height: 10px;
+}
+.div4,
+.experience1,
+.iammegagmailcom3,
+.responsibilities {
+  top: 395px;
+  width: 228px;
+}
+.div4,
+.experience1,
+.responsibilities {
+  top: 411px;
+  width: 171px;
+}
+.experience1,
+.responsibilities {
+  top: 484px;
+  left: 134px;
+  font-size: var(--font-size-5xl);
+  width: 327px;
+  height: 25px;
+}
+.responsibilities {
+  top: 487px;
+  left: 549px;
+  width: 641px;
+  height: 18px;
+}
+.signify-philips-lighting {
+  margin-block-start: 0;
+  margin-block-end: 8.1px;
+}
+.blank-line108 {
+  margin: 0;
+}
+.signify-philips-lig-container {
+  position: absolute;
+  top: 2054px;
+  left: 161px;
+  line-height: 9px;
+  font-weight: 500;
+  display: inline-block;
+  width: 397px;
+  height: 11px;
+}
+.fourkites-bangalore,
+.jun-2022-,
+.senior-manager-ux,
+.senior-staff-ux,
+.sep-2021-,
+.target-bangalore-i {
+  position: absolute;
+  top: 1295px;
+  left: 161px;
+  font-weight: 500;
+  display: inline-block;
+  width: 372px;
+  height: 16px;
+}
+.jun-2022-,
+.senior-manager-ux,
+.senior-staff-ux,
+.sep-2021-,
+.target-bangalore-i {
+  top: 559px;
+}
+.jun-2022-,
+.senior-manager-ux,
+.senior-staff-ux,
+.sep-2021- {
+  top: 1268px;
+  height: 15px;
+}
+.jun-2022-,
+.senior-manager-ux,
+.sep-2021- {
+  top: 531px;
+  height: 13px;
+}
+.jun-2022-,
+.sep-2021- {
+  top: 1323px;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-100);
+  height: 11px;
+}
+.jun-2022- {
+  top: 590px;
+}
+.amadeus,
+.hawkzweb,
+.nabler-web-solutions,
+.senior-interaction-d,
+.senior-software-engi {
+  position: absolute;
+  top: 2767px;
+  left: 161px;
+  font-weight: 500;
+  display: inline-block;
+  width: 372px;
+  height: 11px;
+}
+.hawkzweb,
+.nabler-web-solutions,
+.senior-interaction-d,
+.senior-software-engi {
+  top: 3106px;
+  height: 12px;
+}
+.hawkzweb,
+.senior-interaction-d,
+.senior-software-engi {
+  top: 3284px;
+  height: 11px;
+}
+.senior-interaction-d,
+.senior-software-engi {
+  top: 2019px;
+  height: 15px;
+}
+.senior-software-engi {
+  top: 2739px;
+  height: 14px;
+}
+.visualization-specia {
+  top: 3079px;
+  height: 13px;
+}
+.apr-2007-,
+.feb-2013-,
+.feb-2016-,
+.oct-2012-,
+.visualization-specia,
+.web-designer {
+  position: absolute;
+  left: 161px;
+  font-weight: 500;
+  display: inline-block;
+  width: 372px;
+}
+.web-designer {
+  top: 3255px;
+  height: 14px;
+}
+.apr-2007-,
+.feb-2013-,
+.feb-2016-,
+.oct-2012- {
+  top: 2079px;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-100);
+}
+.apr-2007-,
+.feb-2013-,
+.oct-2012- {
+  top: 2792px;
+  height: 11px;
+}
+.apr-2007-,
+.oct-2012- {
+  top: 3132px;
+}
+.apr-2007- {
+  top: 3310px;
+}
+.group-copy-5 {
+  position: absolute;
+  top: 532.5px;
+  left: 133.5px;
+  width: 17.9px;
+  height: 17.9px;
+}
+.group-copy-10,
+.group-copy-6,
+.group-copy-7,
+.group-copy-8,
+.group-copy-9 {
+  position: absolute;
+  top: 1270.5px;
+  left: 133.5px;
+  width: 17.9px;
+  height: 17.9px;
+}
+.group-copy-10,
+.group-copy-7,
+.group-copy-8,
+.group-copy-9 {
+  top: 2022.5px;
+}
+.group-copy-10,
+.group-copy-8,
+.group-copy-9 {
+  top: 2741.5px;
+}
+.group-copy-10,
+.group-copy-9 {
+  top: 3081.5px;
+}
+.group-copy-10 {
+  top: 3259.5px;
+}
+.line-copy-5,
+.line-copy-6,
+.line-copy-7 {
+  position: absolute;
+  top: 550.12px;
+  left: 142px;
+  width: 1px;
+  height: 721px;
+}
+.line-copy-6,
+.line-copy-7 {
+  top: 1288.14px;
+  height: 735px;
+}
+.line-copy-7 {
+  top: 2040.11px;
+  height: 702px;
+}
+.line-copy-10,
+.line-copy-8,
+.line-copy-9 {
+  position: absolute;
+  top: 2758.78px;
+  left: 142px;
+  width: 1px;
+  height: 323.44px;
+}
+.line-copy-10,
+.line-copy-9 {
+  top: 3098.64px;
+  height: 161.72px;
+}
+.line-copy-10 {
+  top: 3276.68px;
+  height: 208.64px;
+}
+.initiate-the {
+  font-family: var(--font-roboto);
+}
+.lead-and-manage-a-team-of-desi {
+  margin-bottom: 8.1px;
+}
+.initiate-the-design-ops-with-g {
+  margin: 0;
+  padding-left: var(--padding-5xl);
+}
+.initiate-the-design-container {
+  position: absolute;
+  top: 530px;
+  left: 538px;
+  font-size: var(--font-inherit);
+  line-height: 26px;
+  display: inline-block;
+  width: 767px;
+  height: 3000px;
+}
+.group-child28 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-14xl);
+  background-color: var(--color-burlywood-200);
+  width: 168px;
+  height: 38px;
+}
+.download-as-pdf {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  width: 134px;
+  height: 20px;
+}
+.rectangle-parent13 {
+  position: absolute;
+  top: 185px;
+  left: 1202px;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
+  width: 168px;
+  height: 38px;
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.file-size-135 {
+  position: absolute;
+  top: 217px;
+  left: 1243px;
+  font-size: 11px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #242424;
+  display: inline-block;
+  width: 105px;
+  height: 23px;
+}
+.contact-item {
+  position: absolute;
+  top: 264.5px;
+  left: -11.5px;
+  border-top: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 1452px;
+  height: 1px;
+}
+.certification,
+.certified-usability {
+  position: absolute;
+  left: 9.86%;
+  display: inline-block;
+}
+.certification {
+  width: 28.1%;
+  top: calc(50% + 1778px);
+  font-size: var(--font-size-5xl);
+  height: 23px;
+}
+.certified-usability {
+  height: 4.26%;
+  width: 25.73%;
+  top: 92.99%;
+  font-size: var(--font-size-lg);
+  line-height: 26px;
+  white-space: pre-wrap;
+}
+.blank-line125,
+.couselling-psychology {
+  margin-block-start: 0;
+  margin-block-end: 8.1px;
+  font-size: var(--font-size-base);
+}
+.blank-line125 {
+  font-size: var(--font-size-lg);
+}
+.bachelor-of-computer {
+  margin: 0;
+  font-size: var(--font-size-lg);
+}
+.msc-psychology-cou-container {
+  position: absolute;
+  height: 4.89%;
+  width: 26.31%;
+  top: 86.05%;
+  left: 10.15%;
+  line-height: 26px;
+  display: inline-block;
+}
+.design-management-d-container,
+.design-user-researc-container,
+.tools-sketch-invis-container {
+  position: absolute;
+  height: 3.52%;
+  width: 55.97%;
+  top: 88.97%;
+  left: 38.09%;
+  font-size: var(--font-size-lg);
+  line-height: 26px;
+  display: inline-block;
+}
+.design-management-d-container,
+.tools-sketch-invis-container {
+  height: 2.51%;
+  top: 86.04%;
+}
+.tools-sketch-invis-container {
+  height: 1.15%;
+  top: 92.82%;
+}
+.programming-html-c-container {
+  height: 0.56%;
+  width: 52.92%;
+  top: 96.18%;
+  font-size: var(--font-size-lg);
+  line-height: 26px;
+}
+.education,
+.programming-html-c-container,
+.skills,
+.strategy-collabora-container {
+  position: absolute;
+  left: 38.09%;
+  display: inline-block;
+}
+.strategy-collabora-container {
+  height: 1.5%;
+  width: 55.97%;
+  top: 94.25%;
+  font-size: var(--font-size-lg);
+  line-height: 26px;
+}
+.education,
+.skills {
+  width: 19.06%;
+  top: calc(50% + 1484px);
+  font-size: var(--font-size-5xl);
+  height: 24px;
+}
+.education {
+  width: 23.09%;
+  top: calc(50% + 1482px);
+  left: 10.15%;
+  height: 23px;
+}
+.contact1 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 4262px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
