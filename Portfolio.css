@@ -1,6 +1,7 @@
-.portfolio-child {
+.portfolio-child,
+.portfolio-item {
   position: absolute;
-  top: 211px;
+  top: 871px;
   left: 0;
   border-radius: var(--br-smi);
   background-color: var(--color-white);
@@ -8,9 +9,13 @@
   width: 1440px;
   height: 618px;
 }
-.collaboratively-designed-with {
+.portfolio-item {
+  top: 197px;
+}
+.collaboratively-designed-with,
+.i-took-on {
   position: absolute;
-  top: 376px;
+  top: 1036px;
   left: 120px;
   line-height: 26px;
   font-weight: 300;
@@ -18,12 +23,30 @@
   width: 601px;
   height: 72px;
 }
+.i-took-on {
+  top: 344px;
+  left: 724px;
+  width: 657px;
+  height: 144px;
+}
+.role {
+  margin: 0;
+  line-height: 22px;
+}
+.mentor-and-guide {
+  line-height: 28px;
+}
 .user-research-explorations-an {
   margin-bottom: 0;
 }
-.role-lead-designer-container {
+.mentor-and-guide-a-team-of-2-u {
+  margin: 0;
+  padding-left: var(--padding-2xl);
+}
+.role-lead-designer-container,
+.role-senior-manager-container {
   position: absolute;
-  top: 483px;
+  top: 1143px;
   left: 117px;
   font-size: var(--font-inherit);
   font-weight: 300;
@@ -32,9 +55,13 @@
   width: 600px;
   height: 205px;
 }
+.role-senior-manager-container {
+  top: 488px;
+  left: 721px;
+}
 .easyaim-11-1-icon {
   position: absolute;
-  top: 365px;
+  top: 1025px;
   left: 872px;
   width: 207px;
   height: 370px;
@@ -52,17 +79,22 @@
   object-fit: cover;
 }
 .image-2-wrapper {
-  top: 301px;
+  top: 961px;
   left: 1034.18px;
 }
-.easyaim-2019- {
+.career-architecture-framework,
+.interact-retail-easyaim {
   position: absolute;
-  top: 301px;
+  top: 961px;
   left: 120px;
   font-size: var(--font-size-13xl);
   line-height: 36px;
 }
-.ml-logo-1-icon7 {
+.career-architecture-framework {
+  top: 287px;
+  left: 724px;
+}
+.ml-logo-1-icon {
   position: absolute;
   top: 56px;
   left: 80px;
@@ -71,7 +103,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.group-child21 {
+.group-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,9 +122,10 @@
   width: 134px;
   height: 20px;
 }
-.rectangle-parent6 {
+.rectangle-container,
+.rectangle-group {
   position: absolute;
-  top: 681px;
+  top: 1341px;
   left: 117px;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
   width: 168px;
@@ -100,9 +133,13 @@
   cursor: pointer;
   font-size: var(--font-size-sm);
   color: var(--color-white);
-  border-radius: 20px
+  border-radius: 20px;
 }
-.portfolio-item {
+.rectangle-container {
+  top: 714px;
+  left: 721px;
+}
+.portfolio-inner {
   position: absolute;
   top: 108px;
   left: 1082px;
@@ -110,39 +147,39 @@
   width: 78px;
   height: 5px;
 }
-.about-me7 {
+.about-me1 {
   left: 633px;
   font-weight: 500;
   width: 120px;
   cursor: pointer;
 }
-.about-me7,
-.my-skill-set6,
-.portfolio13,
-.resume6 {
+.about-me1,
+.my-skill-set1,
+.portfolio2,
+.resume1 {
   position: absolute;
   top: 85px;
   text-align: center;
   display: inline-block;
 }
-.my-skill-set6 {
+.my-skill-set1 {
   left: 837px;
   width: 155px;
   cursor: pointer;
 }
-.portfolio13,
-.resume6 {
+.portfolio2,
+.resume1 {
   left: 1076px;
   width: 90px;
 }
-.resume6 {
+.resume1 {
   left: 1250px;
   width: 120px;
   cursor: pointer;
 }
-.portfolio-inner {
+.rectangle-div {
   position: absolute;
-  top: 868px;
+  top: 1528px;
   left: 0;
   border-radius: var(--br-smi);
   background-color: var(--color-white);
@@ -150,16 +187,16 @@
   width: 1440px;
   height: 618px;
 }
-.interact-retail-hq3 {
+.interact-retail-hq {
   position: absolute;
-  top: 955px;
+  top: 1615px;
   left: 720px;
   font-size: var(--font-size-13xl);
   line-height: 36px;
 }
 .transform-retail-spaces {
   position: absolute;
-  top: 1025px;
+  top: 1685px;
   left: 720px;
   line-height: 26px;
   font-weight: 300;
@@ -182,7 +219,7 @@
   width: 431.62px;
   height: 270.99px;
 }
-.group-child22,
+.group-child1,
 .image-4-parent {
   position: absolute;
   top: 0;
@@ -190,14 +227,14 @@
   width: 563.84px;
   height: 330px;
 }
-.group-child22 {
+.group-child1 {
   top: 5.32px;
   left: 135.11px;
   background-color: var(--color-white);
   width: 297.88px;
   height: 264.9px;
 }
-.retail-install-1-icon1 {
+.retail-install-1-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -205,31 +242,23 @@
   height: 270.22px;
   object-fit: cover;
 }
-.group-parent2,
-.rectangle-parent7 {
+.group-div,
+.group-parent {
   position: absolute;
   top: 21.28px;
   left: 64.89px;
   width: 432.99px;
   height: 270.22px;
-  border-radius: 20px
 }
-.group-parent2 {
-  top: 1014px;
+.group-parent {
+  top: 1674px;
   left: 80px;
   width: 563.84px;
   height: 330px;
 }
-.ux-and-ui {
-  line-height: 28px;
-}
-.mentor-and-guide-1-ux-and-1-ui {
-  margin: 0;
-  padding-left: var(--padding-2xl);
-}
 .role-lead-designer-container1 {
   position: absolute;
-  top: 1180px;
+  top: 1840px;
   left: 720px;
   font-size: var(--font-inherit);
   font-weight: 300;
@@ -238,9 +267,9 @@
   width: 626px;
   height: 168px;
 }
-.rectangle-parent8 {
+.rectangle-parent1 {
   position: absolute;
-  top: 1382px;
+  top: 2042px;
   left: 717px;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
   width: 168px;
@@ -252,7 +281,7 @@
 }
 .portfolio-child1 {
   position: absolute;
-  top: 1529px;
+  top: 2189px;
   left: 1px;
   border-radius: var(--br-smi);
   background-color: var(--color-white);
@@ -269,12 +298,12 @@
   width: 600px;
 }
 .the-application-empowers {
-  top: 1688px;
+  top: 2348px;
   line-height: 26px;
   height: 166px;
 }
 .role-lead-designer-container2 {
-  top: 1883px;
+  top: 2543px;
   font-size: var(--font-inherit);
   font-family: var(--font-inherit);
   height: 139px;
@@ -301,7 +330,7 @@
   width: 530px;
   height: 310.19px;
 }
-.iap-2-2-icon1,
+.iap-2-2-icon,
 .image-5-icon {
   position: absolute;
   top: 98.46px;
@@ -310,29 +339,29 @@
   height: 211.06px;
   object-fit: cover;
 }
-.iap-2-2-icon1 {
+.iap-2-2-icon {
   top: 119px;
   left: 468px;
   width: 95px;
   height: 168px;
 }
-.group-parent3 {
+.group-container {
   position: absolute;
-  top: 1682px;
+  top: 2342px;
   left: 779px;
   width: 567.24px;
   height: 310.19px;
 }
 .interact-pro-2018 {
   position: absolute;
-  top: 1619px;
+  top: 2279px;
   left: 121px;
   font-size: var(--font-size-13xl);
   line-height: 36px;
 }
-.rectangle-parent9 {
+.rectangle-parent2 {
   position: absolute;
-  top: 2051px;
+  top: 2711px;
   left: 121px;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
   width: 168px;
@@ -344,7 +373,7 @@
 }
 .portfolio-child2 {
   position: absolute;
-  top: 2190px;
+  top: 2850px;
   left: 1px;
   border-radius: var(--br-smi);
   background-color: var(--color-white);
@@ -354,7 +383,7 @@
 }
 .philips-hue-2019 {
   position: absolute;
-  top: 2277px;
+  top: 2937px;
   left: 717px;
   font-size: var(--font-size-13xl);
   line-height: 36px;
@@ -368,7 +397,7 @@
   object-fit: cover;
 }
 .image-2-icon1,
-.screenshot-2021-06-03-at-1081 {
+.screenshot-2021-06-03-at-108 {
   position: absolute;
   top: 0;
   left: 0;
@@ -376,7 +405,7 @@
   height: 428.29px;
   object-fit: cover;
 }
-.screenshot-2021-06-03-at-1081 {
+.screenshot-2021-06-03-at-108 {
   top: 41.47px;
   left: 8.29px;
   border-radius: var(--br-10xs);
@@ -399,12 +428,8 @@
   height: 428.47px;
 }
 .portfolio-inner1 {
-  top: 2277px;
+  top: 2937px;
   left: 223px;
-}
-.senior-designer-and {
-  margin: 0;
-  line-height: 22px;
 }
 .effortlessly-arrange-individua,
 .role-senior-designer-container {
@@ -415,19 +440,19 @@
   width: 600px;
 }
 .role-senior-designer-container {
-  top: 2524px;
+  top: 3184px;
   font-size: var(--font-inherit);
   font-family: var(--font-inherit);
   height: 139px;
 }
 .effortlessly-arrange-individua {
-  top: 2358px;
+  top: 3018px;
   line-height: 26px;
   height: 166px;
 }
-.rectangle-parent10 {
+.rectangle-parent3 {
   position: absolute;
-  top: 2686px;
+  top: 3346px;
   left: 721px;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
   width: 168px;
@@ -440,7 +465,7 @@
 .portfolio-child3,
 .portfolio-child4 {
   position: absolute;
-  top: 2851px;
+  top: 3511px;
   left: -1px;
   border-radius: var(--br-smi);
   background-color: var(--color-white);
@@ -449,11 +474,11 @@
   height: 618px;
 }
 .portfolio-child4 {
-  top: 3514px;
+  top: 4174px;
 }
 .role-senior-designer-container1 {
   position: absolute;
-  top: 3222px;
+  top: 3882px;
   left: 121px;
   font-size: var(--font-inherit);
   font-weight: 300;
@@ -464,14 +489,14 @@
 }
 .dynalite-control-2017 {
   position: absolute;
-  top: 2938px;
+  top: 3598px;
   left: 121px;
   font-size: var(--font-size-13xl);
   line-height: 36px;
 }
-.the-philips-dynalite1 {
+.the-philips-dynalite {
   position: absolute;
-  top: 3017px;
+  top: 3677px;
   left: 121px;
   line-height: 26px;
   font-weight: 300;
@@ -495,21 +520,21 @@
 }
 .screenshot-2021-06-03-at-1219-parent {
   position: absolute;
-  top: 2987px;
+  top: 3647px;
   left: 780px;
   width: 567.65px;
   height: 361px;
 }
 .service-tag-2016 {
   position: absolute;
-  top: 3599px;
+  top: 4259px;
   left: 717px;
   font-size: var(--font-size-13xl);
   line-height: 36px;
 }
 .role-senior-designer-container2 {
   position: absolute;
-  top: 3864px;
+  top: 4524px;
   left: 720px;
   font-size: var(--font-inherit);
   font-weight: 300;
@@ -520,7 +545,7 @@
 }
 .the-legendary-application {
   position: absolute;
-  top: 3673px;
+  top: 4333px;
   left: 721px;
   line-height: 26px;
   font-weight: 300;
@@ -528,9 +553,9 @@
   width: 662px;
   height: 191px;
 }
-.rectangle-parent11 {
+.rectangle-parent4 {
   position: absolute;
-  top: 3384px;
+  top: 4044px;
   left: 121px;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
   width: 168px;
@@ -540,7 +565,7 @@
   color: var(--color-white);
   border-radius: 20px
 }
-.screenshot-2021-06-05-at-12311 {
+.screenshot-2021-06-05-at-1231 {
   position: absolute;
   top: 64.46px;
   left: 0;
@@ -570,7 +595,7 @@
   width: 207.88px;
   height: 425px;
 }
-.screenshot-2021-06-03-at-1371 {
+.screenshot-2021-06-03-at-137 {
   position: absolute;
   top: 41.15px;
   left: 141.27px;
@@ -580,14 +605,14 @@
 }
 .screenshot-2021-06-05-at-1231-parent {
   position: absolute;
-  top: 3615px;
+  top: 4275px;
   left: 208px;
   width: 340.92px;
   height: 425px;
 }
-.rectangle-parent12 {
+.rectangle-parent5 {
   position: absolute;
-  top: 4021px;
+  top: 4681px;
   left: 717px;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
   width: 168px;
@@ -597,11 +622,27 @@
   color: var(--color-white);
   border-radius: 20px
 }
-.portfolio12 {
+.self-growth-and-personal-devel-icon {
+  position: absolute;
+  top: 226px;
+  left: 43px;
+  width: 650px;
+  height: 525px;
+  object-fit: cover;
+}
+.target-bullseye-logo-red-trans-icon {
+  position: absolute;
+  top: 367px;
+  left: 541px;
+  width: 67px;
+  height: 67px;
+  object-fit: cover;
+}
+.portfolio1 {
   position: relative;
   background-color: #f4f6f6;
   width: 100%;
-  height: 4212px;
+  height: 4868px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-xl);
