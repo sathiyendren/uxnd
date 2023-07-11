@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="./Portfolio.css" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Copse:wght@400&display=swap" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
   <style data-tag="default-style-sheet">
     html {
       font-family: Inter;
@@ -91,8 +93,18 @@
               <li>
                 <span class="mentor-and-guide">Collaboration with leaders across the globe</span>
               </li>
+
             </ul>
+            
           </div>
+          <div class="rectangle-container" id="groupContainer2">
+            <div class="group-item"></div>
+            <div class="read-full-case">Read full case study </div>
+          </div>
+          <div class="pass-req">
+            * password required to view this case study.
+          </div>
+
           <img class="easyaim-11-1-icon" alt="" src="./public/easyaim-11-1@2x.png" />
 
           <div class="image-2-wrapper">
@@ -106,10 +118,7 @@
             <div class="group-item"></div>
             <div class="read-full-case">Read full case study</div>
           </div>
-          <div class="rectangle-container" id="groupContainer2">
-            <div class="group-item"></div>
-            <div class="read-full-case">Read full case study</div>
-          </div>
+
           <div class="portfolio-inner"></div>
           <div class="about-me1" id="aboutMeText">About Me</div>
           <div class="my-skill-set1" id="mySkillSet">My Skill set</div>
@@ -344,7 +353,12 @@
     var groupContainer2 = document.getElementById("groupContainer2");
     if (groupContainer2) {
       groupContainer2.addEventListener("click", function (e) {
-        window.location.href = "./CareerArchitecture.html";
+        let access = prompt("To access the content, kindly provide the password. For password assistance, you can reach out to iammega@gmail.com.", "");
+
+        if (window.btoa(access) === 'bWVkZXMyMDIz') {
+          window.location.href = "./CareerArchitecture.html";
+        }
+
       });
     }
 

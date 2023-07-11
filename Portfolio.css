@@ -149,7 +149,6 @@
 }
 .about-me1 {
   left: 633px;
-  font-weight: 500;
   width: 120px;
   cursor: pointer;
 }
@@ -648,4 +647,12 @@
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-roboto);
+}
+.pass-req {
+  font-size: 11px;
+    color: red;
+    font-weight: 500;
+    top: 764px;
+    left: 721px;
+    position: absolute
 }
