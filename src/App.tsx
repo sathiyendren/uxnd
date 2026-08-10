@@ -12,7 +12,7 @@ import Resume from './pages/Resume'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/uxnd">
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />

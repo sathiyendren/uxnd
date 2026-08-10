@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+//
 // ─── Site-wide configuration ────────────────────────────────────────────────
 // All content, navigation, portfolio projects and case study sections live here.
 // To update the portfolio, edit the `portfolio` array.
@@ -70,6 +72,8 @@ export interface Project {
 
 // ─── Person ─────────────────────────────────────────────────────────────────
 
+const BASE_URL = import.meta.env.BASE_URL
+
 export const person = {
   name: 'Megalatha Sankaraiya',
   shortName: 'Megalatha S',
@@ -79,9 +83,9 @@ export const person = {
   phone: '+1 404 740 4814',
   website: 'www.uxnd.in',
   linkedin: 'https://www.linkedin.com/in/megalatha-s-0a679816/',
-  logo: '/ml-logo-11@2x.png',
-  photo: '/mega-1@2x.png',
-  resumePdf: '/Megalatha_Sankaraiya_UX_Designer_Resume.pdf',
+  logo: `${BASE_URL}ml-logo-11@2x.png`,
+  photo: `${BASE_URL}mega-1@2x.png`,
+  resumePdf: `${BASE_URL}Megalatha_Sankaraiya_UX_Designer_Resume.pdf`,
 }
 
 // ─── Navigation ─────────────────────────────────────────────────────────────
@@ -134,7 +138,7 @@ export const about = {
     {
       name: 'LIEVEN VERDIN',
       title: 'Digital Design Lead',
-      photo: '/mask-group@2x.png',
+      photo: `${BASE_URL}mask-group@2x.png`,
       initials: 'LV',
       avatarColor: '#4A7C8E',
       linkedinUrl: 'https://www.linkedin.com/in/lieven-verdin-149412/',
@@ -144,7 +148,7 @@ export const about = {
     {
       name: 'LAURA CUNNINGHAM',
       title: 'Global Design Lead',
-      photo: '/mask-group2@2x.png',
+      photo: `${BASE_URL}mask-group2@2x.png`,
       initials: 'LC',
       avatarColor: '#7C4A8E',
       linkedinUrl: 'https://www.linkedin.com/in/lauracu/',
@@ -154,7 +158,7 @@ export const about = {
     {
       name: 'SANJEEV KUMAR PS',
       title: 'Director of Engineering and Site Leader',
-      photo: '/mask-group3@2x.png',
+      photo: `${BASE_URL}mask-group3@2x.png`,
       initials: 'SK',
       avatarColor: '#2E7D57',
       linkedinUrl: 'https://www.linkedin.com/in/sanjeevps/',
@@ -164,7 +168,7 @@ export const about = {
     {
       name: 'JULIJA BABRE',
       title: 'Enterprise Product Marketing',
-      photo: '/mask-group1@2x.png',
+      photo: `${BASE_URL}mask-group1@2x.png`,
       initials: 'JB',
       avatarColor: '#8E4A4A',
       linkedinUrl: 'https://www.linkedin.com/in/julijababre/',
@@ -448,7 +452,7 @@ export const portfolio: Project[] = [
       'Led Rhythm Core, a design system serving 12 designers across 5 product domains',
       'Planned and ran moderated usability testing to validate the agentic model',
     ],
-    thumbnail: '/cloudwatch-omni-launchpad.png',
+    thumbnail: `${BASE_URL}cloudwatch-omni-launchpad.png`,
     thumbnailFit: 'cover',
     passwordProtected: true,
     passwordHash: 'YXdzMjAyNg==',
@@ -486,7 +490,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/cloudwatch-omni-launchpad.png', alt: 'Agentic Launchpad — proactive insights, fleet health, recent sessions' }],
+        images: [{ src: `${BASE_URL}cloudwatch-omni-launchpad.png`, alt: 'Agentic Launchpad — proactive insights, fleet health, recent sessions' }],
       },
       {
         type: 'text',
@@ -495,7 +499,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/cloudwatch-omni-session.png', alt: 'Session workspace — service topology, unified chat, and canvas' }],
+        images: [{ src: `${BASE_URL}cloudwatch-omni-session.png`, alt: 'Session workspace — service topology, unified chat, and canvas' }],
       },
       {
         type: 'bullets',
@@ -508,7 +512,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/cloudwatch-omni-collab.png', alt: 'V3 collaboration model — AI suggestion card with confirm/dismiss actions' }],
+        images: [{ src: `${BASE_URL}cloudwatch-omni-collab.png`, alt: 'V3 collaboration model — AI suggestion card with confirm/dismiss actions' }],
       },
       {
         type: 'text',
@@ -517,7 +521,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/cloudwatch-omni-topology.png', alt: 'Service topology — blast radius and integrated signal panel' }],
+        images: [{ src: `${BASE_URL}cloudwatch-omni-topology.png`, alt: 'Service topology — blast radius and integrated signal panel' }],
       },
       {
         type: 'text',
@@ -526,7 +530,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/cloudwatch-omni-rhythm-core.png', alt: 'Rhythm Core — components, tokens, and multi-domain usage' }],
+        images: [{ src: `${BASE_URL}cloudwatch-omni-rhythm-core.png`, alt: 'Rhythm Core — components, tokens, and multi-domain usage' }],
       },
       {
         type: 'bullets',
@@ -556,7 +560,7 @@ export const portfolio: Project[] = [
       'UX design: Brainstorming, Facilitation, Data Analysis',
       'User Testing',
     ],
-    thumbnail: '/zarawindowsoxfordstreetlondon03-1@2x.png',
+    thumbnail: `${BASE_URL}zarawindowsoxfordstreetlondon03-1@2x.png`,
     thumbnailFit: 'cover',
     nextProject: 'retailhq',
     prevProject: 'cloudwatch-omni',
@@ -573,7 +577,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/zarawindowsoxfordstreetlondon03-1@2x.png', alt: 'Zara shop window — Oxford Street, London' }],
+        images: [{ src: `${BASE_URL}zarawindowsoxfordstreetlondon03-1@2x.png`, alt: 'Zara shop window — Oxford Street, London' }],
       },
       {
         type: 'challenge',
@@ -617,8 +621,8 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'SYSTEM ARCHITECTURE',
         images: [
-          { src: '/image-14@2x.png', alt: 'System architecture diagram' },
-          { src: '/image-18@2x.png', alt: 'Architecture overview' },
+          { src: `${BASE_URL}image-14@2x.png`, alt: 'System architecture diagram' },
+          { src: `${BASE_URL}image-18@2x.png`, alt: 'Architecture overview' },
         ],
       },
       {
@@ -630,9 +634,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'COMPETITOR REFERENCES',
         images: [
-          { src: '/image-31@2x.png', alt: 'Flos', caption: 'Flos' },
-          { src: '/image-32@2x.png', alt: 'Alight', caption: 'Alight' },
-          { src: '/image-36@2x.png', alt: 'Rhino Arc II', caption: 'Rhino Arc II' },
+          { src: `${BASE_URL}image-31@2x.png`, alt: 'Flos', caption: 'Flos' },
+          { src: `${BASE_URL}image-32@2x.png`, alt: 'Alight', caption: 'Alight' },
+          { src: `${BASE_URL}image-36@2x.png`, alt: 'Rhino Arc II', caption: 'Rhino Arc II' },
         ],
       },
       {
@@ -644,9 +648,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'PERSONAS',
         images: [
-          { src: '/gettyimages1229319543612x612-1@2x.png', alt: 'Visual merchandiser persona' },
-          { src: '/screenshot-20181124-at-629@2x.png', alt: 'User research notes' },
-          { src: '/screenshot-20181124-at-644@2x.png', alt: 'Research session' },
+          { src: `${BASE_URL}gettyimages1229319543612x612-1@2x.png`, alt: 'Visual merchandiser persona' },
+          { src: `${BASE_URL}screenshot-20181124-at-629@2x.png`, alt: 'User research notes' },
+          { src: `${BASE_URL}screenshot-20181124-at-644@2x.png`, alt: 'Research session' },
         ],
       },
       {
@@ -657,7 +661,7 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         title: 'STORYBOARD',
-        images: [{ src: '/image-39@2x.png', alt: 'Storyboard' }],
+        images: [{ src: `${BASE_URL}image-39@2x.png`, alt: 'Storyboard' }],
       },
       {
         type: 'text',
@@ -668,17 +672,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WIDGET EXPLORATIONS',
         images: [
-          { src: '/image-20@2x.png', alt: 'Widget option 1 — Button-based', caption: 'Option 1: Button-based — "Hard to understand which arrows are for pan and which for tilt"' },
-          { src: '/image-19@2x.png', alt: 'Widget option 2 — Semi-circle drag', caption: 'Option 2: Semi-circle drag — "Precision control is missing"' },
-          { src: '/image-22@2x.png', alt: 'Widget option 3 — Center circle drag', caption: 'Option 3: Center circle drag — "Hard to establish hand-eye coordination"' },
+          { src: `${BASE_URL}image-20@2x.png`, alt: 'Widget option 1 — Button-based', caption: 'Option 1: Button-based — "Hard to understand which arrows are for pan and which for tilt"' },
+          { src: `${BASE_URL}image-19@2x.png`, alt: 'Widget option 2 — Semi-circle drag', caption: 'Option 2: Semi-circle drag — "Precision control is missing"' },
+          { src: `${BASE_URL}image-22@2x.png`, alt: 'Widget option 3 — Center circle drag', caption: 'Option 3: Center circle drag — "Hard to establish hand-eye coordination"' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/image-16@2x.png', alt: 'Widget option 4 — Slider-based', caption: 'Option 4: Slider-based — "UI does represent the actual position of the beam"' },
-          { src: '/image-17@2x.png', alt: 'Widget option 5 — Gyroscopic', caption: 'Option 5: Gyroscopic — "UI does NOT represent the actual position of the beam"' },
-          { src: '/easyaimwheel-1@2x.png', alt: 'Widget final — Wheel', caption: 'Final: Wheel widget — selected for its intuitive pan/tilt control' },
+          { src: `${BASE_URL}image-16@2x.png`, alt: 'Widget option 4 — Slider-based', caption: 'Option 4: Slider-based — "UI does represent the actual position of the beam"' },
+          { src: `${BASE_URL}image-17@2x.png`, alt: 'Widget option 5 — Gyroscopic', caption: 'Option 5: Gyroscopic — "UI does NOT represent the actual position of the beam"' },
+          { src: `${BASE_URL}easyaimwheel-1@2x.png`, alt: 'Widget final — Wheel', caption: 'Final: Wheel widget — selected for its intuitive pan/tilt control' },
         ],
       },
       {
@@ -690,9 +694,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'MIND MAP',
         images: [
-          { src: '/image-42@2x.png', alt: 'Mind map 1' },
-          { src: '/image-43@2x.png', alt: 'Mind map 2' },
-          { src: '/image-44@2x.png', alt: 'Mind map 3' },
+          { src: `${BASE_URL}image-42@2x.png`, alt: 'Mind map 1' },
+          { src: `${BASE_URL}image-43@2x.png`, alt: 'Mind map 2' },
+          { src: `${BASE_URL}image-44@2x.png`, alt: 'Mind map 3' },
         ],
       },
       {
@@ -704,43 +708,43 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WIREFRAMES',
         images: [
-          { src: '/pencilsketch1-2@2x.png', alt: 'Pencil sketch wireframes' },
-          { src: '/image-57@2x.png', alt: 'Wireframe detail' },
-          { src: '/image-58@2x.png', alt: 'Wireframe screens' },
+          { src: `${BASE_URL}pencilsketch1-2@2x.png`, alt: 'Pencil sketch wireframes' },
+          { src: `${BASE_URL}image-57@2x.png`, alt: 'Wireframe detail' },
+          { src: `${BASE_URL}image-58@2x.png`, alt: 'Wireframe screens' },
         ],
       },
       {
         type: 'images',
         title: 'HIGH FIDELITY SCREENS',
         images: [
-          { src: '/image-61@2x.png', alt: 'App screen — shop window selection' },
-          { src: '/image-62@2x.png', alt: 'App screen — spot listing' },
-          { src: '/image-63@2x.png', alt: 'App screen — spot detail' },
+          { src: `${BASE_URL}image-61@2x.png`, alt: 'App screen — shop window selection' },
+          { src: `${BASE_URL}image-62@2x.png`, alt: 'App screen — spot listing' },
+          { src: `${BASE_URL}image-63@2x.png`, alt: 'App screen — spot detail' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/image-68@2x.png', alt: 'App screen — widget view' },
-          { src: '/image-69@2x.png', alt: 'App screen — pan/tilt widget' },
-          { src: '/image-70@2x.png', alt: 'App screen — controls' },
+          { src: `${BASE_URL}image-68@2x.png`, alt: 'App screen — widget view' },
+          { src: `${BASE_URL}image-69@2x.png`, alt: 'App screen — pan/tilt widget' },
+          { src: `${BASE_URL}image-70@2x.png`, alt: 'App screen — controls' },
         ],
       },
       {
         type: 'images',
         title: 'THE FINAL SCREENS',
         images: [
-          { src: '/image-81@2x.png', alt: 'Final screen 1' },
-          { src: '/image-82@2x.png', alt: 'Final screen 2' },
-          { src: '/image-86@2x.png', alt: 'Final screen 3' },
+          { src: `${BASE_URL}image-81@2x.png`, alt: 'Final screen 1' },
+          { src: `${BASE_URL}image-82@2x.png`, alt: 'Final screen 2' },
+          { src: `${BASE_URL}image-86@2x.png`, alt: 'Final screen 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/image-83@2x.png', alt: 'Final screen 4' },
-          { src: '/image-84@2x.png', alt: 'Final screen 5' },
-          { src: '/image-85@2x.png', alt: 'Final screen 6' },
+          { src: `${BASE_URL}image-83@2x.png`, alt: 'Final screen 4' },
+          { src: `${BASE_URL}image-84@2x.png`, alt: 'Final screen 5' },
+          { src: `${BASE_URL}image-85@2x.png`, alt: 'Final screen 6' },
         ],
       },
       {
@@ -752,8 +756,8 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'TESTING SESSION',
         images: [
-          { src: '/easyaim-6-1@2x.png', alt: 'Demo testing session' },
-          { src: '/p6@2x.png', alt: 'Testing with ZARA team' },
+          { src: `${BASE_URL}easyaim-6-1@2x.png`, alt: 'Demo testing session' },
+          { src: `${BASE_URL}p6@2x.png`, alt: 'Testing with ZARA team' },
         ],
       },
       {
@@ -784,7 +788,7 @@ export const portfolio: Project[] = [
       'User Research & Testing',
       'UX and UI design',
     ],
-    thumbnail: '/retail-install-1@2x.png',
+    thumbnail: `${BASE_URL}retail-install-1@2x.png`,
     nextProject: 'interactpro',
     prevProject: 'easyaim',
     sections: [
@@ -795,7 +799,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/problem-statement-1@2x.png', alt: 'Problem statement' }],
+        images: [{ src: `${BASE_URL}problem-statement-1@2x.png`, alt: 'Problem statement' }],
       },
       {
         type: 'challenge',
@@ -816,7 +820,7 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         title: 'SOLUTION OVERVIEW',
-        images: [{ src: '/solution-big-full-1@2x.png', alt: 'Solution overview' }],
+        images: [{ src: `${BASE_URL}solution-big-full-1@2x.png`, alt: 'Solution overview' }],
       },
       {
         type: 'text',
@@ -827,16 +831,16 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'ECOSYSTEM MAP',
         images: [
-          { src: '/hq1-1@2x.png', alt: 'Retail ecosystem map' },
-          { src: '/hq4-1@2x.png', alt: 'Ecosystem detail' },
+          { src: `${BASE_URL}hq1-1@2x.png`, alt: 'Retail ecosystem map' },
+          { src: `${BASE_URL}hq4-1@2x.png`, alt: 'Ecosystem detail' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/hq5-1@2x.png', alt: 'Retail HQ context 1' },
-          { src: '/hq6-1@2x.png', alt: 'Retail HQ context 2' },
-          { src: '/hq7@2x.png', alt: 'Retail HQ context 3' },
+          { src: `${BASE_URL}hq5-1@2x.png`, alt: 'Retail HQ context 1' },
+          { src: `${BASE_URL}hq6-1@2x.png`, alt: 'Retail HQ context 2' },
+          { src: `${BASE_URL}hq7@2x.png`, alt: 'Retail HQ context 3' },
         ],
       },
       {
@@ -848,17 +852,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'CO-CREATE DESIGN THINKING WORKSHOPS',
         images: [
-          { src: '/image-112@2x.png', alt: 'Design thinking workshop' },
-          { src: '/image-113@2x.png', alt: 'Workshop session' },
-          { src: '/image-114@2x.png', alt: 'Workshop activities' },
+          { src: `${BASE_URL}image-112@2x.png`, alt: 'Design thinking workshop' },
+          { src: `${BASE_URL}image-113@2x.png`, alt: 'Workshop session' },
+          { src: `${BASE_URL}image-114@2x.png`, alt: 'Workshop activities' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/image-115@2x.png', alt: 'Empathy mapping' },
-          { src: '/image-116@2x.png', alt: 'Clustering insights' },
-          { src: '/image-117@2x.png', alt: 'Need statements' },
+          { src: `${BASE_URL}image-115@2x.png`, alt: 'Empathy mapping' },
+          { src: `${BASE_URL}image-116@2x.png`, alt: 'Clustering insights' },
+          { src: `${BASE_URL}image-117@2x.png`, alt: 'Need statements' },
         ],
       },
       {
@@ -870,87 +874,87 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'PERSONA MAPS',
         images: [
-          { src: '/image-88@2x.png', alt: 'Formula Manager persona' },
-          { src: '/image-89@2x.png', alt: 'Facility Manager persona' },
+          { src: `${BASE_URL}image-88@2x.png`, alt: 'Formula Manager persona' },
+          { src: `${BASE_URL}image-89@2x.png`, alt: 'Facility Manager persona' },
         ],
       },
       {
         type: 'images',
         title: 'EMPATHY MAPPING + AS-IS SCENARIO',
         images: [
-          { src: '/image-91@2x.png', alt: 'Empathy map' },
-          { src: '/image-92@2x.png', alt: 'As-is scenario' },
-          { src: '/image-93@2x.png', alt: 'Scenario mapping' },
+          { src: `${BASE_URL}image-91@2x.png`, alt: 'Empathy map' },
+          { src: `${BASE_URL}image-92@2x.png`, alt: 'As-is scenario' },
+          { src: `${BASE_URL}image-93@2x.png`, alt: 'Scenario mapping' },
         ],
       },
       {
         type: 'images',
         title: 'TO-BE USER JOURNEY',
         images: [
-          { src: '/01flow-1@2x.png', alt: 'To-be user journey flow' },
-          { src: '/image-94@2x.png', alt: 'Journey detail' },
+          { src: `${BASE_URL}01flow-1@2x.png`, alt: 'To-be user journey flow' },
+          { src: `${BASE_URL}image-94@2x.png`, alt: 'Journey detail' },
         ],
       },
       {
         type: 'images',
         title: 'BIG IDEAS + HILL STATEMENTS',
         images: [
-          { src: '/image-96@2x.png', alt: 'Big ideas' },
-          { src: '/image-98@2x.png', alt: 'Hill statements' },
-          { src: '/image-99@2x.png', alt: 'Need statements' },
+          { src: `${BASE_URL}image-96@2x.png`, alt: 'Big ideas' },
+          { src: `${BASE_URL}image-98@2x.png`, alt: 'Hill statements' },
+          { src: `${BASE_URL}image-99@2x.png`, alt: 'Need statements' },
         ],
       },
       {
         type: 'images',
         title: 'WIREFRAMING',
         images: [
-          { src: '/image-100@2x.png', alt: 'Wireframe 1' },
-          { src: '/image-101@2x.png', alt: 'Wireframe 2' },
-          { src: '/image-102@2x.png', alt: 'Wireframe 3' },
+          { src: `${BASE_URL}image-100@2x.png`, alt: 'Wireframe 1' },
+          { src: `${BASE_URL}image-101@2x.png`, alt: 'Wireframe 2' },
+          { src: `${BASE_URL}image-102@2x.png`, alt: 'Wireframe 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/image-103@2x.png', alt: 'Wireframe 4' },
-          { src: '/image-104@2x.png', alt: 'Wireframe 5' },
-          { src: '/image-2-1@2x.png', alt: 'Wireframe 6' },
+          { src: `${BASE_URL}image-103@2x.png`, alt: 'Wireframe 4' },
+          { src: `${BASE_URL}image-104@2x.png`, alt: 'Wireframe 5' },
+          { src: `${BASE_URL}image-2-1@2x.png`, alt: 'Wireframe 6' },
         ],
       },
       {
         type: 'images',
         title: 'UI SCREENS — FORMAT & STORE SELECTION',
         images: [
-          { src: '/image-121@2x.png', alt: 'Format selection' },
-          { src: '/image-122@2x.png', alt: 'Store list' },
-          { src: '/image-123@2x.png', alt: 'Store overview' },
+          { src: `${BASE_URL}image-121@2x.png`, alt: 'Format selection' },
+          { src: `${BASE_URL}image-122@2x.png`, alt: 'Store list' },
+          { src: `${BASE_URL}image-123@2x.png`, alt: 'Store overview' },
         ],
       },
       {
         type: 'images',
         title: 'UI SCREENS — SCENE MANAGEMENT',
         images: [
-          { src: '/image-124@2x.png', alt: 'Scene management' },
-          { src: '/image-125@2x.png', alt: 'Scene editor' },
-          { src: '/image-126@2x.png', alt: 'Zone lighting' },
+          { src: `${BASE_URL}image-124@2x.png`, alt: 'Scene management' },
+          { src: `${BASE_URL}image-125@2x.png`, alt: 'Scene editor' },
+          { src: `${BASE_URL}image-126@2x.png`, alt: 'Zone lighting' },
         ],
       },
       {
         type: 'images',
         title: 'UI SCREENS — DEPLOY & MONITOR',
         images: [
-          { src: '/image-128@2x.png', alt: 'Deploy to stores' },
-          { src: '/image-129@2x.png', alt: 'Deployment status' },
-          { src: '/image-130@2x.png', alt: 'Store performance dashboard' },
+          { src: `${BASE_URL}image-128@2x.png`, alt: 'Deploy to stores' },
+          { src: `${BASE_URL}image-129@2x.png`, alt: 'Deployment status' },
+          { src: `${BASE_URL}image-130@2x.png`, alt: 'Store performance dashboard' },
         ],
       },
       {
         type: 'images',
         title: 'FEATURED CUSTOMERS',
         images: [
-          { src: '/hq8@2x.png', alt: 'Featured customer 1' },
-          { src: '/hq9@2x.png', alt: 'Featured customer 2' },
-          { src: '/hq10@2x.png', alt: 'Featured customer 3' },
+          { src: `${BASE_URL}hq8@2x.png`, alt: 'Featured customer 1' },
+          { src: `${BASE_URL}hq9@2x.png`, alt: 'Featured customer 2' },
+          { src: `${BASE_URL}hq10@2x.png`, alt: 'Featured customer 3' },
         ],
       },
       {
@@ -979,7 +983,7 @@ export const portfolio: Project[] = [
       'UX design',
       'User Testing',
     ],
-    thumbnail: '/screenshot-20210602-at-1143-11@2x.png',
+    thumbnail: `${BASE_URL}screenshot-20210602-at-1143-11@2x.png`,
     thumbnailFit: 'cover',
     nextProject: 'philipshue',
     prevProject: 'retailhq',
@@ -987,8 +991,8 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         images: [
-          { src: '/interact-pro-2-1@2x.png', alt: 'Interact Pro app' },
-          { src: '/interact-pro-2-2@2x.png', alt: 'Interact Pro context' },
+          { src: `${BASE_URL}interact-pro-2-1@2x.png`, alt: 'Interact Pro app' },
+          { src: `${BASE_URL}interact-pro-2-2@2x.png`, alt: 'Interact Pro context' },
         ],
       },
       {
@@ -1020,9 +1024,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'RESEARCH INPUTS',
         images: [
-          { src: '/iap-1-1@2x.png', alt: 'Research input 1' },
-          { src: '/iap-2-2@2x.png', alt: 'Research input 2' },
-          { src: '/iap-3-1@2x.png', alt: 'Research input 3' },
+          { src: `${BASE_URL}iap-1-1@2x.png`, alt: 'Research input 1' },
+          { src: `${BASE_URL}iap-2-2@2x.png`, alt: 'Research input 2' },
+          { src: `${BASE_URL}iap-3-1@2x.png`, alt: 'Research input 3' },
         ],
       },
       {
@@ -1034,17 +1038,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WORKSHOP SESSION',
         images: [
-          { src: '/iap-4-1@2x.png', alt: 'Workshop activity 1' },
-          { src: '/iap-5@2x.png', alt: 'Workshop activity 2' },
-          { src: '/iap-6@2x.png', alt: 'Workshop activity 3' },
+          { src: `${BASE_URL}iap-4-1@2x.png`, alt: 'Workshop activity 1' },
+          { src: `${BASE_URL}iap-5@2x.png`, alt: 'Workshop activity 2' },
+          { src: `${BASE_URL}iap-6@2x.png`, alt: 'Workshop activity 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/iap-7@2x.png', alt: 'Workshop output 1' },
-          { src: '/iap-8@2x.png', alt: 'Workshop output 2' },
-          { src: '/iap-9@2x.png', alt: 'Workshop output 3' },
+          { src: `${BASE_URL}iap-7@2x.png`, alt: 'Workshop output 1' },
+          { src: `${BASE_URL}iap-8@2x.png`, alt: 'Workshop output 2' },
+          { src: `${BASE_URL}iap-9@2x.png`, alt: 'Workshop output 3' },
         ],
       },
       {
@@ -1056,25 +1060,25 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'IMPROVED FLOW SCREENS',
         images: [
-          { src: '/iap-10@2x.png', alt: 'Improved flow screen 1' },
-          { src: '/iap-11@2x.png', alt: 'Improved flow screen 2' },
-          { src: '/iap-12@2x.png', alt: 'Improved flow screen 3' },
+          { src: `${BASE_URL}iap-10@2x.png`, alt: 'Improved flow screen 1' },
+          { src: `${BASE_URL}iap-11@2x.png`, alt: 'Improved flow screen 2' },
+          { src: `${BASE_URL}iap-12@2x.png`, alt: 'Improved flow screen 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/iap-13@2x.png', alt: 'Flow screen 4' },
-          { src: '/iap-14@2x.png', alt: 'Flow screen 5' },
-          { src: '/iap-15@2x.png', alt: 'Flow screen 6' },
+          { src: `${BASE_URL}iap-13@2x.png`, alt: 'Flow screen 4' },
+          { src: `${BASE_URL}iap-14@2x.png`, alt: 'Flow screen 5' },
+          { src: `${BASE_URL}iap-15@2x.png`, alt: 'Flow screen 6' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/iap-16@2x.png', alt: 'Flow screen 7' },
-          { src: '/screenshot-20210603-at-108-1@2x.png', alt: 'App overview screen' },
-          { src: '/image-21@2x.png', alt: 'App detail screen' },
+          { src: `${BASE_URL}iap-16@2x.png`, alt: 'Flow screen 7' },
+          { src: `${BASE_URL}screenshot-20210603-at-108-1@2x.png`, alt: 'App overview screen' },
+          { src: `${BASE_URL}image-21@2x.png`, alt: 'App detail screen' },
         ],
       },
     ],
@@ -1094,7 +1098,7 @@ export const portfolio: Project[] = [
       'Composting the Data',
       'UX design',
     ],
-    thumbnail: '/hue5@2x.png',
+    thumbnail: `${BASE_URL}hue5@2x.png`,
     thumbnailFit: 'contain',
     nextProject: 'dynalite',
     prevProject: 'interactpro',
@@ -1102,8 +1106,8 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         images: [
-          { src: '/hue-1@2x.png', alt: 'Philips Hue app' },
-          { src: '/hue3-1@2x.png', alt: 'Hue research overview' },
+          { src: `${BASE_URL}hue-1@2x.png`, alt: 'Philips Hue app' },
+          { src: `${BASE_URL}hue3-1@2x.png`, alt: 'Hue research overview' },
         ],
       },
       {
@@ -1135,24 +1139,24 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'RESEARCH SYNTHESIS',
         images: [
-          { src: '/hue3-1@2x.png', alt: 'Affinity clustering — Notes, Cluster, Feature Ideation, Prioritization' },
+          { src: `${BASE_URL}hue3-1@2x.png`, alt: 'Affinity clustering — Notes, Cluster, Feature Ideation, Prioritization' },
         ],
       },
       {
         type: 'images',
         title: 'USER JOURNEY + RAPID PROTOTYPING',
         images: [
-          { src: '/hue1-1@2x.png', alt: 'User journey map' },
-          { src: '/hue2-1@2x.png', alt: 'Rapid prototype sketches' },
+          { src: `${BASE_URL}hue1-1@2x.png`, alt: 'User journey map' },
+          { src: `${BASE_URL}hue2-1@2x.png`, alt: 'Rapid prototype sketches' },
         ],
       },
       {
         type: 'images',
         title: 'APP SCREENS',
         images: [
-          { src: '/hue4@2x.png', alt: 'Hue app screen 1' },
-          { src: '/hue5@2x.png', alt: 'Hue app screen 2' },
-          { src: '/hue6@2x.png', alt: 'Hue app screen 3' },
+          { src: `${BASE_URL}hue4@2x.png`, alt: 'Hue app screen 1' },
+          { src: `${BASE_URL}hue5@2x.png`, alt: 'Hue app screen 2' },
+          { src: `${BASE_URL}hue6@2x.png`, alt: 'Hue app screen 3' },
         ],
       },
     ],
@@ -1168,15 +1172,15 @@ export const portfolio: Project[] = [
       'Provides convenient control over lighting, allowing users to create personalized lighting experiences that enhance the ambiance and functionality of their spaces.',
     role: 'Senior Designer and Researcher',
     responsibilities: ['Information architecture', 'User Interviews', 'UX Design'],
-    thumbnail: '/screenshot-20210603-at-1219@2x.png',
+    thumbnail: `${BASE_URL}screenshot-20210603-at-1219@2x.png`,
     nextProject: 'servicetag',
     prevProject: 'philipshue',
     sections: [
       {
         type: 'images',
         images: [
-          { src: '/dyn1@2x.png', alt: 'Dynalite Control app' },
-          { src: '/dyn2@2x.png', alt: 'Dynalite app context' },
+          { src: `${BASE_URL}dyn1@2x.png`, alt: 'Dynalite Control app' },
+          { src: `${BASE_URL}dyn2@2x.png`, alt: 'Dynalite app context' },
         ],
       },
       {
@@ -1193,17 +1197,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'STORYBOARDS',
         images: [
-          { src: '/dyn3@2x.png', alt: 'Storyboard 1' },
-          { src: '/dyn4@2x.png', alt: 'Storyboard 2' },
-          { src: '/dyn5@2x.png', alt: 'Storyboard 3' },
+          { src: `${BASE_URL}dyn3@2x.png`, alt: 'Storyboard 1' },
+          { src: `${BASE_URL}dyn4@2x.png`, alt: 'Storyboard 2' },
+          { src: `${BASE_URL}dyn5@2x.png`, alt: 'Storyboard 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/dyn6@2x.png', alt: 'Storyboard 4' },
-          { src: '/dyn8@2x.png', alt: 'Storyboard 5' },
-          { src: '/dyn9@2x.png', alt: 'Storyboard 6' },
+          { src: `${BASE_URL}dyn6@2x.png`, alt: 'Storyboard 4' },
+          { src: `${BASE_URL}dyn8@2x.png`, alt: 'Storyboard 5' },
+          { src: `${BASE_URL}dyn9@2x.png`, alt: 'Storyboard 6' },
         ],
       },
       {
@@ -1215,17 +1219,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'TASK FLOWS',
         images: [
-          { src: '/dyn10@2x.png', alt: 'Task flow 1' },
-          { src: '/dyn11@2x.png', alt: 'Task flow 2' },
-          { src: '/dyn12@2x.png', alt: 'Task flow 3' },
+          { src: `${BASE_URL}dyn10@2x.png`, alt: 'Task flow 1' },
+          { src: `${BASE_URL}dyn11@2x.png`, alt: 'Task flow 2' },
+          { src: `${BASE_URL}dyn12@2x.png`, alt: 'Task flow 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/dyn13@2x.png', alt: 'Task flow 4' },
-          { src: '/dyn14@2x.png', alt: 'Task flow 5' },
-          { src: '/dyn15@2x.png', alt: 'Task flow 6' },
+          { src: `${BASE_URL}dyn13@2x.png`, alt: 'Task flow 4' },
+          { src: `${BASE_URL}dyn14@2x.png`, alt: 'Task flow 5' },
+          { src: `${BASE_URL}dyn15@2x.png`, alt: 'Task flow 6' },
         ],
       },
       {
@@ -1237,49 +1241,49 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WIREFRAMING',
         images: [
-          { src: '/dyn16@2x.png', alt: 'Wireframe 1' },
-          { src: '/dyn17@2x.png', alt: 'Wireframe 2' },
-          { src: '/dyn18@2x.png', alt: 'Wireframe 3' },
+          { src: `${BASE_URL}dyn16@2x.png`, alt: 'Wireframe 1' },
+          { src: `${BASE_URL}dyn17@2x.png`, alt: 'Wireframe 2' },
+          { src: `${BASE_URL}dyn18@2x.png`, alt: 'Wireframe 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/dyn19@2x.png', alt: 'Wireframe 4' },
-          { src: '/dyn20@2x.png', alt: 'Wireframe 5' },
-          { src: '/dyn21@2x.png', alt: 'Wireframe 6' },
+          { src: `${BASE_URL}dyn19@2x.png`, alt: 'Wireframe 4' },
+          { src: `${BASE_URL}dyn20@2x.png`, alt: 'Wireframe 5' },
+          { src: `${BASE_URL}dyn21@2x.png`, alt: 'Wireframe 6' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/dyn22@2x.png', alt: 'Wireframe 7' },
-          { src: '/6@2x.png', alt: 'Wireframe 8' },
-          { src: '/7@2x.png', alt: 'Wireframe 9' },
+          { src: `${BASE_URL}dyn22@2x.png`, alt: 'Wireframe 7' },
+          { src: `${BASE_URL}6@2x.png`, alt: 'Wireframe 8' },
+          { src: `${BASE_URL}7@2x.png`, alt: 'Wireframe 9' },
         ],
       },
       {
         type: 'images',
         title: 'FINAL APP SCREENS',
         images: [
-          { src: '/dyn23@2x.png', alt: 'Final screen 1 — Scenes' },
-          { src: '/dyn24@2x.png', alt: 'Final screen 2 — Channels' },
-          { src: '/dyn25@2x.png', alt: 'Final screen 3 — Schedule' },
+          { src: `${BASE_URL}dyn23@2x.png`, alt: 'Final screen 1 — Scenes' },
+          { src: `${BASE_URL}dyn24@2x.png`, alt: 'Final screen 2 — Channels' },
+          { src: `${BASE_URL}dyn25@2x.png`, alt: 'Final screen 3 — Schedule' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/dyn26-1@2x.png', alt: 'Final screen 4' },
-          { src: '/dyn28@2x.png', alt: 'Final screen 5' },
-          { src: '/dyn29@2x.png', alt: 'Final screen 6' },
+          { src: `${BASE_URL}dyn26-1@2x.png`, alt: 'Final screen 4' },
+          { src: `${BASE_URL}dyn28@2x.png`, alt: 'Final screen 5' },
+          { src: `${BASE_URL}dyn29@2x.png`, alt: 'Final screen 6' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/dyn30-1@2x.png', alt: 'Final screen 7 — iPad view' },
-          { src: '/screenshot-20210603-at-1219@2x.png', alt: 'App in context' },
+          { src: `${BASE_URL}dyn30-1@2x.png`, alt: 'Final screen 7 — iPad view' },
+          { src: `${BASE_URL}screenshot-20210603-at-1219@2x.png`, alt: 'App in context' },
         ],
       },
     ],
@@ -1295,7 +1299,7 @@ export const portfolio: Project[] = [
       'Users will have the ability to effortlessly view luminaire configuration details, easily identify required spare parts, and conveniently program LED drivers to factory settings using cutting-edge Near Field Communication (NFC) technology.',
     role: 'Senior Designer and Researcher',
     responsibilities: ['User Research', 'Navigation flow', 'UX Design'],
-    thumbnail: '/screenshot-20210605-at-1231-1@2x.png',
+    thumbnail: `${BASE_URL}screenshot-20210605-at-1231-1@2x.png`,
     thumbnailFit: 'top',
     prevProject: 'dynalite',
     nextProject: 'careerarchitecture',
@@ -1303,9 +1307,9 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         images: [
-          { src: '/st1-1@2x.png', alt: 'Service Tag app' },
-          { src: '/st2-1@2x.png', alt: 'Service Tag context' },
-          { src: '/st3-1@2x.png', alt: 'Service Tag screens' },
+          { src: `${BASE_URL}st1-1@2x.png`, alt: 'Service Tag app' },
+          { src: `${BASE_URL}st2-1@2x.png`, alt: 'Service Tag context' },
+          { src: `${BASE_URL}st3-1@2x.png`, alt: 'Service Tag screens' },
         ],
       },
       {
@@ -1327,8 +1331,8 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'USER STORY MAPS',
         images: [
-          { src: '/screenshot-20210605-at-1231-1@2x.png', alt: 'User story map 1' },
-          { src: '/screenshot-20210603-at-137-1@2x.png', alt: 'User story map 2' },
+          { src: `${BASE_URL}screenshot-20210605-at-1231-1@2x.png`, alt: 'User story map 1' },
+          { src: `${BASE_URL}screenshot-20210603-at-137-1@2x.png`, alt: 'User story map 2' },
         ],
       },
       {
@@ -1340,25 +1344,25 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'TASK FLOWS',
         images: [
-          { src: '/st4@2x.png', alt: 'Task flow 1' },
-          { src: '/st5@2x.png', alt: 'Task flow 2' },
+          { src: `${BASE_URL}st4@2x.png`, alt: 'Task flow 1' },
+          { src: `${BASE_URL}st5@2x.png`, alt: 'Task flow 2' },
         ],
       },
       {
         type: 'images',
         title: 'WIREFRAMING THE FLOWS',
         images: [
-          { src: '/st6@2x.png', alt: 'Wireframe flow 1' },
-          { src: '/st7@2x.png', alt: 'Wireframe flow 2' },
+          { src: `${BASE_URL}st6@2x.png`, alt: 'Wireframe flow 1' },
+          { src: `${BASE_URL}st7@2x.png`, alt: 'Wireframe flow 2' },
         ],
       },
       {
         type: 'images',
         title: 'PRODUCT REVAMP — FINAL SCREENS',
         images: [
-          { src: '/screenshot-20210605-at-1231-1@2x.png', alt: 'Service Tag final screen 1' },
-          { src: '/screenshot-20210604-at-1258-1@2x.png', alt: 'Service Tag final screen 2' },
-          { src: '/screenshot-20210603-at-137-1@2x.png', alt: 'Service Tag final screen 3' },
+          { src: `${BASE_URL}screenshot-20210605-at-1231-1@2x.png`, alt: 'Service Tag final screen 1' },
+          { src: `${BASE_URL}screenshot-20210604-at-1258-1@2x.png`, alt: 'Service Tag final screen 2' },
+          { src: `${BASE_URL}screenshot-20210603-at-137-1@2x.png`, alt: 'Service Tag final screen 3' },
         ],
       },
     ],
@@ -1380,7 +1384,7 @@ export const portfolio: Project[] = [
       'Build Career Architecture Framework',
       'Collaboration with leaders across the globe',
     ],
-    thumbnail: '/selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png',
+    thumbnail: `${BASE_URL}selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png`,
     thumbnailFit: 'contain',
     passwordProtected: true,
     passwordHash: 'bWVkZXMyMDIz',
@@ -1395,7 +1399,7 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         title: 'FRAMEWORK VISUALS',
-        images: [{ src: '/selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png', alt: 'Career Architecture Framework' }],
+        images: [{ src: `${BASE_URL}selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png`, alt: 'Career Architecture Framework' }],
       },
     ],
   },
