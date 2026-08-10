@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudWatch Omni - UX Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0A0A0F;--surface:#13131A;--surface-2:#1a1a24;
+  --primary:#6366F1;--primary-glow:rgba(99,102,241,.12);
+  --secondary:#A78BFA;
+  --text:#F1F5F9;--text-2:#94A3B8;--text-3:#64748B;
+  --border:rgba(148,163,184,.1);--border-2:rgba(148,163,184,.06);
+  --radius:12px;--radius-sm:6px;
+  --font:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --teal:#2DD4BF;--amber:#F59E0B;--red:#EF4444;--green:#22C55E;
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--primary);color:#fff}
+a{color:var(--primary);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+@media(min-width:768px){.container{padding:0 48px}}
+
+.nav{position:sticky;top:0;z-index:100;padding:14px 0;backdrop-filter:blur(20px);background:rgba(10,10,15,.8);border-bottom:1px solid var(--border)}
+.nav .container{display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-weight:600;font-size:.875rem;color:var(--text-2)}.nav-brand span{color:var(--text)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-size:.8rem;color:var(--text-3);font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--text);text-decoration:none}
+@media(max-width:640px){.nav-links{display:none}}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 0;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;background:url('images/hero-bg.png') center/cover no-repeat;opacity:.15;filter:blur(1px);pointer-events:none}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 40%,var(--primary-glow),transparent 70%);pointer-events:none;z-index:1}
+.hero-tag{display:inline-block;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--primary);font-weight:600;margin-bottom:16px;font-family:var(--mono)}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px}
+.hero .subtitle{font-size:1.15rem;color:var(--text-2);max-width:620px;margin-bottom:32px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px}
+.hero-pill{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 16px;font-size:.75rem;color:var(--text-2)}
+.hero-pill strong{color:var(--text);display:block;font-size:.85rem}
+.hero-outcome{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 32px;display:inline-flex;align-items:baseline;gap:12px}
+.hero-outcome .number{font-size:2.5rem;font-weight:800;color:var(--teal);font-family:var(--mono)}
+.hero-outcome .label{font-size:.9rem;color:var(--text-2)}
+
+section{padding:80px 0;border-top:1px solid var(--border-2)}
+.section-label{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:12px;font-weight:500}
+h2{font-size:1.75rem;font-weight:700;line-height:1.3;margin-bottom:16px;letter-spacing:-.02em}
+h3{font-size:1.1rem;font-weight:600;color:var(--text);margin-bottom:12px;margin-top:32px}
+p{color:var(--text-2);margin-bottom:16px}
+ul{padding-left:20px;color:var(--text-2);margin-bottom:16px}
+li{margin-bottom:8px}li strong{color:var(--text)}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin:16px 0}
+.card-grid{display:grid;gap:16px;margin:24px 0}
+.card-grid-2{grid-template-columns:1fr 1fr}
+.card-grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+@media(max-width:640px){.card-grid-2,.card-grid-3{grid-template-columns:1fr}}
+
+.tldr{background:var(--surface);border:1px solid var(--primary);border-radius:var(--radius);padding:32px;margin:32px 0;position:relative;overflow:hidden}
+.tldr::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--primary),var(--secondary))}
+.tldr-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:640px){.tldr-grid{grid-template-columns:1fr}}
+.tldr h4{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--primary);margin-bottom:8px;font-family:var(--mono)}
+
+.quote{border-left:3px solid var(--primary);padding:16px 24px;margin:24px 0;background:var(--surface);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.quote p{font-style:italic;color:var(--text);margin-bottom:4px;font-size:1rem}
+.quote cite{font-size:.75rem;color:var(--text-3);font-style:normal}
+
+.metric-bar{display:flex;align-items:center;gap:16px;padding:16px 24px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);margin:24px 0}
+.metric-bar .value{font-size:1.5rem;font-weight:700;color:var(--teal);font-family:var(--mono)}
+.metric-bar .label{font-size:.85rem;color:var(--text-2)}
+
+.screenshot{background:var(--surface-2);border:2px dashed var(--border);border-radius:var(--radius-sm);padding:48px 24px;text-align:center;color:var(--text-3);font-size:.8rem;margin:16px 0;font-family:var(--mono)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin:32px 0}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center}
+.stat .value{display:block;font-size:2rem;font-weight:800;color:var(--teal);font-family:var(--mono)}
+.stat .label{font-size:.75rem;color:var(--text-3);margin-top:4px}
+
+.kiro-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:.75rem;color:var(--text-2);margin-top:8px}
+.kiro-badge strong{color:var(--text)}
+
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+footer{padding:48px 0;text-align:center;border-top:1px solid var(--border-2)}
+footer p{font-size:.75rem;color:var(--text-3)}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="container"><div class="nav-brand"><span>Mega</span> · Sr. UX Designer</div><ul class="nav-links"><li><a href="#overview">Overview</a></li><li><a href="#problem">Problem</a></li><li><a href="#design">Design</a></li><li><a href="#outcome">Outcome</a></li></ul></div></nav>
+
+<header class="hero" id="overview">
+  <div class="container">
+    <span class="hero-tag">Case Study - Observability - AWS</span>
+    <h1>Designing an AI-Native Observability Platform for Rapid Remediation</h1>
+    <p class="subtitle">How I designed an agentic investigation platform that compresses 90-minute manual investigations into 5-minute AI-assisted decisions - while keeping the human in command.</p>
+    <div class="hero-pills">
+      <div class="hero-pill"><strong>Sr. UX Designer</strong>Observability - SSOG</div>
+      <div class="hero-pill"><strong>10 Months</strong>Sep 2025 – Present</div>
+      <div class="hero-pill"><strong>Platform</strong>Web · Enterprise SaaS</div>
+      <div class="hero-pill"><strong>Scope</strong>IA, Interaction, Design System</div>
+    </div>
+    <div class="hero-outcome">
+      <span class="number">73%</span>
+      <span class="label">reduction in mean time to resolution<br><small style="color:var(--text-3)">Industry avg: 30–90 min diagnosis | Omni target: ~5 min with agent assist</small></span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="tldr">
+      <span class="section-label">TL;DR</span>
+      <div class="tldr-grid">
+        <div>
+          <h4>Problem</h4>
+          <p>Operators spend 30–90 minutes per incident manually correlating metrics, logs, and traces across disconnected dashboards. The actual decision takes 30 seconds - finding the evidence takes an hour.</p>
+          <h4>My Role</h4>
+          <p>Led end-to-end design of the agentic investigation experience - AI interaction model, collaborative sessions, service topology, landing experience, and the Rhythm Core design system serving 12 designers across 5 product domains.</p>
+        </div>
+        <div>
+          <h4>Solution</h4>
+          <p>An AI-native workspace where an agent proactively surfaces anomalies, correlates telemetry, and suggests resolution paths - compressing a 90-minute investigation into a 5-minute decision while keeping the human in command of every critical action.</p>
+          <h4>Impact</h4>
+          <p>~73% MTTR reduction. Design system adopted across 5 domains. 3 collaboration model iterations. Validated with internal customers through rapid testing cycles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="problem" class="fade-up">
+  <div class="container">
+    <span class="section-label">The Industry Problem</span>
+    <h2>Manual Investigation Doesn't Scale</h2>
+    <p>When an SLO breach fires at 2 AM, here's what an experienced operator actually does:</p>
+    <div class="card">
+      <div style="display:grid;grid-template-columns:auto 1fr auto;gap:12px;font-size:.85rem">
+        <span style="color:var(--primary);font-family:var(--mono)">1.</span><span><strong>Detect</strong> - receive alert</span><span style="color:var(--text-3)">1-5 min</span>
+        <span style="color:var(--primary);font-family:var(--mono)">2.</span><span><strong>Orient</strong> - open dashboard, identify affected service</span><span style="color:var(--text-3)">5-15 min</span>
+        <span style="color:var(--primary);font-family:var(--mono)">3.</span><span><strong>Correlate</strong> - switch between metrics, logs, traces, maps</span><span style="color:var(--text-3)">15-45 min</span>
+        <span style="color:var(--primary);font-family:var(--mono)">4.</span><span><strong>Diagnose</strong> - compare deployments, config changes, dependencies</span><span style="color:var(--text-3)">10-30 min</span>
+        <span style="color:var(--primary);font-family:var(--mono)">5.</span><span><strong>Resolve</strong> - execute rollback or fix</span><span style="color:var(--text-3)">5-10 min</span>
+        <span style="color:var(--primary);font-family:var(--mono)">6.</span><span><strong>Verify</strong> - confirm recovery</span><span style="color:var(--text-3)">5-10 min</span>
+      </div>
+    </div>
+    <div class="metric-bar">
+      <span class="value">30–90 min</span>
+      <span class="label">spent on manual signal correlation per incident - the decision itself takes 30 seconds</span>
+    </div>
+    <h3>Why AI Changes the Equation</h3>
+    <p>The breakthrough isn't replacing the operator's judgment. It's eliminating the 30-90 minutes of manual correlation that precedes their decision. An AI agent that proactively detects anomalies, correlates telemetry, surfaces probable root cause, and suggests resolution actions - compresses a 90-minute hunt into a 5-minute decision.</p>
+    <p><strong>The operator still decides. The AI does the legwork.</strong></p>
+
+    <h3>The Competitive Landscape (2026)</h3>
+    <div class="card-grid card-grid-2">
+      <div class="card"><div style="margin-bottom:12px"><svg width="100" height="24" viewBox="0 0 100 24"><text x="0" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#632CA6">datadog</text></svg></div><p>Acquired Eppo - built experimentation directly into observability. Combining business metrics with system health in one view.</p></div>
+      <div class="card"><div style="margin-bottom:12px"><svg width="80" height="24" viewBox="0 0 80 24"><text x="0" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#65A637">splunk</text><text x="62" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#F58220">></text></svg></div><p>Converged AI monitoring with security - hallucination detection, bias drift, and PII leakage alongside traces and logs.</p></div>
+      <div class="card"><div style="margin-bottom:12px"><svg width="120" height="24" viewBox="0 0 120 24"><text x="0" y="18" font-family="var(--font)" font-size="14" font-weight="700" fill="#81B5A1">ServiceNow</text></svg></div><p>AI Gateway with MCP control plane - automatic blocking of unapproved AI actions via "approved-only dropdowns."</p></div>
+      <div class="card"><div style="margin-bottom:12px"><svg width="80" height="24" viewBox="0 0 80 24"><text x="0" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#4285F4">G</text><text x="12" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#EA4335">o</text><text x="24" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#FBBC05">o</text><text x="36" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#4285F4">g</text><text x="48" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#34A853">l</text><text x="54" y="18" font-family="var(--font)" font-size="16" font-weight="700" fill="#EA4335">e</text></svg></div><p>Voice + camera as default search. Text-first interfaces replaced. Gemma 4 runs agentic workflows on-device.</p></div>
+    </div>
+    <div class="metric-bar" style="margin-top:24px">
+      <span class="value">$3.8B</span>
+      <span class="label">Q1 2026 observability + security financing - highest in 3 years. The industry isn't debating whether AI belongs. It's racing to own the interaction model.</span>
+    </div>
+  </div>
+</section>
+
+<section class="fade-up">
+  <div class="container">
+    <span class="section-label">Design Principles</span>
+    <h2>The AI Interaction Model</h2>
+    <p style="font-size:1.2rem;font-style:italic;color:var(--text);margin-bottom:32px;font-weight:300;max-width:700px">How might we design an investigation experience where AI eliminates the manual correlation work - so operators spend their attention on decisions, not on data-hunting?</p>
+    <div class="card-grid card-grid-2">
+      <div class="card">
+        <h3>◆ Agent as thought partner, not autopilot</h3>
+        <p>AI observes, surfaces, and suggests - but waits for explicit human confirmation before critical actions. The operator stays in command.</p>
+        <p style="font-size:.75rem;color:var(--text-3);font-style:italic">"Divide tasks between human and AI deliberately, not by default" - AgXD</p>
+      </div>
+      <div class="card">
+        <h3>◆ Proactive, not reactive</h3>
+        <p>The agent works before the human arrives. When an operator opens Omni, probable root cause is already surfaced with supporting evidence. First interaction is a decision, not a search.</p>
+      </div>
+      <div class="card">
+        <h3>◆ Context follows the investigation</h3>
+        <p>Service, time range, and state persist across every surface. No re-entry, no context loss, no starting over.</p>
+        <p style="font-size:.75rem;color:var(--text-3);font-style:italic">"Never ask for information the system already has" - IxD</p>
+      </div>
+      <div class="card">
+        <h3>◆ One room, many participants</h3>
+        <p>Humans and AI in a single stream. @AI to invoke. Deep link to collaborate. No mode-switching between team chat and AI mode.</p>
+        <p style="font-size:.75rem;color:var(--text-3);font-style:italic">"Give users one clear home reachable from anywhere" - IxD</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="design" class="fade-up">
+  <div class="container">
+    <span class="section-label">Design Solution</span>
+    <h2>The Agentic Investigation Workspace</h2>
+    <p>Replaced the dashboard-first model with a session-based workspace where AI proactively surfaces anomalies, operators collaborate in real-time, and the interface adapts to investigation context.</p>
+
+    <h3>1. The Launchpad - Work Begins Before You Arrive</h3>
+    <p>Old: open a blank dashboard, figure out what to look at. New: the agent has already been monitoring. Operators land with proactive insights, anomalies surfaced, and recent sessions ready to resume. First interaction is a <em>decision</em>, not a <em>query</em>.</p>
+    <img src="images/launchpad.png" alt="Agentic Launchpad - proactive insights, fleet health, recent sessions" style="width:100%;border-radius:var(--radius-sm);border:1px solid var(--border);margin:16px 0" />
+
+    <h3>2. Sessions - Persistent Investigation Workspaces</h3>
+    <p>Each investigation is a session that auto-creates on first interaction. No upfront naming. Full context captured automatically - traces, metrics, logs, chat, AI suggestions. Persistent, shareable via deep link, resumable. Nothing is ever lost.</p>
+    <img src="images/session-incident.png" alt="Order Application Incident - service topology + unified chat + canvas" style="width:100%;border-radius:var(--radius-sm);border:1px solid var(--border);margin:16px 0" />
+
+    <h3>3. Collaborative Workflows - Three Iterations</h3>
+    <div class="card-grid card-grid-3">
+      <div class="card"><h3>V1</h3><p>Separate Team/AI toggle. Private messages. Role management.</p><p style="color:var(--text-3);font-size:.8rem">Learning: mode-switching adds overhead in a crisis</p></div>
+      <div class="card"><h3>V2</h3><p>Unified chat. @AI mentions. Proactive suggestions. Multi-step invite.</p><p style="color:var(--text-3);font-size:.8rem">Learning: invite flow too heavy for fast incidents</p></div>
+      <div class="card" style="border-color:var(--teal)"><h3>V3 - Final</h3><p>Unified chat. @AI invoke. AI waits for confirmation. Shareable deep link only.</p><p style="color:var(--teal);font-size:.8rem">✓ Simple · Human-in-the-loop · Zero friction</p></div>
+    </div>
+    <p>V3 insight: during real incidents, operators paste a link in Slack - they don't open settings panels. The entire invite flow was replaced with a shareable URL.</p>
+    <img src="images/collab-v3.png" alt="V3 - AI suggestion card with Confirm/Dismiss, user confirmation, execution" style="width:100%;border-radius:var(--radius-sm);border:1px solid var(--border);margin:16px 0" />
+
+    <h3>4. Service Topology - Blast Radius at a Glance</h3>
+    <p>Dynamic service map showing incident blast radius in real-time. Every node is interactive - click to see metrics, logs, traces, alarms, and dependencies in one integrated panel. Investigation follows the <em>entity</em>, not the data type.</p>
+    <img src="images/service-topology.png" alt="Service topology - SLO breach indicator - integrated signal panel" style="width:100%;border-radius:var(--radius-sm);border:1px solid var(--border);margin:16px 0" />
+
+    <h3>5. Rhythm Core - Design System at Scale</h3>
+    <p>12 designers across 5 domains needed shared infrastructure. Led creation of Rhythm Core - component library on Cloudscape Core with custom token layer. Governed as a product with its own roadmap, versioning, and cross-team governance.</p>
+    <img src="images/rhythm-core.png" alt="Rhythm Core - components, tokens, multi-domain usage" style="width:100%;border-radius:var(--radius-sm);border:1px solid var(--border);margin:16px 0" />
+  </div>
+</section>
+
+<section class="fade-up">
+  <div class="container">
+    <span class="section-label">Validation</span>
+    <h2>Testing & Iteration</h2>
+    <p>Conducted moderated usability testing with 5 internal AWS engineers - all with zero prior Omni experience. 15 tasks mapped to real incident response workflows. The study validated the agentic model while surfacing refinement opportunities.</p>
+    <div class="card-grid card-grid-2">
+      <div class="card"><h3>Validated ✓</h3><ul><li>Operators responded positively to proactive AI surfacing</li><li>Session model immediately understood once auto-creation demonstrated</li><li>Deep links used naturally without explanation</li><li>AI suggestion + confirmation pattern built trust rapidly</li></ul></div>
+      <div class="card"><h3>Refined ↻</h3><ul><li>Streamlined signal correlation entry points</li><li>Improved AI suggestion timing and context delivery</li><li>Added co-located telemetry on service pages</li><li>Tightened auto-save and session persistence</li></ul></div>
+    </div>
+
+    <h3>Customer Signals - Validating Design Decisions</h3>
+    <p style="font-size:.85rem;color:var(--text-3);margin-bottom:16px">From the DelightLab intelligence system - real customer feedback that validated our design direction before and during testing:</p>
+    <div class="card-grid card-grid-2">
+      <div class="card">
+        <p style="font-size:.75rem;color:var(--teal);font-family:var(--mono);margin-bottom:4px">CUSTOMER REQUEST</p>
+        <p style="color:var(--text);font-size:.9rem">"Allow users to create shareable links that auto resolve to the view they are looking at"</p>
+        <p style="font-size:.75rem;color:var(--text-3);margin:0">→ Validated: V3 deep link collaboration model</p>
+      </div>
+      <div class="card">
+        <p style="font-size:.75rem;color:var(--teal);font-family:var(--mono);margin-bottom:4px">CUSTOMER REQUEST</p>
+        <p style="color:var(--text);font-size:.9rem">"While the agent is thinking, it should show something that lets the user know there is something happening behind the scenes"</p>
+        <p style="font-size:.75rem;color:var(--text-3);margin:0">→ Validated: AI status indicators and streaming response patterns</p>
+      </div>
+      <div class="card">
+        <p style="font-size:.75rem;color:var(--teal);font-family:var(--mono);margin-bottom:4px">CUSTOMER REQUEST</p>
+        <p style="color:var(--text);font-size:.9rem">"Format agent responses as structured cards instead of unhelpful JSON blobs"</p>
+        <p style="font-size:.75rem;color:var(--text-3);margin:0">→ Validated: Structured suggestion cards with Confirm/Dismiss actions</p>
+      </div>
+      <div class="card">
+        <p style="font-size:.75rem;color:var(--teal);font-family:var(--mono);margin-bottom:4px">CUSTOMER REQUEST</p>
+        <p style="color:var(--text);font-size:.9rem">"Allow users to click a button on any panel which triggers the Agent to explain that view"</p>
+        <p style="font-size:.75rem;color:var(--text-3);margin:0">→ Validated: @AI contextual invoke pattern</p>
+      </div>
+    </div>
+    <p style="color:var(--text-3);font-size:.85rem">Rapid validation-to-fix cycles in progress. Aggressive re-testing underway.</p>
+  </div>
+</section>
+
+<section id="outcome" class="fade-up">
+  <div class="container">
+    <span class="section-label">Impact</span>
+    <h2>Outcomes</h2>
+    <div class="stats">
+      <div class="stat"><span class="value">~5min</span><span class="label">Target MTTR<br><small style="color:var(--text-3)">vs 30-90min avg</small></span></div>
+      <div class="stat"><span class="value">73%</span><span class="label">MTTR reduction</span></div>
+      <div class="stat"><span class="value">5</span><span class="label">Domains on Rhythm Core</span></div>
+      <div class="stat"><span class="value">12</span><span class="label">Designers on shared system</span></div>
+    </div>
+    <p style="font-size:1.05rem;color:var(--text);margin:24px 0">A 73% reduction in mean time to resolution isn't a UX metric. It's a business outcome. For enterprise customers, the difference between 90 minutes and 5 minutes is measurable in SLA compliance, engineering hours, and customer trust.</p>
+    <p><strong>The operator still makes the decision. The AI eliminates the 85 minutes of manual work that precedes it.</strong></p>
+  </div>
+</section>
+
+<section class="fade-up">
+  <div class="container">
+    <span class="section-label">Process</span>
+    <h2>How I Work</h2>
+    <div class="card-grid card-grid-2" style="margin-top:32px">
+      <div class="card" style="padding:32px">
+        <span style="font-family:var(--mono);font-size:.75rem;color:var(--primary);display:block;margin-bottom:12px">01 - Discover</span>
+        <h3 style="margin-top:0;font-size:1.2rem;margin-bottom:12px">Ask the right question first</h3>
+        <p style="color:var(--text-2);font-size:.9rem;margin:0">Before any design work starts, I talk to stakeholders and users to understand what's actually broken - not just what was asked for. The brief is a starting point, not the answer.</p>
+      </div>
+      <div class="card" style="padding:32px">
+        <span style="font-family:var(--mono);font-size:.75rem;color:var(--primary);display:block;margin-bottom:12px">02 - Research</span>
+        <h3 style="margin-top:0;font-size:1.2rem;margin-bottom:12px">Watch what people do, not what they say</h3>
+        <p style="color:var(--text-2);font-size:.9rem;margin:0">I test with real users on real tasks. The gap between what someone says they'd do and what they actually do is where the real problems live. That's what I'm looking for.</p>
+      </div>
+      <div class="card" style="padding:32px">
+        <span style="font-family:var(--mono);font-size:.75rem;color:var(--primary);display:block;margin-bottom:12px">03 - Strategy</span>
+        <h3 style="margin-top:0;font-size:1.2rem;margin-bottom:12px">Set direction before opening Kiro</h3>
+        <p style="color:var(--text-2);font-size:.9rem;margin:0">I agree on what success looks like, who we're designing for, and what principles will guide decisions - before touching a component. This is what makes design reviews fast and clear.</p>
+      </div>
+      <div class="card" style="padding:32px">
+        <span style="font-family:var(--mono);font-size:.75rem;color:var(--primary);display:block;margin-bottom:12px">04 - Explore</span>
+        <h3 style="margin-top:0;font-size:1.2rem;margin-bottom:12px">Build rough, explore wide</h3>
+        <p style="color:var(--text-2);font-size:.9rem;margin:0">All exploration happens in <strong style="color:var(--text)">Kiro IDE</strong> - live components from day one, not static mockups. At least three directions get built and compared. The ones that don't work are just as important as the ones that do.</p>
+      </div>
+      <div class="card" style="padding:32px">
+        <span style="font-family:var(--mono);font-size:.75rem;color:var(--primary);display:block;margin-bottom:12px">05 - Validate</span>
+        <h3 style="margin-top:0;font-size:1.2rem;margin-bottom:12px">Test, fix, repeat</h3>
+        <p style="color:var(--text-2);font-size:.9rem;margin:0">I test prototypes with real users, rank what breaks by severity, fix in priority order, and test again. A finding only matters if it changes something. Untested assumptions stay assumptions.</p>
+      </div>
+      <div class="card" style="padding:32px">
+        <span style="font-family:var(--mono);font-size:.75rem;color:var(--primary);display:block;margin-bottom:12px">06 - Measure</span>
+        <h3 style="margin-top:0;font-size:1.2rem;margin-bottom:12px">Did it actually work?</h3>
+        <p style="color:var(--text-2);font-size:.9rem;margin:0">After launch, I check the design against the success metrics set in phase one - not as a formality, but because that's the only honest way to know if the work did its job.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p style="margin-bottom:8px;color:var(--text-2);font-size:.85rem">Mega · Sr. UX Designer · AWS</p>
+    <p>Designing complex, high-stakes, AI-native products at scale.</p>
+    <p style="margin-top:12px;font-style:italic">Some work is NDA-protected. Detailed artifacts available on request.</p>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
