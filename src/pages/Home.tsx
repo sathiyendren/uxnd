@@ -30,9 +30,13 @@ export default function Home() {
                 <Link to="/portfolio" className="btn-outline">
                   View Portfolio
                 </Link>
-                <Link to="/resume" className="btn-outline flex items-center gap-2">
+                <a
+                  href={person.resumePdf}
+                  download="Megalatha_Sankaraiya_UX_Designer_Resume.pdf"
+                  className="btn-outline flex items-center gap-2"
+                >
                   ↓ Download Resume
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -42,7 +46,7 @@ export default function Home() {
                 <img
                   src={person.photo}
                   alt={person.name}
-                  className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-white"
+                  className="relative w-64 h-64 md:w-80 md:h-80 object-cover object-[center_31%] rounded-full shadow-2xl border-4 border-white"
                 />
               </div>
             </div>

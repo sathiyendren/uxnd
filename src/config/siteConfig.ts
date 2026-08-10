@@ -73,15 +73,15 @@ export interface Project {
 export const person = {
   name: 'Megalatha Sankaraiya',
   shortName: 'Megalatha S',
-  title: 'Senior Manager in UX',
+  title: 'User Experience Designer',
   location: 'Greater Atlanta, US',
   email: 'iammega@gmail.com',
   phone: '+1 404 740 4814',
   website: 'www.uxnd.in',
   linkedin: 'https://www.linkedin.com/in/megalatha-s-0a679816/',
-  logo: '/public/ml-logo-11@2x.png',
-  photo: '/public/mega-1@2x.png',
-  resumePdf: '/public/Megalatha_Sankaraiya_Resume.pdf',
+  logo: '/ml-logo-11@2x.png',
+  photo: '/mega-1@2x.png',
+  resumePdf: '/Megalatha_Sankaraiya_UX_Designer_Resume.pdf',
 }
 
 // ─── Navigation ─────────────────────────────────────────────────────────────
@@ -134,7 +134,7 @@ export const about = {
     {
       name: 'LIEVEN VERDIN',
       title: 'Digital Design Lead',
-      photo: '/public/mask-group@2x.png',
+      photo: '/mask-group@2x.png',
       initials: 'LV',
       avatarColor: '#4A7C8E',
       linkedinUrl: 'https://www.linkedin.com/in/lieven-verdin-149412/',
@@ -144,7 +144,7 @@ export const about = {
     {
       name: 'LAURA CUNNINGHAM',
       title: 'Global Design Lead',
-      photo: '/public/mask-group2@2x.png',
+      photo: '/mask-group2@2x.png',
       initials: 'LC',
       avatarColor: '#7C4A8E',
       linkedinUrl: 'https://www.linkedin.com/in/lauracu/',
@@ -154,7 +154,7 @@ export const about = {
     {
       name: 'SANJEEV KUMAR PS',
       title: 'Director of Engineering and Site Leader',
-      photo: '/public/mask-group3@2x.png',
+      photo: '/mask-group3@2x.png',
       initials: 'SK',
       avatarColor: '#2E7D57',
       linkedinUrl: 'https://www.linkedin.com/in/sanjeevps/',
@@ -164,7 +164,7 @@ export const about = {
     {
       name: 'JULIJA BABRE',
       title: 'Enterprise Product Marketing',
-      photo: '/public/mask-group1@2x.png',
+      photo: '/mask-group1@2x.png',
       initials: 'JB',
       avatarColor: '#8E4A4A',
       linkedinUrl: 'https://www.linkedin.com/in/julijababre/',
@@ -324,125 +324,105 @@ export const skills = {
 export const contactPage = {
   experience: [
     {
-      company: 'Target (Bangalore, India)',
+      company: 'Amazon Web Services (AWS)  .  Atlanta, GA',
+      role: 'Senior UX Designer – CloudWatch, Observability & Security, CloudTrail',
+      period: 'April 2024 - Present',
+      responsibilities: [
+        'Designed agentic investigation experience targeting ~73% reduction in mean time to resolution vs. 30-90 minute industry average, replacing static dashboards with a session-based, AI-augmented collaborative workspace.',
+        'Led the UX design of CloudWatch Omni\'s Observability, an off-console application, transforming a dashboard-centric monitoring tool into an AI-native investigation platform serving millions of AWS enterprise customers across cloud observability, security, and governance domains.',
+        'Led Rhythm Core design system across 5 product domains (Observability, Security, Governance, OpenSearch, MCP app), establishing a versioned governance model and cross-team design review across 12 designers.',
+        'Applied WCAG accessibility standards to all Omni UI components and established accessibility as a required review gate in the design-to-engineering handoff process across all 5 product domains.',
+        'Constantly producing engineer-ready live prototypes using the Kiro IDE, eliminating the static mockup handoff gap entirely.',
+        'Led end-to-end design of AWS CloudTrail\'s Aggregated events, Cost estimator, Data event coverage, and Data event Insights workflows by actively coordinating with Product and Engineering teams.',
+      ],
+    },
+    {
+      company: 'Target  . Bangalore, India',
       role: 'Senior Manager UX',
-      period: 'Jun 2022 – Feb 2023',
+      period: 'Jun 2022 - Feb 2023',
       responsibilities: [
-        'Initiate the <strong>Design Ops</strong> with global and cross functional teams to improve the efficiency of design process, design guidelines, standards and information workflow. Work closely with senior management to <strong>align design initiatives</strong> with business goals and create seamless transitions.',
-        'Lead and manage a team of designers including <strong>hiring, training, and mentoring</strong> team members in a decentralised design team environment. Provide guidance, set objectives, and ensure the team\'s overall performance and productivity.',
-        'Oversee multiple design projects simultaneously and also <strong>collaborate with stakeholders, and cross functional teams</strong> to define the initial project scope and timelines. <strong>Allocate resources</strong> effectively, monitor progress, and ensure that projects are delivered on time and within budget.',
-        'Act as a <strong>bridge between design teams and other departments</strong>, such as research, accessibility, marketing, engineering, and product management. Ensure that design requirements are understood, and that the design team\'s contributions are integrated seamlessly into the overall product ecosystem and <strong>avoid design debts.</strong>',
-        'Responsible for maintaining high-quality design outputs. <strong>Review and provide feedback</strong> on individual design work along with the entire design team on a weekly call basis, ensuring that it meets the desired heuristics and standards of UX. Promote continuous improvement by encouraging the <strong>adoption of best practices, design innovation, exploring new design tools and technologies, and staying updated on industry trends.</strong>',
-        'Involve in <strong>budget planning and resource allocation</strong>. Collaborate with finance and procurement departments to determine design-related expenses, such as software licenses, equipment, and external contractors. Optimize resource allocation to maximize efficiency and ensure that the team has the necessary <strong>tools and support</strong>.',
+        'Initiated and led Design Ops program across global and cross-functional teams, improving design process efficiency, standards documentation, and workflow across 5+ concurrent product tracks.',
+        'Managed distributed UX team end-to-end including hiring, mentoring, and weekly design quality reviews; established feedback cadence and heuristic evaluation standards adopted team-wide.',
+        'Partnered with senior leadership to align the design roadmap with business priorities; owned resource allocation and tooling investment decisions for the design organization.',
+        'Embedded WCAG 2.2 accessibility compliance into the team-wide design process and made it a required criterion in all design review checkpoints across active product tracks.',
       ],
     },
     {
-      company: 'Fourkites (Bangalore, India)',
+      company: 'Fourkites  .  Bangalore, India',
       role: 'Senior Staff UX Designer',
-      period: 'Sep 2021 – May 2022',
+      period: 'Sep 2021 - May 2022',
       responsibilities: [
-        'Provided <strong>leadership and strategic direction in UX design initiatives</strong>. Collaborated with stakeholders to understand business goals, user needs, and project requirements, and translated them into effective UX design strategies.',
-        'Conducted <strong>user research</strong> activities to gain insights into user behaviors, needs, and motivations. <strong>Analyzed research findings and data</strong> to inform design decisions and identify opportunities for improving the user experience.',
-        'Defined the <strong>information architecture</strong> of digital products or platforms. Organized and structured content, navigation systems, and information hierarchies to ensure a logical and intuitive user experience.',
-        '<strong>Designed and prototyped interactive user interfaces and experiences.</strong> Created wireframes, user flows, and prototypes to illustrate user interactions and validate design concepts through user testing and feedback.',
-        '<strong>Developed and maintained design systems and guidelines</strong> that ensure consistency and coherence across different products or platforms. Defined design patterns, components, and style guides to guide the UX design process.',
-        '<strong>Collaborated with cross-functional teams</strong> such as product managers, developers, visual designers and content writers. Worked closely with these teams to align on project goals, requirements, and ensure the successful implementation of UX design solutions.',
-        'Integrated <strong>accessibility considerations into design solutions</strong> to ensure usability for users with disabilities. Advocated for inclusive design practices and considering diverse user needs and perspectives.',
-        '<strong>Mentoring and guiding senior and junior UX designers</strong> by sharing knowledge, providing feedback, and fostering their professional growth. Collaborating with peers and contributing to a culture of collaboration and knowledge sharing within the UX design team.',
+        'Led UX strategy and interaction design for an enterprise logistics visibility platform serving Fortune 500 customers, owning the product from research through handoff.',
+        'Conducted user research and task-based usability testing to identify friction in core operator workflows; findings directly drove IA restructuring and navigation improvements that shipped within one sprint cycle.',
+        'Built and governed design system guidelines ensuring visual and interaction consistency across all product surfaces; reduced design inconsistency issues flagged in engineering QA.',
+        'Collaborated with PM, engineering, and data teams daily to align on requirements, manage tradeoffs, and deliver production-ready designs on schedule.',
       ],
     },
     {
-      company: 'Signify (Philips Lighting)',
+      company: 'Philips Lighting (Signify)  .  Bangalore, India',
       role: 'Senior Interaction Designer',
-      period: 'Feb 2016 – Aug 2021',
+      period: 'Feb 2016 - Aug 2021',
       responsibilities: [
-        'Took the initiative to <strong>work independently and provided guidance</strong> to two design teams based in Bangalore (BLR) and the Netherlands (NL).',
-        'Led and <strong>managed the scrum teams</strong> within the Agile Release Train, ensuring smooth and efficient operations.',
-        'Held <strong>SAFe certification</strong> as a Product Manager/Product Owner (PM/PO) and Scrum Master, demonstrating expertise in Agile methodologies.',
-        'Managed and served <strong>multiple businesses and stakeholders remotely</strong>, ensuring effective communication and collaboration.',
-        'Conducted <strong>remote user interviews and testing</strong>, as well as visited customer locations for ethnographic research purposes.',
-        'Played a significant role in the <strong>development of the Design Language System</strong> \'Interact\', contributing valuable insights and ideas.',
-        'Created and maintained <strong>product roadmaps for the Design teams</strong>, providing strategic direction for their work.',
-        '<strong>Oversaw the entire design life cycle</strong>, from the requirement phase to the handover to development, and conducted both quantitative and qualitative research as needed.',
-        'Contributed to <strong>program epic backlog</strong> and participated in product architectural discussions, influencing key decisions.',
-        'Led and guided the design team in <strong>successful quarterly Program Increment planning</strong> events.',
-        'Acted as an <strong>active Product Owner (PO)</strong> for several projects, proposing Minimum Viable Products (MVPs), writing user stories, and creating backlogs for the team to work on during Program Increments.',
+        'Led UX independently across two distributed design teams (Bangalore and Netherlands), managing design direction, research planning, and delivery across both locations without a local design manager.',
+        'Played a leading role in developing the Design Language System "Interact", a cross-platform component library that standardized design patterns and drove consistency across Signify\'s enterprise digital product portfolio.',
+        'Held SAFe PM/PO certification and served as active Product Owner on multiple projects—wrote user stories, proposed MVPs, managed backlogs, and led quarterly Program Increment planning across Agile release trains.',
+        'Conducted remote user interviews and on-site ethnographic research at customer locations; research directly informed IA decisions and core workflow redesign across the product portfolio.',
+        'Oversaw the full design lifecycle from requirements through handoff, managed scrum teams within the Agile Release Train, and contributed to program epic backlog and product architectural decisions.',
+        'Integrated accessibility considerations into all design solutions and advocated for inclusive design practices across the team and in cross-functional design reviews.',
       ],
     },
     {
       company: 'Amadeus',
       role: 'Senior Software Engineer',
-      period: 'Feb 2013 – Feb 2016',
+      period: 'Feb 2013 - Feb 2016',
       responsibilities: [
-        'User Interface design, wireframing and prototyping',
-        'User Research and Analysis',
-        'Information Architecture',
-        'Design Systems and Guidelines',
-        'Front-End Development',
-        'Responsive Design',
-        'Cross-Browser Compatibility',
-        'Accessibility',
-        'Version Control and Deployment',
+        'UI/UX design, wireframing and prototyping, information architecture, design systems, front-end development (HTML, CSS, JavaScript), accessibility, and version control.',
       ],
     },
     {
       company: 'Nabler Web Solutions',
       role: 'Visualization Specialist',
-      period: 'Oct 2012 – Feb 2013',
+      period: 'Oct 2012 - Feb 2013',
       responsibilities: [
-        'Data Analysis and Interpretation',
-        'Dashboard interaction design',
-        'Data Mapping and spatial visualizations',
-        'Transforming complex data into meaningful visual representations',
+        'Data visualization, dashboard interaction design, spatial data mapping, and transforming complex data into actionable interfaces.',
       ],
     },
     {
       company: 'Hawkzweb',
       role: 'Web Designer',
-      period: 'Apr 2007 – Oct 2012',
+      period: 'Apr 2007 - Oct 2012',
       responsibilities: [
-        'Graphic Design for Print and Digital Collateral',
-        'Typography and Layout Design',
-        'Image Editing and optimisation',
-        'Branding and Identity Design',
-        'Client Communication',
-        'Content Management Systems (CMS)',
-        'Web Graphics and Multimedia animations',
-        'Responsive Design',
+        'Graphic design, typography, branding, content management systems (CMS), responsive web design, and multimedia.',
       ],
     },
   ] as ExperienceEntry[],
   certifications: [
-    'Certified Usability Analyst (CUA) – Human Factors International (HFI)',
-    'Project Manager / Product Owner – Scaled Agile Framework (SAFe)',
+    'Certified Usability Analyst (CUA) — Human Factors International (HFI)',
+    'SAFe Certified PM/PO (Project Manager / Product Owner) — Scaled Agile Framework',
   ],
   education: [
     { degree: 'M.Sc Psychology (Counselling Psychology)', status: 'Pursuing' },
-    { degree: 'B.C.A – Bachelor of Computer Applications', status: '' },
+    { degree: 'B.C.A — Bachelor of Computer Applications', status: '' },
   ],
   skills: [
     {
       label: 'Design',
       value:
-        'User Research, Interaction Design, Data driven design decision making, User Testing, Information Architecture, Visual Design, Usability Evaluation, UX Writing, Prototyping and Tools, Collaboration and Communication, Empathy and User Advocacy, Analytical Thinking, Accessibility, Contextual Inquiries, Empathy mapping, Customer journey mapping, Rapid prototyping, Story telling with prototypes',
-    },
-    {
-      label: 'Design Management',
-      value:
-        'Design Thinking, Leadership, Communication, Project Management, Team Building and Collaboration, Strategic Thinking, Design Evaluation and Metrics, Design Operations, Design Systems, Business Acumen, Adaptability and Resilience, Continuous Learning',
+        'Agentic UX Design, User Research, Usability Testing, Interaction design, Information Architecture, Prototyping, Accessibility (WCAG), UX Writing, Design Systems, Customer journey mapping, Contextual inquiry, Empathy mapping, Task Analysis, Heuristic Evaluation.',
     },
     {
       label: 'Tools',
-      value: 'Sketch, InVision App + Craft, Adobe XD, Adobe Photoshop, Miro, Trello',
+      value: 'Kiro IDE, Figma, Sketch, Miro, Adobe Photoshop, InVision, HTML, CSS, JavaScript, jQuery',
     },
     {
-      label: 'Programming',
-      value: 'HTML, CSS, jQuery, JavaScript, AutoCAD',
-    },
-    {
-      label: 'Strategy & Collaboration',
+      label: 'Methods',
       value:
-        'Design thinking, UX strategy, Product Design, SAFe Practitioner, SAFe PM/PO, Product Ownership, Psychology Counselling',
+        'Moderated Usability Testing, Task-Based Evaluation, Design Sprints, Agile / SAFe, Program Increment Planning, A/B Testing, Affinity Mapping',
+    },
+    {
+      label: 'Leadership',
+      value:
+        'Design Operations, Cross-functional Collaboration, Team Management, Hiring & Mentoring, Stakeholder Management, Resource Planning, Design Governance, Product Ownership',
     },
   ],
 }
@@ -450,6 +430,116 @@ export const contactPage = {
 // ─── Portfolio projects ───────────────────────────────────────────────────────
 
 export const portfolio: Project[] = [
+  {
+    id: 'cloudwatch-omni',
+    slug: 'cloudwatch-omni',
+    title: 'CloudWatch Omni — AI-Native Observability',
+    period: 'Sep 2025 – Present',
+    shortDescription:
+      'Led the UX design of an AI-native investigation platform that replaces dashboard-hunting with an agentic workspace — targeting a 73% reduction in mean time to resolution for enterprise AWS customers.',
+    description:
+      'Incident investigation in observability is fundamentally broken: operators spend 30–90 minutes per incident manually correlating metrics, logs, and traces across disconnected dashboards. I led the UX design of CloudWatch Omni, an AI-native investigation platform where an agent proactively surfaces anomalies, correlates telemetry, and suggests resolution paths — while keeping the human in command of every critical decision.',
+    role: 'Senior UX Designer — Observability, SSOG',
+    responsibilities: [
+      'Designed the agentic AI interaction model and human-in-the-loop confirmation flows',
+      'Led 3 iterations of session-based, real-time collaboration between operators and AI',
+      'Designed interactive service topology for blast-radius investigation',
+      'Designed the AI-first landing experience surfacing proactive insights',
+      'Led Rhythm Core, a design system serving 12 designers across 5 product domains',
+      'Planned and ran moderated usability testing to validate the agentic model',
+    ],
+    thumbnail: '/cloudwatch-omni-launchpad.png',
+    thumbnailFit: 'cover',
+    passwordProtected: true,
+    passwordHash: 'YXdzMjAyNg==',
+    nextProject: 'easyaim',
+    sections: [
+      {
+        type: 'heading',
+        title: 'THE PROBLEM',
+        content: 'Operators spend 30–90 minutes per incident manually correlating metrics, logs, and traces across disconnected dashboards. The decision itself takes 30 seconds — finding the evidence takes an hour.',
+      },
+      {
+        type: 'text',
+        title: 'WHY AI CHANGES THE EQUATION',
+        content: 'The breakthrough isn\'t replacing the operator\'s judgment — it\'s eliminating the manual correlation that precedes their decision. An AI agent that proactively detects anomalies, correlates telemetry, and surfaces probable root cause compresses a 90-minute investigation into a 5-minute decision. <strong>The operator still decides. The AI does the legwork.</strong>',
+      },
+      {
+        type: 'challenge',
+        title: 'DESIGN CHALLENGE',
+        highlight: 'How might we design an investigation experience where AI eliminates the manual correlation work — so operators spend their attention on decisions, not on data-hunting?',
+      },
+      {
+        type: 'bullets',
+        title: 'DESIGN PRINCIPLES',
+        items: [
+          '<strong>Agent as thought partner, not autopilot</strong> — AI observes, surfaces, and suggests, but waits for explicit human confirmation before critical actions.',
+          '<strong>Proactive, not reactive</strong> — the agent works before the human arrives; the first interaction is a decision, not a search.',
+          '<strong>Context follows the investigation</strong> — service, time range, and state persist across every surface.',
+          '<strong>One room, many participants</strong> — humans and AI collaborate in a single stream, with no mode-switching.',
+        ],
+      },
+      {
+        type: 'text',
+        title: 'THE LAUNCHPAD',
+        content: 'Replaced the blank dashboard with a landing experience where the agent has already been monitoring — operators land with proactive insights, surfaced anomalies, and recent sessions ready to resume.',
+      },
+      {
+        type: 'images',
+        images: [{ src: '/cloudwatch-omni-launchpad.png', alt: 'Agentic Launchpad — proactive insights, fleet health, recent sessions' }],
+      },
+      {
+        type: 'text',
+        title: 'PERSISTENT INVESTIGATION SESSIONS',
+        content: 'Each investigation is a session that auto-creates on first interaction, capturing full context automatically — traces, metrics, logs, chat, and AI suggestions — persistent, shareable via deep link, and resumable.',
+      },
+      {
+        type: 'images',
+        images: [{ src: '/cloudwatch-omni-session.png', alt: 'Session workspace — service topology, unified chat, and canvas' }],
+      },
+      {
+        type: 'bullets',
+        title: 'COLLABORATION MODEL — 3 ITERATIONS',
+        items: [
+          '<strong>V1:</strong> Separate Team/AI toggle with private messages and role management — mode-switching added overhead in a crisis.',
+          '<strong>V2:</strong> Unified chat with @AI mentions and proactive suggestions — the invite flow was too heavy for fast incidents.',
+          '<strong>V3 (final):</strong> Unified chat, @AI invoke, AI waits for confirmation, shareable deep link only — simple, human-in-the-loop, zero friction.',
+        ],
+      },
+      {
+        type: 'images',
+        images: [{ src: '/cloudwatch-omni-collab.png', alt: 'V3 collaboration model — AI suggestion card with confirm/dismiss actions' }],
+      },
+      {
+        type: 'text',
+        title: 'SERVICE TOPOLOGY',
+        content: 'A dynamic service map shows incident blast radius in real time. Every node is interactive, surfacing metrics, logs, traces, alarms, and dependencies in one integrated panel — investigation follows the entity, not the data type.',
+      },
+      {
+        type: 'images',
+        images: [{ src: '/cloudwatch-omni-topology.png', alt: 'Service topology — blast radius and integrated signal panel' }],
+      },
+      {
+        type: 'text',
+        title: 'RHYTHM CORE — DESIGN SYSTEM AT SCALE',
+        content: 'Led the creation of Rhythm Core, a component library on Cloudscape Core with a custom token layer, governed as a product with its own roadmap and cross-team governance across 5 product domains and 12 designers.',
+      },
+      {
+        type: 'images',
+        images: [{ src: '/cloudwatch-omni-rhythm-core.png', alt: 'Rhythm Core — components, tokens, and multi-domain usage' }],
+      },
+      {
+        type: 'bullets',
+        title: 'OUTCOMES',
+        items: [
+          '<strong>~73% reduction</strong> in target mean time to resolution vs. 30–90 minute industry average',
+          '<strong>5 of 5</strong> product domains adopted the Rhythm Core design system',
+          '<strong>12 designers</strong> aligned on a shared design language',
+          'Validated through moderated usability testing with 5 internal AWS engineers across 15 real incident-response tasks',
+        ],
+      },
+    ],
+  },
   {
     id: 'easyaim',
     slug: 'easyaim',
@@ -466,9 +556,10 @@ export const portfolio: Project[] = [
       'UX design: Brainstorming, Facilitation, Data Analysis',
       'User Testing',
     ],
-    thumbnail: '/public/zarawindowsoxfordstreetlondon03-1@2x.png',
+    thumbnail: '/zarawindowsoxfordstreetlondon03-1@2x.png',
     thumbnailFit: 'cover',
     nextProject: 'retailhq',
+    prevProject: 'cloudwatch-omni',
     sections: [
       {
         type: 'heading',
@@ -482,7 +573,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/public/zarawindowsoxfordstreetlondon03-1@2x.png', alt: 'Zara shop window — Oxford Street, London' }],
+        images: [{ src: '/zarawindowsoxfordstreetlondon03-1@2x.png', alt: 'Zara shop window — Oxford Street, London' }],
       },
       {
         type: 'challenge',
@@ -526,8 +617,8 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'SYSTEM ARCHITECTURE',
         images: [
-          { src: '/public/image-14@2x.png', alt: 'System architecture diagram' },
-          { src: '/public/image-18@2x.png', alt: 'Architecture overview' },
+          { src: '/image-14@2x.png', alt: 'System architecture diagram' },
+          { src: '/image-18@2x.png', alt: 'Architecture overview' },
         ],
       },
       {
@@ -539,9 +630,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'COMPETITOR REFERENCES',
         images: [
-          { src: '/public/image-31@2x.png', alt: 'Flos', caption: 'Flos' },
-          { src: '/public/image-32@2x.png', alt: 'Alight', caption: 'Alight' },
-          { src: '/public/image-36@2x.png', alt: 'Rhino Arc II', caption: 'Rhino Arc II' },
+          { src: '/image-31@2x.png', alt: 'Flos', caption: 'Flos' },
+          { src: '/image-32@2x.png', alt: 'Alight', caption: 'Alight' },
+          { src: '/image-36@2x.png', alt: 'Rhino Arc II', caption: 'Rhino Arc II' },
         ],
       },
       {
@@ -553,9 +644,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'PERSONAS',
         images: [
-          { src: '/public/gettyimages1229319543612x612-1@2x.png', alt: 'Visual merchandiser persona' },
-          { src: '/public/screenshot-20181124-at-629@2x.png', alt: 'User research notes' },
-          { src: '/public/screenshot-20181124-at-644@2x.png', alt: 'Research session' },
+          { src: '/gettyimages1229319543612x612-1@2x.png', alt: 'Visual merchandiser persona' },
+          { src: '/screenshot-20181124-at-629@2x.png', alt: 'User research notes' },
+          { src: '/screenshot-20181124-at-644@2x.png', alt: 'Research session' },
         ],
       },
       {
@@ -566,7 +657,7 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         title: 'STORYBOARD',
-        images: [{ src: '/public/image-39@2x.png', alt: 'Storyboard' }],
+        images: [{ src: '/image-39@2x.png', alt: 'Storyboard' }],
       },
       {
         type: 'text',
@@ -577,17 +668,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WIDGET EXPLORATIONS',
         images: [
-          { src: '/public/image-20@2x.png', alt: 'Widget option 1 — Button-based', caption: 'Option 1: Button-based — "Hard to understand which arrows are for pan and which for tilt"' },
-          { src: '/public/image-19@2x.png', alt: 'Widget option 2 — Semi-circle drag', caption: 'Option 2: Semi-circle drag — "Precision control is missing"' },
-          { src: '/public/image-22@2x.png', alt: 'Widget option 3 — Center circle drag', caption: 'Option 3: Center circle drag — "Hard to establish hand-eye coordination"' },
+          { src: '/image-20@2x.png', alt: 'Widget option 1 — Button-based', caption: 'Option 1: Button-based — "Hard to understand which arrows are for pan and which for tilt"' },
+          { src: '/image-19@2x.png', alt: 'Widget option 2 — Semi-circle drag', caption: 'Option 2: Semi-circle drag — "Precision control is missing"' },
+          { src: '/image-22@2x.png', alt: 'Widget option 3 — Center circle drag', caption: 'Option 3: Center circle drag — "Hard to establish hand-eye coordination"' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/image-16@2x.png', alt: 'Widget option 4 — Slider-based', caption: 'Option 4: Slider-based — "UI does represent the actual position of the beam"' },
-          { src: '/public/image-17@2x.png', alt: 'Widget option 5 — Gyroscopic', caption: 'Option 5: Gyroscopic — "UI does NOT represent the actual position of the beam"' },
-          { src: '/public/easyaimwheel-1@2x.png', alt: 'Widget final — Wheel', caption: 'Final: Wheel widget — selected for its intuitive pan/tilt control' },
+          { src: '/image-16@2x.png', alt: 'Widget option 4 — Slider-based', caption: 'Option 4: Slider-based — "UI does represent the actual position of the beam"' },
+          { src: '/image-17@2x.png', alt: 'Widget option 5 — Gyroscopic', caption: 'Option 5: Gyroscopic — "UI does NOT represent the actual position of the beam"' },
+          { src: '/easyaimwheel-1@2x.png', alt: 'Widget final — Wheel', caption: 'Final: Wheel widget — selected for its intuitive pan/tilt control' },
         ],
       },
       {
@@ -599,9 +690,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'MIND MAP',
         images: [
-          { src: '/public/image-42@2x.png', alt: 'Mind map 1' },
-          { src: '/public/image-43@2x.png', alt: 'Mind map 2' },
-          { src: '/public/image-44@2x.png', alt: 'Mind map 3' },
+          { src: '/image-42@2x.png', alt: 'Mind map 1' },
+          { src: '/image-43@2x.png', alt: 'Mind map 2' },
+          { src: '/image-44@2x.png', alt: 'Mind map 3' },
         ],
       },
       {
@@ -613,43 +704,43 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WIREFRAMES',
         images: [
-          { src: '/public/pencilsketch1-2@2x.png', alt: 'Pencil sketch wireframes' },
-          { src: '/public/image-57@2x.png', alt: 'Wireframe detail' },
-          { src: '/public/image-58@2x.png', alt: 'Wireframe screens' },
+          { src: '/pencilsketch1-2@2x.png', alt: 'Pencil sketch wireframes' },
+          { src: '/image-57@2x.png', alt: 'Wireframe detail' },
+          { src: '/image-58@2x.png', alt: 'Wireframe screens' },
         ],
       },
       {
         type: 'images',
         title: 'HIGH FIDELITY SCREENS',
         images: [
-          { src: '/public/image-61@2x.png', alt: 'App screen — shop window selection' },
-          { src: '/public/image-62@2x.png', alt: 'App screen — spot listing' },
-          { src: '/public/image-63@2x.png', alt: 'App screen — spot detail' },
+          { src: '/image-61@2x.png', alt: 'App screen — shop window selection' },
+          { src: '/image-62@2x.png', alt: 'App screen — spot listing' },
+          { src: '/image-63@2x.png', alt: 'App screen — spot detail' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/image-68@2x.png', alt: 'App screen — widget view' },
-          { src: '/public/image-69@2x.png', alt: 'App screen — pan/tilt widget' },
-          { src: '/public/image-70@2x.png', alt: 'App screen — controls' },
+          { src: '/image-68@2x.png', alt: 'App screen — widget view' },
+          { src: '/image-69@2x.png', alt: 'App screen — pan/tilt widget' },
+          { src: '/image-70@2x.png', alt: 'App screen — controls' },
         ],
       },
       {
         type: 'images',
         title: 'THE FINAL SCREENS',
         images: [
-          { src: '/public/image-81@2x.png', alt: 'Final screen 1' },
-          { src: '/public/image-82@2x.png', alt: 'Final screen 2' },
-          { src: '/public/image-86@2x.png', alt: 'Final screen 3' },
+          { src: '/image-81@2x.png', alt: 'Final screen 1' },
+          { src: '/image-82@2x.png', alt: 'Final screen 2' },
+          { src: '/image-86@2x.png', alt: 'Final screen 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/image-83@2x.png', alt: 'Final screen 4' },
-          { src: '/public/image-84@2x.png', alt: 'Final screen 5' },
-          { src: '/public/image-85@2x.png', alt: 'Final screen 6' },
+          { src: '/image-83@2x.png', alt: 'Final screen 4' },
+          { src: '/image-84@2x.png', alt: 'Final screen 5' },
+          { src: '/image-85@2x.png', alt: 'Final screen 6' },
         ],
       },
       {
@@ -661,8 +752,8 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'TESTING SESSION',
         images: [
-          { src: '/public/easyaim-6-1@2x.png', alt: 'Demo testing session' },
-          { src: '/public/p6@2x.png', alt: 'Testing with ZARA team' },
+          { src: '/easyaim-6-1@2x.png', alt: 'Demo testing session' },
+          { src: '/p6@2x.png', alt: 'Testing with ZARA team' },
         ],
       },
       {
@@ -693,7 +784,7 @@ export const portfolio: Project[] = [
       'User Research & Testing',
       'UX and UI design',
     ],
-    thumbnail: '/public/retail-install-1@2x.png',
+    thumbnail: '/retail-install-1@2x.png',
     nextProject: 'interactpro',
     prevProject: 'easyaim',
     sections: [
@@ -704,7 +795,7 @@ export const portfolio: Project[] = [
       },
       {
         type: 'images',
-        images: [{ src: '/public/problem-statement-1@2x.png', alt: 'Problem statement' }],
+        images: [{ src: '/problem-statement-1@2x.png', alt: 'Problem statement' }],
       },
       {
         type: 'challenge',
@@ -725,7 +816,7 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         title: 'SOLUTION OVERVIEW',
-        images: [{ src: '/public/solution-big-full-1@2x.png', alt: 'Solution overview' }],
+        images: [{ src: '/solution-big-full-1@2x.png', alt: 'Solution overview' }],
       },
       {
         type: 'text',
@@ -736,16 +827,16 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'ECOSYSTEM MAP',
         images: [
-          { src: '/public/hq1-1@2x.png', alt: 'Retail ecosystem map' },
-          { src: '/public/hq4-1@2x.png', alt: 'Ecosystem detail' },
+          { src: '/hq1-1@2x.png', alt: 'Retail ecosystem map' },
+          { src: '/hq4-1@2x.png', alt: 'Ecosystem detail' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/hq5-1@2x.png', alt: 'Retail HQ context 1' },
-          { src: '/public/hq6-1@2x.png', alt: 'Retail HQ context 2' },
-          { src: '/public/hq7@2x.png', alt: 'Retail HQ context 3' },
+          { src: '/hq5-1@2x.png', alt: 'Retail HQ context 1' },
+          { src: '/hq6-1@2x.png', alt: 'Retail HQ context 2' },
+          { src: '/hq7@2x.png', alt: 'Retail HQ context 3' },
         ],
       },
       {
@@ -757,17 +848,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'CO-CREATE DESIGN THINKING WORKSHOPS',
         images: [
-          { src: '/public/image-112@2x.png', alt: 'Design thinking workshop' },
-          { src: '/public/image-113@2x.png', alt: 'Workshop session' },
-          { src: '/public/image-114@2x.png', alt: 'Workshop activities' },
+          { src: '/image-112@2x.png', alt: 'Design thinking workshop' },
+          { src: '/image-113@2x.png', alt: 'Workshop session' },
+          { src: '/image-114@2x.png', alt: 'Workshop activities' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/image-115@2x.png', alt: 'Empathy mapping' },
-          { src: '/public/image-116@2x.png', alt: 'Clustering insights' },
-          { src: '/public/image-117@2x.png', alt: 'Need statements' },
+          { src: '/image-115@2x.png', alt: 'Empathy mapping' },
+          { src: '/image-116@2x.png', alt: 'Clustering insights' },
+          { src: '/image-117@2x.png', alt: 'Need statements' },
         ],
       },
       {
@@ -779,87 +870,87 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'PERSONA MAPS',
         images: [
-          { src: '/public/image-88@2x.png', alt: 'Formula Manager persona' },
-          { src: '/public/image-89@2x.png', alt: 'Facility Manager persona' },
+          { src: '/image-88@2x.png', alt: 'Formula Manager persona' },
+          { src: '/image-89@2x.png', alt: 'Facility Manager persona' },
         ],
       },
       {
         type: 'images',
         title: 'EMPATHY MAPPING + AS-IS SCENARIO',
         images: [
-          { src: '/public/image-91@2x.png', alt: 'Empathy map' },
-          { src: '/public/image-92@2x.png', alt: 'As-is scenario' },
-          { src: '/public/image-93@2x.png', alt: 'Scenario mapping' },
+          { src: '/image-91@2x.png', alt: 'Empathy map' },
+          { src: '/image-92@2x.png', alt: 'As-is scenario' },
+          { src: '/image-93@2x.png', alt: 'Scenario mapping' },
         ],
       },
       {
         type: 'images',
         title: 'TO-BE USER JOURNEY',
         images: [
-          { src: '/public/01flow-1@2x.png', alt: 'To-be user journey flow' },
-          { src: '/public/image-94@2x.png', alt: 'Journey detail' },
+          { src: '/01flow-1@2x.png', alt: 'To-be user journey flow' },
+          { src: '/image-94@2x.png', alt: 'Journey detail' },
         ],
       },
       {
         type: 'images',
         title: 'BIG IDEAS + HILL STATEMENTS',
         images: [
-          { src: '/public/image-96@2x.png', alt: 'Big ideas' },
-          { src: '/public/image-98@2x.png', alt: 'Hill statements' },
-          { src: '/public/image-99@2x.png', alt: 'Need statements' },
+          { src: '/image-96@2x.png', alt: 'Big ideas' },
+          { src: '/image-98@2x.png', alt: 'Hill statements' },
+          { src: '/image-99@2x.png', alt: 'Need statements' },
         ],
       },
       {
         type: 'images',
         title: 'WIREFRAMING',
         images: [
-          { src: '/public/image-100@2x.png', alt: 'Wireframe 1' },
-          { src: '/public/image-101@2x.png', alt: 'Wireframe 2' },
-          { src: '/public/image-102@2x.png', alt: 'Wireframe 3' },
+          { src: '/image-100@2x.png', alt: 'Wireframe 1' },
+          { src: '/image-101@2x.png', alt: 'Wireframe 2' },
+          { src: '/image-102@2x.png', alt: 'Wireframe 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/image-103@2x.png', alt: 'Wireframe 4' },
-          { src: '/public/image-104@2x.png', alt: 'Wireframe 5' },
-          { src: '/public/image-2-1@2x.png', alt: 'Wireframe 6' },
+          { src: '/image-103@2x.png', alt: 'Wireframe 4' },
+          { src: '/image-104@2x.png', alt: 'Wireframe 5' },
+          { src: '/image-2-1@2x.png', alt: 'Wireframe 6' },
         ],
       },
       {
         type: 'images',
         title: 'UI SCREENS — FORMAT & STORE SELECTION',
         images: [
-          { src: '/public/image-121@2x.png', alt: 'Format selection' },
-          { src: '/public/image-122@2x.png', alt: 'Store list' },
-          { src: '/public/image-123@2x.png', alt: 'Store overview' },
+          { src: '/image-121@2x.png', alt: 'Format selection' },
+          { src: '/image-122@2x.png', alt: 'Store list' },
+          { src: '/image-123@2x.png', alt: 'Store overview' },
         ],
       },
       {
         type: 'images',
         title: 'UI SCREENS — SCENE MANAGEMENT',
         images: [
-          { src: '/public/image-124@2x.png', alt: 'Scene management' },
-          { src: '/public/image-125@2x.png', alt: 'Scene editor' },
-          { src: '/public/image-126@2x.png', alt: 'Zone lighting' },
+          { src: '/image-124@2x.png', alt: 'Scene management' },
+          { src: '/image-125@2x.png', alt: 'Scene editor' },
+          { src: '/image-126@2x.png', alt: 'Zone lighting' },
         ],
       },
       {
         type: 'images',
         title: 'UI SCREENS — DEPLOY & MONITOR',
         images: [
-          { src: '/public/image-128@2x.png', alt: 'Deploy to stores' },
-          { src: '/public/image-129@2x.png', alt: 'Deployment status' },
-          { src: '/public/image-130@2x.png', alt: 'Store performance dashboard' },
+          { src: '/image-128@2x.png', alt: 'Deploy to stores' },
+          { src: '/image-129@2x.png', alt: 'Deployment status' },
+          { src: '/image-130@2x.png', alt: 'Store performance dashboard' },
         ],
       },
       {
         type: 'images',
         title: 'FEATURED CUSTOMERS',
         images: [
-          { src: '/public/hq8@2x.png', alt: 'Featured customer 1' },
-          { src: '/public/hq9@2x.png', alt: 'Featured customer 2' },
-          { src: '/public/hq10@2x.png', alt: 'Featured customer 3' },
+          { src: '/hq8@2x.png', alt: 'Featured customer 1' },
+          { src: '/hq9@2x.png', alt: 'Featured customer 2' },
+          { src: '/hq10@2x.png', alt: 'Featured customer 3' },
         ],
       },
       {
@@ -888,7 +979,7 @@ export const portfolio: Project[] = [
       'UX design',
       'User Testing',
     ],
-    thumbnail: '/public/screenshot-20210602-at-1143-11@2x.png',
+    thumbnail: '/screenshot-20210602-at-1143-11@2x.png',
     thumbnailFit: 'cover',
     nextProject: 'philipshue',
     prevProject: 'retailhq',
@@ -896,8 +987,8 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         images: [
-          { src: '/public/interact-pro-2-1@2x.png', alt: 'Interact Pro app' },
-          { src: '/public/interact-pro-2-2@2x.png', alt: 'Interact Pro context' },
+          { src: '/interact-pro-2-1@2x.png', alt: 'Interact Pro app' },
+          { src: '/interact-pro-2-2@2x.png', alt: 'Interact Pro context' },
         ],
       },
       {
@@ -929,9 +1020,9 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'RESEARCH INPUTS',
         images: [
-          { src: '/public/iap-1-1@2x.png', alt: 'Research input 1' },
-          { src: '/public/iap-2-2@2x.png', alt: 'Research input 2' },
-          { src: '/public/iap-3-1@2x.png', alt: 'Research input 3' },
+          { src: '/iap-1-1@2x.png', alt: 'Research input 1' },
+          { src: '/iap-2-2@2x.png', alt: 'Research input 2' },
+          { src: '/iap-3-1@2x.png', alt: 'Research input 3' },
         ],
       },
       {
@@ -943,17 +1034,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WORKSHOP SESSION',
         images: [
-          { src: '/public/iap-4-1@2x.png', alt: 'Workshop activity 1' },
-          { src: '/public/iap-5@2x.png', alt: 'Workshop activity 2' },
-          { src: '/public/iap-6@2x.png', alt: 'Workshop activity 3' },
+          { src: '/iap-4-1@2x.png', alt: 'Workshop activity 1' },
+          { src: '/iap-5@2x.png', alt: 'Workshop activity 2' },
+          { src: '/iap-6@2x.png', alt: 'Workshop activity 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/iap-7@2x.png', alt: 'Workshop output 1' },
-          { src: '/public/iap-8@2x.png', alt: 'Workshop output 2' },
-          { src: '/public/iap-9@2x.png', alt: 'Workshop output 3' },
+          { src: '/iap-7@2x.png', alt: 'Workshop output 1' },
+          { src: '/iap-8@2x.png', alt: 'Workshop output 2' },
+          { src: '/iap-9@2x.png', alt: 'Workshop output 3' },
         ],
       },
       {
@@ -965,25 +1056,25 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'IMPROVED FLOW SCREENS',
         images: [
-          { src: '/public/iap-10@2x.png', alt: 'Improved flow screen 1' },
-          { src: '/public/iap-11@2x.png', alt: 'Improved flow screen 2' },
-          { src: '/public/iap-12@2x.png', alt: 'Improved flow screen 3' },
+          { src: '/iap-10@2x.png', alt: 'Improved flow screen 1' },
+          { src: '/iap-11@2x.png', alt: 'Improved flow screen 2' },
+          { src: '/iap-12@2x.png', alt: 'Improved flow screen 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/iap-13@2x.png', alt: 'Flow screen 4' },
-          { src: '/public/iap-14@2x.png', alt: 'Flow screen 5' },
-          { src: '/public/iap-15@2x.png', alt: 'Flow screen 6' },
+          { src: '/iap-13@2x.png', alt: 'Flow screen 4' },
+          { src: '/iap-14@2x.png', alt: 'Flow screen 5' },
+          { src: '/iap-15@2x.png', alt: 'Flow screen 6' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/iap-16@2x.png', alt: 'Flow screen 7' },
-          { src: '/public/screenshot-20210603-at-108-1@2x.png', alt: 'App overview screen' },
-          { src: '/public/image-21@2x.png', alt: 'App detail screen' },
+          { src: '/iap-16@2x.png', alt: 'Flow screen 7' },
+          { src: '/screenshot-20210603-at-108-1@2x.png', alt: 'App overview screen' },
+          { src: '/image-21@2x.png', alt: 'App detail screen' },
         ],
       },
     ],
@@ -1003,7 +1094,7 @@ export const portfolio: Project[] = [
       'Composting the Data',
       'UX design',
     ],
-    thumbnail: '/public/hue5@2x.png',
+    thumbnail: '/hue5@2x.png',
     thumbnailFit: 'contain',
     nextProject: 'dynalite',
     prevProject: 'interactpro',
@@ -1011,8 +1102,8 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         images: [
-          { src: '/public/hue-1@2x.png', alt: 'Philips Hue app' },
-          { src: '/public/hue3-1@2x.png', alt: 'Hue research overview' },
+          { src: '/hue-1@2x.png', alt: 'Philips Hue app' },
+          { src: '/hue3-1@2x.png', alt: 'Hue research overview' },
         ],
       },
       {
@@ -1044,24 +1135,24 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'RESEARCH SYNTHESIS',
         images: [
-          { src: '/public/hue3-1@2x.png', alt: 'Affinity clustering — Notes, Cluster, Feature Ideation, Prioritization' },
+          { src: '/hue3-1@2x.png', alt: 'Affinity clustering — Notes, Cluster, Feature Ideation, Prioritization' },
         ],
       },
       {
         type: 'images',
         title: 'USER JOURNEY + RAPID PROTOTYPING',
         images: [
-          { src: '/public/hue1-1@2x.png', alt: 'User journey map' },
-          { src: '/public/hue2-1@2x.png', alt: 'Rapid prototype sketches' },
+          { src: '/hue1-1@2x.png', alt: 'User journey map' },
+          { src: '/hue2-1@2x.png', alt: 'Rapid prototype sketches' },
         ],
       },
       {
         type: 'images',
         title: 'APP SCREENS',
         images: [
-          { src: '/public/hue4@2x.png', alt: 'Hue app screen 1' },
-          { src: '/public/hue5@2x.png', alt: 'Hue app screen 2' },
-          { src: '/public/hue6@2x.png', alt: 'Hue app screen 3' },
+          { src: '/hue4@2x.png', alt: 'Hue app screen 1' },
+          { src: '/hue5@2x.png', alt: 'Hue app screen 2' },
+          { src: '/hue6@2x.png', alt: 'Hue app screen 3' },
         ],
       },
     ],
@@ -1077,15 +1168,15 @@ export const portfolio: Project[] = [
       'Provides convenient control over lighting, allowing users to create personalized lighting experiences that enhance the ambiance and functionality of their spaces.',
     role: 'Senior Designer and Researcher',
     responsibilities: ['Information architecture', 'User Interviews', 'UX Design'],
-    thumbnail: '/public/screenshot-20210603-at-1219@2x.png',
+    thumbnail: '/screenshot-20210603-at-1219@2x.png',
     nextProject: 'servicetag',
     prevProject: 'philipshue',
     sections: [
       {
         type: 'images',
         images: [
-          { src: '/public/dyn1@2x.png', alt: 'Dynalite Control app' },
-          { src: '/public/dyn2@2x.png', alt: 'Dynalite app context' },
+          { src: '/dyn1@2x.png', alt: 'Dynalite Control app' },
+          { src: '/dyn2@2x.png', alt: 'Dynalite app context' },
         ],
       },
       {
@@ -1102,17 +1193,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'STORYBOARDS',
         images: [
-          { src: '/public/dyn3@2x.png', alt: 'Storyboard 1' },
-          { src: '/public/dyn4@2x.png', alt: 'Storyboard 2' },
-          { src: '/public/dyn5@2x.png', alt: 'Storyboard 3' },
+          { src: '/dyn3@2x.png', alt: 'Storyboard 1' },
+          { src: '/dyn4@2x.png', alt: 'Storyboard 2' },
+          { src: '/dyn5@2x.png', alt: 'Storyboard 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/dyn6@2x.png', alt: 'Storyboard 4' },
-          { src: '/public/dyn8@2x.png', alt: 'Storyboard 5' },
-          { src: '/public/dyn9@2x.png', alt: 'Storyboard 6' },
+          { src: '/dyn6@2x.png', alt: 'Storyboard 4' },
+          { src: '/dyn8@2x.png', alt: 'Storyboard 5' },
+          { src: '/dyn9@2x.png', alt: 'Storyboard 6' },
         ],
       },
       {
@@ -1124,17 +1215,17 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'TASK FLOWS',
         images: [
-          { src: '/public/dyn10@2x.png', alt: 'Task flow 1' },
-          { src: '/public/dyn11@2x.png', alt: 'Task flow 2' },
-          { src: '/public/dyn12@2x.png', alt: 'Task flow 3' },
+          { src: '/dyn10@2x.png', alt: 'Task flow 1' },
+          { src: '/dyn11@2x.png', alt: 'Task flow 2' },
+          { src: '/dyn12@2x.png', alt: 'Task flow 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/dyn13@2x.png', alt: 'Task flow 4' },
-          { src: '/public/dyn14@2x.png', alt: 'Task flow 5' },
-          { src: '/public/dyn15@2x.png', alt: 'Task flow 6' },
+          { src: '/dyn13@2x.png', alt: 'Task flow 4' },
+          { src: '/dyn14@2x.png', alt: 'Task flow 5' },
+          { src: '/dyn15@2x.png', alt: 'Task flow 6' },
         ],
       },
       {
@@ -1146,49 +1237,49 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'WIREFRAMING',
         images: [
-          { src: '/public/dyn16@2x.png', alt: 'Wireframe 1' },
-          { src: '/public/dyn17@2x.png', alt: 'Wireframe 2' },
-          { src: '/public/dyn18@2x.png', alt: 'Wireframe 3' },
+          { src: '/dyn16@2x.png', alt: 'Wireframe 1' },
+          { src: '/dyn17@2x.png', alt: 'Wireframe 2' },
+          { src: '/dyn18@2x.png', alt: 'Wireframe 3' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/dyn19@2x.png', alt: 'Wireframe 4' },
-          { src: '/public/dyn20@2x.png', alt: 'Wireframe 5' },
-          { src: '/public/dyn21@2x.png', alt: 'Wireframe 6' },
+          { src: '/dyn19@2x.png', alt: 'Wireframe 4' },
+          { src: '/dyn20@2x.png', alt: 'Wireframe 5' },
+          { src: '/dyn21@2x.png', alt: 'Wireframe 6' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/dyn22@2x.png', alt: 'Wireframe 7' },
-          { src: '/public/6@2x.png', alt: 'Wireframe 8' },
-          { src: '/public/7@2x.png', alt: 'Wireframe 9' },
+          { src: '/dyn22@2x.png', alt: 'Wireframe 7' },
+          { src: '/6@2x.png', alt: 'Wireframe 8' },
+          { src: '/7@2x.png', alt: 'Wireframe 9' },
         ],
       },
       {
         type: 'images',
         title: 'FINAL APP SCREENS',
         images: [
-          { src: '/public/dyn23@2x.png', alt: 'Final screen 1 — Scenes' },
-          { src: '/public/dyn24@2x.png', alt: 'Final screen 2 — Channels' },
-          { src: '/public/dyn25@2x.png', alt: 'Final screen 3 — Schedule' },
+          { src: '/dyn23@2x.png', alt: 'Final screen 1 — Scenes' },
+          { src: '/dyn24@2x.png', alt: 'Final screen 2 — Channels' },
+          { src: '/dyn25@2x.png', alt: 'Final screen 3 — Schedule' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/dyn26-1@2x.png', alt: 'Final screen 4' },
-          { src: '/public/dyn28@2x.png', alt: 'Final screen 5' },
-          { src: '/public/dyn29@2x.png', alt: 'Final screen 6' },
+          { src: '/dyn26-1@2x.png', alt: 'Final screen 4' },
+          { src: '/dyn28@2x.png', alt: 'Final screen 5' },
+          { src: '/dyn29@2x.png', alt: 'Final screen 6' },
         ],
       },
       {
         type: 'images',
         images: [
-          { src: '/public/dyn30-1@2x.png', alt: 'Final screen 7 — iPad view' },
-          { src: '/public/screenshot-20210603-at-1219@2x.png', alt: 'App in context' },
+          { src: '/dyn30-1@2x.png', alt: 'Final screen 7 — iPad view' },
+          { src: '/screenshot-20210603-at-1219@2x.png', alt: 'App in context' },
         ],
       },
     ],
@@ -1204,7 +1295,7 @@ export const portfolio: Project[] = [
       'Users will have the ability to effortlessly view luminaire configuration details, easily identify required spare parts, and conveniently program LED drivers to factory settings using cutting-edge Near Field Communication (NFC) technology.',
     role: 'Senior Designer and Researcher',
     responsibilities: ['User Research', 'Navigation flow', 'UX Design'],
-    thumbnail: '/public/screenshot-20210605-at-1231-1@2x.png',
+    thumbnail: '/screenshot-20210605-at-1231-1@2x.png',
     thumbnailFit: 'top',
     prevProject: 'dynalite',
     nextProject: 'careerarchitecture',
@@ -1212,9 +1303,9 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         images: [
-          { src: '/public/st1-1@2x.png', alt: 'Service Tag app' },
-          { src: '/public/st2-1@2x.png', alt: 'Service Tag context' },
-          { src: '/public/st3-1@2x.png', alt: 'Service Tag screens' },
+          { src: '/st1-1@2x.png', alt: 'Service Tag app' },
+          { src: '/st2-1@2x.png', alt: 'Service Tag context' },
+          { src: '/st3-1@2x.png', alt: 'Service Tag screens' },
         ],
       },
       {
@@ -1236,8 +1327,8 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'USER STORY MAPS',
         images: [
-          { src: '/public/screenshot-20210605-at-1231-1@2x.png', alt: 'User story map 1' },
-          { src: '/public/screenshot-20210603-at-137-1@2x.png', alt: 'User story map 2' },
+          { src: '/screenshot-20210605-at-1231-1@2x.png', alt: 'User story map 1' },
+          { src: '/screenshot-20210603-at-137-1@2x.png', alt: 'User story map 2' },
         ],
       },
       {
@@ -1249,25 +1340,25 @@ export const portfolio: Project[] = [
         type: 'images',
         title: 'TASK FLOWS',
         images: [
-          { src: '/public/st4@2x.png', alt: 'Task flow 1' },
-          { src: '/public/st5@2x.png', alt: 'Task flow 2' },
+          { src: '/st4@2x.png', alt: 'Task flow 1' },
+          { src: '/st5@2x.png', alt: 'Task flow 2' },
         ],
       },
       {
         type: 'images',
         title: 'WIREFRAMING THE FLOWS',
         images: [
-          { src: '/public/st6@2x.png', alt: 'Wireframe flow 1' },
-          { src: '/public/st7@2x.png', alt: 'Wireframe flow 2' },
+          { src: '/st6@2x.png', alt: 'Wireframe flow 1' },
+          { src: '/st7@2x.png', alt: 'Wireframe flow 2' },
         ],
       },
       {
         type: 'images',
         title: 'PRODUCT REVAMP — FINAL SCREENS',
         images: [
-          { src: '/public/screenshot-20210605-at-1231-1@2x.png', alt: 'Service Tag final screen 1' },
-          { src: '/public/screenshot-20210604-at-1258-1@2x.png', alt: 'Service Tag final screen 2' },
-          { src: '/public/screenshot-20210603-at-137-1@2x.png', alt: 'Service Tag final screen 3' },
+          { src: '/screenshot-20210605-at-1231-1@2x.png', alt: 'Service Tag final screen 1' },
+          { src: '/screenshot-20210604-at-1258-1@2x.png', alt: 'Service Tag final screen 2' },
+          { src: '/screenshot-20210603-at-137-1@2x.png', alt: 'Service Tag final screen 3' },
         ],
       },
     ],
@@ -1289,7 +1380,7 @@ export const portfolio: Project[] = [
       'Build Career Architecture Framework',
       'Collaboration with leaders across the globe',
     ],
-    thumbnail: '/public/selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png',
+    thumbnail: '/selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png',
     thumbnailFit: 'contain',
     passwordProtected: true,
     passwordHash: 'bWVkZXMyMDIz',
@@ -1304,7 +1395,7 @@ export const portfolio: Project[] = [
       {
         type: 'images',
         title: 'FRAMEWORK VISUALS',
-        images: [{ src: '/public/selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png', alt: 'Career Architecture Framework' }],
+        images: [{ src: '/selfgrowthandpersonaldevelopmentprogressstagesflatpersonconceptreachingforcareergoalsandsuccessillustrationambitionladdersandpotentialaccomplishmentvisionforfuturevector-3@2x.png', alt: 'Career Architecture Framework' }],
       },
     ],
   },

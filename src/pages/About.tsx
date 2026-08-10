@@ -19,11 +19,14 @@ export default function About() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img
-              src={person.photo}
-              alt={person.name}
-              className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-xl"
-            />
+            <div className="relative">
+              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-burlywood-light to-pink-soft/30 absolute -inset-4" />
+              <img
+                src={person.photo}
+                alt={person.name}
+                className="relative w-64 h-64 md:w-80 md:h-80 object-cover object-[center_31%] rounded-full shadow-2xl border-4 border-white"
+              />
+            </div>
           </div>
         </div>
       </section>

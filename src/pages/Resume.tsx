@@ -1,21 +1,20 @@
-import { contactPage, person, skills } from '../config/siteConfig'
+import { contactPage, person } from '../config/siteConfig'
 
 export default function Resume() {
-  const allSkills = skills.categories.flatMap((c) => c.items)
-
   return (
     <main className="bg-white min-h-screen">
-      {/* Print button — hidden when printing */}
+      {/* Download button — hidden when printing */}
       <div className="print:hidden flex items-center justify-between px-8 py-4 border-b border-gray-line bg-gray-light">
         <p className="text-sm text-gray-warm">
-          To save as PDF: click the button → in the print dialog, set <strong>Destination</strong> to <strong>"Save as PDF"</strong> → click Save.
+          Click the button to download the latest resume PDF.
         </p>
-        <button
-          onClick={() => window.print()}
+        <a
+          href={person.resumePdf}
+          download="Megalatha_Sankaraiya_UX_Designer_Resume.pdf"
           className="btn-primary text-sm ml-6 whitespace-nowrap flex-shrink-0"
         >
           ↓ Print / Save as PDF
-        </button>
+        </a>
       </div>
 
       {/* Resume body */}
@@ -24,7 +23,10 @@ export default function Resume() {
         {/* Header */}
         <header className="mb-6 border-b-2 border-gray-900 pb-4">
           <h1 className="text-3xl font-montserrat font-bold tracking-wide">{person.name}</h1>
-          <p className="text-lg font-medium text-burlywood mt-1">{person.title} | UX Designer &amp; Design Leader</p>
+          <p className="text-lg font-medium text-burlywood mt-1">{person.title}</p>
+          <p className="text-sm text-gray-600 mt-1">
+            19+ years Experience · AI-Native Product Design · Design Systems · Enterprise UX
+          </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-sm text-gray-600">
             <span>{person.location}</span>
             <span>•</span>
@@ -42,31 +44,21 @@ export default function Resume() {
         <section className="mb-5">
           <h2 className="section-heading">Professional Summary</h2>
           <p className="text-sm leading-relaxed text-gray-700">
-            Senior UX Manager and Interaction Designer with 16+ years of experience delivering user-centered design solutions across Retail, Enterprise, B2B, Consumer, Airline, and IoT domains. Proven track record in UX Strategy, Design Leadership, Design Operations (DesignOps), Design Systems, and cross-functional stakeholder management. Expert in end-to-end UX Design — from User Research and Usability Testing to high-fidelity Interaction Design and handoff. SAFe PM/PO certified. Experienced managing globally distributed design teams.
+            User Experience Designer with 19+ years of experience leading interaction design, design systems, and design operations for enterprise-scale digital products. Currently at Amazon Web Services designing AI-native Observability and Security experiences for millions of enterprise customers. Track record of running structured usability research, building design systems adopted across multiple product domains, and driving measurable outcomes, from research insight to engineering handoff. Experienced in WCAG accessibility, cross-functional leadership, and AI-native product design and strategies. Currently use Kiro IDE to create production-grade prototypes from day one, no static mockup lag.
           </p>
         </section>
 
-        {/* Core Skills */}
+        {/* Skills & Tools */}
         <section className="mb-5">
-          <h2 className="section-heading">Core Competencies</h2>
-          <div className="flex flex-wrap gap-1.5 mt-2">
-            {allSkills.map((skill, i) => (
-              <span
-                key={i}
-                className="text-xs border border-gray-300 rounded px-2 py-0.5 text-gray-700"
-              >
-                {skill}
-              </span>
+          <h2 className="section-heading">Skills &amp; Tools</h2>
+          <div className="space-y-2 mt-2">
+            {contactPage.skills.map((s, i) => (
+              <div key={i} className="text-sm text-gray-700">
+                <span className="font-semibold">{s.label}:</span>{' '}
+                <span className="text-gray-600">{s.value}</span>
+              </div>
             ))}
           </div>
-        </section>
-
-        {/* Tools */}
-        <section className="mb-5">
-          <h2 className="section-heading">Tools &amp; Technologies</h2>
-          <p className="text-sm text-gray-700">
-            Figma, Sketch, InVision, Adobe XD, Adobe Photoshop, Miro, HotJar, Google Analytics, JIRA, Confluence, Trello, HTML, CSS, JavaScript, jQuery, AutoCAD
-          </p>
         </section>
 
         {/* Experience */}
@@ -126,7 +118,7 @@ export default function Resume() {
         <section className="mb-2">
           <h2 className="section-heading">Industries</h2>
           <p className="text-sm text-gray-700 mt-1">
-            Retail · Fashion · Airline · Airport Management · Travel &amp; Tourism · IoT / Smart Lighting · Hardware Manufacturing · Enterprise SaaS · Supply Chain Visibility · B2B
+            Cloud / Observability · Security · Enterprise SaaS · Retail · Logistics · IoT / Smart Lighting · Travel &amp; Tourism · Hardware Manufacturing · B2B · Consumer
           </p>
         </section>
       </div>

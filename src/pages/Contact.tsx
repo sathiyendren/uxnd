@@ -31,10 +31,10 @@ export default function Contact() {
           <div className="card p-8 text-center">
             <div className="text-5xl mb-4">📄</div>
             <h2 className="font-montserrat font-semibold text-gray-900 mb-2">Download Resume</h2>
-            <p className="text-sm text-gray-warm mb-6">File size: 135 KB</p>
+            <p className="text-sm text-gray-warm mb-6">File size: 123 KB</p>
             <a
               href={person.resumePdf}
-              download="Megalatha_Sankaraiya_Resume.pdf"
+              download="Megalatha_Sankaraiya_UX_Designer_Resume.pdf"
               className="btn-primary"
             >
               Download as PDF
