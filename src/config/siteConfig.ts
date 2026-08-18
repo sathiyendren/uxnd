@@ -81,7 +81,7 @@ export const person = {
   location: 'Greater Atlanta, US',
   email: 'iammega@gmail.com',
   phone: '+1 404 740 4814',
-  website: 'www.uxnd.in',
+  website: 'megaux.design',
   linkedin: 'https://www.linkedin.com/in/megalatha-s-0a679816/',
   logo: `${BASE_URL}ml-logo-11@2x.png`,
   photo: `${BASE_URL}mega-1@2x.png`,
