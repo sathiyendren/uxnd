@@ -23,6 +23,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600&family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Copse:wght@400&display=swap" rel="stylesheet" />
+
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        if (redirect) {
+          delete sessionStorage.redirect;
+          if (redirect !== window.location.href) {
+            var parser = document.createElement('a');
+            parser.href = redirect;
+            if (parser.pathname !== window.location.pathname) {
+              window.history.replaceState(null, null, parser.pathname + parser.search + parser.hash);
+            }
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
