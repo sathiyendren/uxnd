@@ -101,7 +101,7 @@ export const nav: NavItem[] = [
 export const home = {
   headline: "I design products people depend on when things go wrong.",
   subheadline: 'Currently at AWS · Previously Fourkites, Target, Philips',
-  tagline: '16 years across enterprise, B2B, and consumer',
+  tagline: '19 years across enterprise, B2B, and consumer',
   description:
     ' I led the redesign of CloudWatch Omni- an AI-native investigation platform serving millions of AWS engineers. I design entirely in Kiro IDE, from first idea to production prototype, in one environment.',
   cta: 'View portfolio',
@@ -111,7 +111,7 @@ export const home = {
 
 export const about = {
   bio: [
-    '16 years designing products that people depend on under pressure. Currently at Amazon Web Services, where I led the design of CloudWatch Omni-an AI-native investigation platform built for millions of engineers diagnosing production incidents in real time. I design entirely in Kiro IDE, from first rough concept to production-grade prototype, in one environment.',
+    '19 years designing products that people depend on under pressure. Currently at Amazon Web Services, where I led the design of CloudWatch Omni-an AI-native investigation platform built for millions of engineers diagnosing production incidents in real time. I design entirely in Kiro IDE, from first rough concept to production-grade prototype, in one environment.',
     'My background spans cloud infrastructure at AWS, logistics visibility at Fourkites, connected hardware at Philips, and retail operations at Target. The industries change. The problem does not: complex systems that need to feel clear and fast for people under cognitive load. That is the thread',
     'I am drawn to design problems where getting it wrong actually costs something-time, trust, or a user\'s confidence in the product. I design with that weight in mind. Not to slow things down, but because the best design decisions I have made came from taking the stakes seriously',
   ],
@@ -120,7 +120,7 @@ export const about = {
     { label: 'One design system governing them all', value: '5 domains' },
     { label: 'Cross-team design governance', value: '12 designers' },
     { label: 'Target MTTR reduction, CloudWatch Omni', value: '73%' },
-    { label: 'Across enterprise, B2B, and consumer', value: '16 years' },
+    { label: 'Across enterprise, B2B, and consumer', value: '19 years' },
   ],
   leadershipTitle: 'HOW I LEAD',
   leadership: [

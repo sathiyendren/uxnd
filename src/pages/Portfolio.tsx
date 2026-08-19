@@ -31,7 +31,7 @@ export default function Portfolio() {
           <p className="section-label">Work</p>
           <h1 className="text-4xl md:text-5xl font-montserrat font-bold text-gray-900 mb-4">Portfolio</h1>
           <p className="text-gray-warm">
-            From AI-native enterprise platforms at AWS to consumer hardware at Philips- selected work across 16 years.
+            From AI-native enterprise platforms at AWS to consumer hardware at Philips- selected work across 19 years.
           </p>
         </div>
       </section>
