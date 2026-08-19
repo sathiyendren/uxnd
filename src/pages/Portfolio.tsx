@@ -4,6 +4,9 @@ import { portfolio } from '../config/siteConfig'
 export default function Portfolio() {
   const navigate = useNavigate()
 
+  const featured = portfolio.find((p) => p.id === 'cloudwatch-omni')
+  const others = portfolio.filter((p) => p.id !== 'cloudwatch-omni')
+
   const handleProjectClick = (project: (typeof portfolio)[0]) => {
     if (project.passwordProtected) {
       const input = window.prompt(
@@ -28,7 +31,7 @@ export default function Portfolio() {
           <p className="section-label">Work</p>
           <h1 className="text-4xl md:text-5xl font-montserrat font-bold text-gray-900 mb-4">Portfolio</h1>
           <p className="text-gray-warm">
-            A selection of UX case studies spanning retail, lighting, travel, and enterprise products.
+            From AI-native enterprise platforms at AWS to consumer hardware at Philips- selected work across 16 years.
           </p>
         </div>
       </section>
@@ -36,8 +39,63 @@ export default function Portfolio() {
       {/* Project grid */}
       <section className="py-14 bg-gray-light">
         <div className="page-container">
+          {/* Featured full-width card */}
+          {featured && (
+            <div
+              onClick={() => handleProjectClick(featured)}
+              className="card cursor-pointer group overflow-hidden bg-gray-900 mb-8"
+            >
+              <div className="grid md:grid-cols-2">
+                {/* Thumbnail */}
+                <div className="h-64 md:h-full min-h-[260px] overflow-hidden order-1 md:order-2">
+                  <img
+                    src={featured.thumbnail}
+                    alt={featured.title}
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    onError={(e) => {
+                      ;(e.target as HTMLImageElement).style.display = 'none'
+                    }}
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="p-8 md:p-10 flex flex-col justify-center order-2 md:order-1">
+                  <p className="text-xs font-montserrat font-semibold tracking-wider text-burlywood uppercase mb-3">
+                    Featured Work · AWS · 2025–Present
+                  </p>
+                  <h2 className="text-2xl md:text-3xl font-montserrat font-bold text-white leading-snug mb-4 group-hover:text-burlywood transition-colors">
+                    CloudWatch Omni — AI-Native Incident Investigation
+                  </h2>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    Redesigned how millions of AWS engineers diagnose production incidents. Replaced
+                    dashboard-hunting with a session-based agentic workspace — targeting 73% faster
+                    resolution than the industry average.
+                  </p>
+                  <p className="text-sm text-gray-400 leading-relaxed mb-6">
+                    29 usability issues surfaced · 11 critical fixes shipped in 2 weeks · Design system
+                    adopted across 5 product domains
+                  </p>
+                  <div className="flex items-center justify-between gap-4 flex-wrap">
+                    <span className="flex items-center text-burlywood text-sm font-montserrat font-medium">
+                      Read the case study
+                      <svg
+                        className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                    <span className="text-xs text-gray-400">🔒 Password available on request</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="grid md:grid-cols-2 gap-8">
-            {portfolio.map((project) => (
+            {others.map((project) => (
               <div
                 key={project.id}
                 onClick={() => handleProjectClick(project)}

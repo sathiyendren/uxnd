@@ -1,8 +1,29 @@
-import { Link } from 'react-router-dom'
-import { home, person } from '../config/siteConfig'
+import { Link, useNavigate } from 'react-router-dom'
+import { home, person, portfolio } from '../config/siteConfig'
 
 
 export default function Home() {
+  const navigate = useNavigate()
+
+  const featured = portfolio.find((p) => p.id === 'cloudwatch-omni')
+
+  const handleFeaturedClick = () => {
+    if (!featured) return
+    if (featured.passwordProtected) {
+      const input = window.prompt(
+        'To access the content, kindly provide the password. For password assistance, you can reach out to iammega@gmail.com.',
+        ''
+      )
+      if (input && window.btoa(input) === featured.passwordHash) {
+        navigate(`/portfolio/${featured.slug}`)
+      } else if (input !== null) {
+        alert('Incorrect password. Please try again.')
+      }
+    } else {
+      navigate(`/portfolio/${featured.slug}`)
+    }
+  }
+
   return (
     <main className="min-h-screen flex flex-col">
       {/* Hero */}
@@ -10,7 +31,7 @@ export default function Home() {
         <div className="page-container w-full py-20 md:py-32">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <p className="section-label">Welcome</p>
+              <p className="section-label">SR. UX DESIGNER · AMAZON WEB SERVICES</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-gray-900 leading-tight mb-6">
                 {home.headline}
               </h1>
@@ -26,9 +47,6 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Link to="/about" className="btn-primary">
                   {home.cta} →
-                </Link>
-                <Link to="/portfolio" className="btn-outline">
-                  View Portfolio
                 </Link>
                 <a
                   href={person.resumePdf}
@@ -59,9 +77,9 @@ export default function Home() {
         <div className="page-container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: '16+', label: 'Years of Experience' },
-              { value: '10+', label: 'Companies Served' },
-              { value: '6+', label: 'Industries' },
+              { value: 'Millions', label: 'Users designed for at AWS' },
+              { value: '73%', label: 'Target MTTR reduction, CloudWatch Omni' },
+              { value: '5 domains', label: 'One design system governing them all' },
               { value: '3', label: 'Continents' },
             ].map((stat) => (
               <div key={stat.label}>
@@ -73,38 +91,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Nav cards */}
+      {/* Featured work */}
       <section className="bg-gray-light py-16">
         <div className="page-container">
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                title: 'About Me',
-                desc: 'Discover my background, philosophy, and what drives me as a UX leader.',
-                path: '/about',
-                icon: '👤',
-              },
-              {
-                title: 'My Skill Set',
-                desc: 'Explore the full range of my design, research, and leadership capabilities.',
-                path: '/skills',
-                icon: '⚡',
-              },
-              {
-                title: 'Portfolio',
-                desc: 'Case studies showcasing UX challenges I\'ve solved across industries.',
-                path: '/portfolio',
-                icon: '🎨',
-              },
-            ].map((card) => (
-              <Link key={card.path} to={card.path} className="card p-6 group">
-                <div className="text-3xl mb-3">{card.icon}</div>
-                <h3 className="text-lg font-montserrat font-semibold text-gray-900 mb-2 group-hover:text-burlywood transition-colors">
-                  {card.title}
-                </h3>
-                <p className="text-sm text-gray-warm leading-relaxed">{card.desc}</p>
-              </Link>
-            ))}
+          <div
+            onClick={handleFeaturedClick}
+            className="card cursor-pointer block p-8 md:p-12 bg-burlywood-light group"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <p className="section-label">FEATURED WORK</p>
+              {featured?.passwordProtected && (
+                <span className="flex-shrink-0 text-xs bg-pink-soft/40 text-gray-warm px-2 py-1 rounded-full">
+                  🔒 Password
+                </span>
+              )}
+            </div>
+            <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-gray-900 mt-2 mb-1 group-hover:text-burlywood transition-colors">
+              CloudWatch Omni — AI-Native Incident Investigation
+            </h3>
+            <p className="text-sm text-gray-warm font-roboto mb-4">
+              Amazon Web Services · 2025–Present
+            </p>
+            <p className="text-gray-700 leading-relaxed max-w-2xl mb-6">
+              Redesigned how millions of engineers diagnose production incidents — targeting 73% faster
+              resolution than the industry average.
+            </p>
+            <span className="text-burlywood font-montserrat font-semibold">
+              Read the case study →
+            </span>
           </div>
         </div>
       </section>

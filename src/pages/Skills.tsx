@@ -112,26 +112,6 @@ function RadarChart() {
   )
 }
 
-// ─── Proficiency bar ──────────────────────────────────────────────────────────
-
-function ProficiencyBar({ value, label }: { value: number; label: string }) {
-  const level = value >= 90 ? 'Expert' : value >= 75 ? 'Advanced' : 'Proficient'
-  return (
-    <div className="mt-3 mb-4">
-      <div className="flex justify-between items-center mb-1.5">
-        <span className="text-xs text-gray-warm font-roboto">{label}</span>
-        <span className="text-xs font-montserrat font-semibold text-burlywood">{level}</span>
-      </div>
-      <div className="h-1.5 bg-gray-line rounded-full overflow-hidden">
-        <div
-          className="h-full bg-gradient-to-r from-burlywood to-burlywood-dark rounded-full transition-all duration-700"
-          style={{ width: `${value}%` }}
-        />
-      </div>
-    </div>
-  )
-}
-
 // ─── Design Ops accordion item ────────────────────────────────────────────────
 
 function AccordionItem({
@@ -191,9 +171,7 @@ export default function Skills() {
               My Skill Set
             </h1>
             <p className="text-gray-warm leading-relaxed mb-6">
-              A comprehensive blend of design craft, research methodology, leadership,
-              and technical skills cultivated over <strong className="text-gray-900">16+ years</strong> across
-              Retail, Fashion, Airline, Travel, and Lighting industries.
+              Built across cloud infrastructure, enterprise logistics, connected hardware, and retail- currently at Amazon Web Services designing for millions of engineers.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               {skills.radar.map((r) => (
@@ -226,41 +204,33 @@ export default function Skills() {
             <h2 className="section-title">Core Competencies</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="max-w-5xl mx-auto divide-y divide-gray-line border-t border-b border-gray-line">
             {skills.categories.map((cat) => (
               <div
                 key={cat.name}
-                className="card p-6 flex flex-col hover:shadow-md transition-shadow"
+                className="grid md:grid-cols-[minmax(0,1fr)_1.7fr] gap-5 md:gap-10 py-8 group"
               >
-                {/* Card header */}
-                <div className="flex items-start justify-between mb-1">
-                  <span className="text-2xl text-burlywood font-copse leading-none select-none">
+                {/* Left: identity */}
+                <div className="flex gap-4">
+                  <span className="w-11 h-11 rounded-xl bg-burlywood-light text-burlywood text-xl font-copse flex items-center justify-center flex-shrink-0 leading-none select-none group-hover:bg-burlywood group-hover:text-white transition-colors">
                     {cat.icon}
                   </span>
-                  <span className="text-xs font-montserrat font-bold text-burlywood tabular-nums">
-                    {cat.proficiency}%
-                  </span>
+                  <div>
+                    <h3 className="font-montserrat font-semibold text-gray-900 text-lg leading-tight mb-1">
+                      {cat.name}
+                    </h3>
+                    <p className="text-sm text-gray-warm leading-relaxed">
+                      {cat.description}
+                    </p>
+                  </div>
                 </div>
 
-                <h3 className="font-montserrat font-semibold text-gray-900 text-base mt-2 mb-1">
-                  {cat.name}
-                </h3>
-                <p className="text-xs text-gray-warm leading-relaxed mb-3">
-                  {cat.description}
-                </p>
-
-                {/* Proficiency bar */}
-                <ProficiencyBar value={cat.proficiency} label="Proficiency" />
-
-                {/* Divider */}
-                <div className="border-t border-gray-line mb-4" />
-
-                {/* Skill pills */}
-                <div className="flex flex-wrap gap-1.5 mt-auto">
+                {/* Right: skills */}
+                <div className="flex flex-wrap content-start gap-2 md:pt-1">
                   {cat.items.map((item) => (
                     <span
                       key={item}
-                      className="px-2.5 py-1 text-xs rounded-md bg-gray-pale text-gray-700 border border-gray-line font-roboto"
+                      className="px-3 py-1.5 text-sm rounded-lg bg-gray-pale text-gray-700 border border-gray-line font-roboto"
                     >
                       {item}
                     </span>
@@ -285,9 +255,11 @@ export default function Skills() {
                   {para}
                 </p>
               ))}
-              <p className="text-sm text-gray-700 leading-relaxed mt-2 italic border-l-2 border-burlywood pl-4">
-                {skills.designOps.closing}
-              </p>
+              {skills.designOps.closing && (
+                <p className="text-sm text-gray-700 leading-relaxed mt-2 italic border-l-2 border-burlywood pl-4">
+                  {skills.designOps.closing}
+                </p>
+              )}
             </div>
 
             {/* Right: accordion */}
@@ -310,11 +282,11 @@ export default function Skills() {
       <section className="py-12 bg-white border-t border-gray-line">
         <div className="page-container flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="font-montserrat font-semibold text-gray-900 mb-1">Want to see these skills in action?</p>
-            <p className="text-sm text-gray-warm">Browse case studies across retail, lighting, and enterprise UX.</p>
+            <p className="font-montserrat font-semibold text-gray-900 mb-1">Want to see the work?</p>
+            <p className="text-sm text-gray-warm">The CloudWatch Omni case study covers the full arc - research, IA redesign, agentic UX, and design systems.</p>
           </div>
           <Link to="/portfolio" className="btn-primary flex-shrink-0">
-            View Portfolio →
+            Read the case study →
           </Link>
         </div>
       </section>
