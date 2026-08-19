@@ -124,8 +124,8 @@ export const about = {
   ],
   leadershipTitle: 'HOW I LEAD',
   leadership: [
-    'My job as a design leader is to create the conditions for great work — clear direction, room to think, and a team that trusts each other enough to disagree out loud. I don\'t measure success by how involved I am. I measure it by whether the team is doing their best work without needing me in the room.', 'Direction, not instructions - I define what success looks like and why it matters. How we get there is the team\'s call. Micromanaging decisions is just slow delegation with extra steps.',
-    'Direction, not instructions - I define what success looks like and why it matters. How we get there is the team\'s call.',
+    'My job as a design leader is to create the conditions for great work — clear direction, room to think, and a team that trusts each other enough to disagree out loud. I don\'t measure success by how involved I am. I measure it by whether the team is doing their best work without needing me in the room.', 
+    'Direction, not instructions - I define what success looks like and why it matters. How we get there is the team\'s call. Micromanaging decisions is just slow delegation with extra steps.',
     'Autonomy with accountability - Ownership only works if the person who owns it also owns the outcome-good or bad. I hold the team to that, and I hold myself to it first.',
     'Invest in people more than process - Strong process follows strong people, not the other way around. The best design operations I have built started with trust, not tooling.',
   ],
