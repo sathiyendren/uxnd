@@ -10,7 +10,7 @@ export default function About() {
           <div>
             <p className="section-label">About Me</p>
             <h1 className="section-title text-4xl md:text-5xl mb-6">
-              UX Leader &amp; Designer
+              I design for how people actually behave - not how we assume they will.
             </h1>
             <div className="prose-custom space-y-4">
               {about.bio.map((para, i) => (
@@ -35,14 +35,14 @@ export default function About() {
       <section className="py-14 bg-white border-t border-gray-line">
         <div className="page-container">
           <p className="section-label text-center">MY EXPERIENCE</p>
-          <h2 className="section-title text-center mb-10">Areas of Expertise</h2>
+          <h2 className="section-title text-center mb-10">Work that ships at scale</h2>
           <div className="flex flex-wrap justify-center gap-6">
             {about.experienceAreas.map((area) => (
               <div
                 key={area.label}
                 className="flex flex-col items-center gap-2 bg-burlywood-light rounded-2xl px-8 py-6 min-w-[140px]"
               >
-                <span className="text-3xl font-montserrat font-bold text-burlywood">{area.years} yrs</span>
+                <span className="text-3xl font-montserrat font-bold text-burlywood">{area.value}</span>
                 <span className="text-sm text-gray-warm text-center">{area.label}</span>
               </div>
             ))}
