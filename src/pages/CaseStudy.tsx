@@ -1,6 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect, useCallback } from 'react'
-import { portfolio, type CaseStudySection } from '../config/siteConfig'
+import ReactGA from 'react-ga4'
+import { GA_TRACKING_ID, portfolio, type CaseStudySection } from '../config/siteConfig'
 
 // ─── Lightbox ────────────────────────────────────────────────────────────────
 
@@ -103,6 +104,16 @@ function SectionBlock({
   section: CaseStudySection
   onImageClick: (images: LightboxImage[], index: number) => void
 }) {
+  const handleImageClick = (images: LightboxImage[], index: number) => {
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.event({
+        category: 'CaseStudy',
+        action: 'open_section_image',
+        label: section.title || 'Section Image',
+      })
+    }
+    onImageClick(images, index)
+  }
   switch (section.type) {
     case 'challenge':
       return (
@@ -174,7 +185,7 @@ function SectionBlock({
               <div
                 key={i}
                 className="rounded-xl overflow-hidden bg-gray-pale border border-gray-line cursor-zoom-in group"
-                onClick={() => onImageClick(section.images as LightboxImage[], i)}
+                onClick={() => handleImageClick(section.images as LightboxImage[], i)}
               >
                 <img
                   src={img.src}
@@ -207,6 +218,27 @@ export default function CaseStudy() {
   const project = portfolio.find((p) => p.slug === slug)
 
   const [lightbox, setLightbox] = useState<{ images: LightboxImage[]; index: number } | null>(null)
+
+  const handleImageClick = (images: LightboxImage[], index: number) => {
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.event({
+        category: 'CaseStudy',
+        action: 'open_lightbox',
+        label: project?.title || 'Unknown',
+      })
+    }
+    setLightbox({ images, index })
+  }
+
+  const handleProjectNav = (direction: 'prev' | 'next', targetProject: string) => {
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.event({
+        category: 'CaseStudy',
+        action: `navigate_${direction}`,
+        label: targetProject,
+      })
+    }
+  }
 
   if (!project) {
     return (
@@ -272,7 +304,7 @@ export default function CaseStudy() {
             {/* Thumbnail */}
             <div
               className="rounded-2xl overflow-hidden shadow-lg bg-gray-pale cursor-zoom-in"
-              onClick={() => setLightbox({ images: [{ src: project.thumbnail, alt: project.title }], index: 0 })}
+              onClick={() => handleImageClick([{ src: project.thumbnail, alt: project.title }], 0)}
             >
               <img
                 src={project.thumbnail}
@@ -306,7 +338,10 @@ export default function CaseStudy() {
         <div className="page-container flex flex-col md:flex-row items-center justify-between gap-4">
           {prev ? (
             <button
-              onClick={() => navigate(`/portfolio/${prev.slug}`)}
+              onClick={() => {
+                handleProjectNav('prev', prev.title)
+                navigate(`/portfolio/${prev.slug}`)
+              }}
               className="flex items-center gap-2 text-sm font-montserrat text-gray-warm hover:text-burlywood transition-colors"
             >
               ← {prev.title}
@@ -319,7 +354,10 @@ export default function CaseStudy() {
           </Link>
           {next ? (
             <button
-              onClick={() => navigate(`/portfolio/${next.slug}`)}
+              onClick={() => {
+                handleProjectNav('next', next.title)
+                navigate(`/portfolio/${next.slug}`)
+              }}
               className="flex items-center gap-2 text-sm font-montserrat text-gray-warm hover:text-burlywood transition-colors"
             >
               View next: {next.title} →

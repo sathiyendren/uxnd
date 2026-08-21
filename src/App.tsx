@@ -1,4 +1,7 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import ReactGA from 'react-ga4'
+import { GA_TRACKING_ID } from './config/siteConfig'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -10,10 +13,29 @@ import CaseStudy from './pages/CaseStudy'
 import Contact from './pages/Contact'
 import Resume from './pages/Resume'
 
+// Initialize GA
+if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+  ReactGA.initialize(GA_TRACKING_ID)
+}
+
+// Page view tracking component
+function PageViewTracker() {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search })
+    }
+  }, [location])
+
+  return null
+}
+
 export default function App() {
   return (
     <BrowserRouter basename="/">
       <ScrollToTop />
+      <PageViewTracker />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-1">

@@ -1,6 +1,37 @@
-import { contactPage, person } from '../config/siteConfig'
+import ReactGA from 'react-ga4'
+import { GA_TRACKING_ID, contactPage, person } from '../config/siteConfig'
 
 export default function Contact() {
+  const handleEmailClick = () => {
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.event({
+        category: 'Contact',
+        action: 'click_email',
+        label: person.email,
+      })
+    }
+  }
+
+  const handleLinkedInClick = () => {
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.event({
+        category: 'Contact',
+        action: 'click_linkedin',
+        label: 'LinkedIn Profile',
+      })
+    }
+  }
+
+  const handleResumeDownload = () => {
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.event({
+        category: 'Contact',
+        action: 'download_resume',
+        label: 'Megalatha_Sankaraiya_UX_Designer_Resume.pdf',
+      })
+    }
+  }
+
   return (
     <main>
       {/* Header */}
@@ -12,7 +43,11 @@ export default function Contact() {
               {person.shortName}
             </h1>
             <div className="space-y-3 text-sm">
-              <a href={`mailto:${person.email}`} className="flex items-center gap-3 text-gray-700 hover:text-burlywood transition-colors">
+              <a
+                href={`mailto:${person.email}`}
+                onClick={handleEmailClick}
+                className="flex items-center gap-3 text-gray-700 hover:text-burlywood transition-colors"
+              >
                 <span className="text-burlywood">✉</span> {person.email}
               </a>
               <p className="flex items-center gap-3 text-gray-700">
@@ -21,7 +56,13 @@ export default function Contact() {
               <p className="flex items-center gap-3 text-gray-700">
                 <span className="text-burlywood">🌐</span> {person.website}
               </p>
-              <a href={person.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-700 hover:text-burlywood transition-colors">
+              <a
+                href={person.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                onClick={handleLinkedInClick}
+                className="flex items-center gap-3 text-gray-700 hover:text-burlywood transition-colors"
+              >
                 <span className="text-burlywood">in</span> LinkedIn Profile
               </a>
             </div>
@@ -35,6 +76,7 @@ export default function Contact() {
             <a
               href={person.resumePdf}
               download="Megalatha_Sankaraiya_UX_Designer_Resume.pdf"
+              onClick={handleResumeDownload}
               className="btn-primary"
             >
               Download as PDF

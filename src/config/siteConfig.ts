@@ -5,6 +5,9 @@
 // To update the portfolio, edit the `portfolio` array.
 // To add a new page to the nav, add an entry to `nav`.
 
+// Google Analytics tracking ID (replace with your actual GA4 measurement ID)
+export const GA_TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID || 'G-XXXXXXXXXX'
+
 export interface NavItem {
   label: string
   path: string

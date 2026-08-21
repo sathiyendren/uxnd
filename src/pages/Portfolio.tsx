@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom'
+import ReactGA from 'react-ga4'
+import { GA_TRACKING_ID } from '../config/siteConfig'
 import { portfolio } from '../config/siteConfig'
 
 export default function Portfolio() {
@@ -8,6 +10,15 @@ export default function Portfolio() {
   const others = portfolio.filter((p) => p.id !== 'cloudwatch-omni')
 
   const handleProjectClick = (project: (typeof portfolio)[0]) => {
+    // Track project click event
+    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+      ReactGA.event({
+        category: 'Portfolio',
+        action: 'click_project',
+        label: project.title,
+      })
+    }
+
     if (project.passwordProtected) {
       const input = window.prompt(
         'To access the content, kindly provide the password. For password assistance, you can reach out to iammega@gmail.com.',
@@ -17,6 +28,15 @@ export default function Portfolio() {
         navigate(`/portfolio/${project.slug}`)
       } else if (input !== null) {
         alert('Incorrect password. Please try again.')
+      } else {
+        // Track password cancel
+        if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+          ReactGA.event({
+            category: 'Portfolio',
+            action: 'password_cancel',
+            label: project.title,
+          })
+        }
       }
     } else {
       navigate(`/portfolio/${project.slug}`)
