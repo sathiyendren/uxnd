@@ -3,7 +3,7 @@ import { GA_TRACKING_ID, contactPage, person } from '../config/siteConfig'
 
 export default function Resume() {
   const handleResumeDownload = () => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-HLRKB358F1') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Resume',
         action: 'download_resume',
