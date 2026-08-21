@@ -1,10 +1,21 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { nav, person } from '../config/siteConfig'
+import ReactGA from 'react-ga4'
+import { GA_TRACKING_ID, nav, person } from '../config/siteConfig'
 
 export default function Navbar() {
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
+
+  const handleNavClick = (label: string, path: string) => {
+    if (GA_TRACKING_ID) {
+      ReactGA.event({
+        category: 'Navigation',
+        action: 'click_nav',
+        label: label,
+      })
+    }
+  }
 
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-line">
@@ -19,12 +30,17 @@ export default function Navbar() {
             <Link
               key={item.path}
               to={item.path}
+              onClick={() => handleNavClick(item.label, item.path)}
               className={`nav-link ${pathname.startsWith(item.path) ? 'nav-link-active' : ''}`}
             >
               {item.label}
             </Link>
           ))}
-          <Link to="/resume" className="btn-primary text-xs py-2 px-5">
+          <Link
+            to="/resume"
+            onClick={() => handleNavClick('Resume', '/resume')}
+            className="btn-primary text-xs py-2 px-5"
+          >
             Resume
           </Link>
         </div>
@@ -48,13 +64,23 @@ export default function Navbar() {
             <Link
               key={item.path}
               to={item.path}
+              onClick={() => {
+                handleNavClick(item.label, item.path)
+                setOpen(false)
+              }}
               className={`nav-link text-base ${pathname.startsWith(item.path) ? 'nav-link-active' : ''}`}
-              onClick={() => setOpen(false)}
             >
               {item.label}
             </Link>
           ))}
-          <Link to="/resume" className="btn-primary text-sm self-start" onClick={() => setOpen(false)}>
+          <Link
+            to="/resume"
+            onClick={() => {
+              handleNavClick('Resume', '/resume')
+              setOpen(false)
+            }}
+            className="btn-primary text-sm self-start"
+          >
             Resume
           </Link>
         </div>

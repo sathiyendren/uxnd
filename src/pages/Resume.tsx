@@ -1,6 +1,17 @@
-import { contactPage, person } from '../config/siteConfig'
+import ReactGA from 'react-ga4'
+import { GA_TRACKING_ID, contactPage, person } from '../config/siteConfig'
 
 export default function Resume() {
+  const handleResumeDownload = () => {
+    if (GA_TRACKING_ID) {
+      ReactGA.event({
+        category: 'Resume',
+        action: 'download_resume',
+        label: 'Megalatha_Sankaraiya_UX_Designer_Resume.pdf',
+      })
+    }
+  }
+
   return (
     <main className="bg-white min-h-screen">
       {/* Download button — hidden when printing */}
@@ -11,6 +22,7 @@ export default function Resume() {
         <a
           href={person.resumePdf}
           download="Megalatha_Sankaraiya_UX_Designer_Resume.pdf"
+          onClick={handleResumeDownload}
           className="btn-primary text-sm ml-6 whitespace-nowrap flex-shrink-0"
         >
           ↓ Print / Save as PDF
