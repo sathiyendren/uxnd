@@ -11,7 +11,7 @@ export default function Portfolio() {
 
   const handleProjectClick = (project: (typeof portfolio)[0]) => {
     // Track project click event
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Portfolio',
         action: 'click_project',
@@ -30,7 +30,7 @@ export default function Portfolio() {
         alert('Incorrect password. Please try again.')
       } else {
         // Track password cancel
-        if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+        if (GA_TRACKING_ID) {
           ReactGA.event({
             category: 'Portfolio',
             action: 'password_cancel',

@@ -3,7 +3,7 @@ import { GA_TRACKING_ID, person } from '../config/siteConfig'
 
 export default function Footer() {
   const handleEmailClick = () => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Footer',
         action: 'click_email',
@@ -13,7 +13,7 @@ export default function Footer() {
   }
 
   const handleLinkedInClick = () => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Footer',
         action: 'click_linkedin',

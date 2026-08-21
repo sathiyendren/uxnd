@@ -105,7 +105,7 @@ function SectionBlock({
   onImageClick: (images: LightboxImage[], index: number) => void
 }) {
   const handleImageClick = (images: LightboxImage[], index: number) => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'CaseStudy',
         action: 'open_section_image',
@@ -220,7 +220,7 @@ export default function CaseStudy() {
   const [lightbox, setLightbox] = useState<{ images: LightboxImage[]; index: number } | null>(null)
 
   const handleImageClick = (images: LightboxImage[], index: number) => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'CaseStudy',
         action: 'open_lightbox',
@@ -231,7 +231,7 @@ export default function CaseStudy() {
   }
 
   const handleProjectNav = (direction: 'prev' | 'next', targetProject: string) => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'CaseStudy',
         action: `navigate_${direction}`,

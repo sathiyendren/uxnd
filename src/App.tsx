@@ -14,7 +14,7 @@ import Contact from './pages/Contact'
 import Resume from './pages/Resume'
 
 // Initialize GA
-if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+if (GA_TRACKING_ID) {
   ReactGA.initialize(GA_TRACKING_ID)
 }
 
@@ -23,7 +23,7 @@ function PageViewTracker() {
   const location = useLocation()
 
   useEffect(() => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search })
     }
   }, [location])

@@ -3,7 +3,7 @@ import { GA_TRACKING_ID, contactPage, person } from '../config/siteConfig'
 
 export default function Contact() {
   const handleEmailClick = () => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Contact',
         action: 'click_email',
@@ -13,7 +13,7 @@ export default function Contact() {
   }
 
   const handleLinkedInClick = () => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Contact',
         action: 'click_linkedin',
@@ -23,7 +23,7 @@ export default function Contact() {
   }
 
   const handleResumeDownload = () => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Contact',
         action: 'download_resume',

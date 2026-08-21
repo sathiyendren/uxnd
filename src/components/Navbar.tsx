@@ -8,7 +8,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   const handleNavClick = (label: string, path: string) => {
-    if (GA_TRACKING_ID && GA_TRACKING_ID !== 'G-XXXXXXXXXX') {
+    if (GA_TRACKING_ID) {
       ReactGA.event({
         category: 'Navigation',
         action: 'click_nav',
